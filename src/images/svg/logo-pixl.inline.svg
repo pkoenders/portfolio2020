@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="53px" viewBox="0 0 70 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7 Copy</title>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1274.000000, -88.000000)">
+            <g id="Group-7-Copy" transform="translate(1274.000000, 88.000000)">
+                <polygon id="Fill-1" fill="#B42A76" points="0 20 20 20 20 0 0 0"></polygon>
+                <polygon id="Fill-2" fill="#F5B121" points="20 20 40 20 40 0 20 0"></polygon>
+                <polygon id="Fill-3" fill="#1AACE5" points="0 40 20 40 20 19.999 0 19.999"></polygon>
+                <g id="Group-6" transform="translate(24.000000, 11.000000)" fill="#19181D" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="36" font-weight="400">
+                    <text id="p">
+                        <tspan x="-4.54747351e-13" y="35">p</tspan>
+                    </text>
+                    <text id="i">
+                        <tspan x="18.396" y="35">i</tspan>
+                    </text>
+                    <text id="x">
+                        <tspan x="23.472" y="35">x</tspan>
+                    </text>
+                    <text id="l">
+                        <tspan x="39.204" y="35">l</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+@import "src/styles/scss";
+
+.footer {
+  border-top: 1px solid $headerBgColor;
+  color: #f6f4f2;
+  padding: 120px 60px 120px 60px;
+  background-color: $footerBgColor;
+  text-align: center;
+
+  svg {
+    width: auto;
+    height: 40px;
+  }
+
+  p {
+    font-size: .9rem;
+    color: $footerFgColor;
+    margin-bottom: 10px;
+  }
+
+  p+p {
+    font-size: .8rem;
+    color: $tertiaryColorA;
+    line-height: 1.0rem;
+  }
+}

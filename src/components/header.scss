@@ -1,0 +1,132 @@
+@import "src/styles/scss";
+
+
+header.header-nav-wrapper {
+  display: flex !important;
+  position: fixed;
+  flex-direction: row;
+  //justify-content: space-between;
+  //justify-content: flex-end;
+
+  width: 100%;
+  z-index: 1000;
+  // background-color: #ffffff;
+
+  a {
+    margin: 0;
+    display: flex;
+    z-index: 100;
+
+    svg {
+      background-color: #ffffff94;
+      background-color: #ffffff;
+      padding: 15px 25px 10px 25px;
+      height: 60px;
+      width: auto;
+      border: 1px solid #ffffff94;
+      border-top: none;
+      border-left: none;
+    }
+  }
+
+  div.header-nav {
+    z-index: 99;
+
+    min-width: 130px;
+
+    background-color: $headerBgColor;
+    // max-width: 960px;
+    border: 1px solid #ffffff94;
+    border-top: none;
+
+    transition: all .25s linear;
+
+    // border-right: none;
+
+    .hamburgerContainer {
+      position: absolute;
+      display: flex;
+      align-self: center;
+      padding: 5px 15px;
+      height: 60px;
+      left: 95px;
+      border: none;
+
+
+
+      button {
+        align-self: center;
+      }
+
+      h1 {
+        margin: 0;
+
+        a {
+          color: #ffffff;
+
+        }
+      }
+    }
+
+    ul {
+      display: none;
+      // visibility: hidden;
+      // opacity: 0;
+      // transition: visibility 0s, opacity 1.5s linear;
+    }
+  }
+
+  div.header-nav.open {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 100vh;
+    max-width: 100%;
+    border: none;
+
+    ul {
+      display: block;
+      // visibility: visible;
+      // opacity: 1;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      top: 80px;
+      position: absolute;
+      left: 130px;
+
+      li {
+        a {
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+          color: #ffffff;
+          padding: 10px 0;
+          position: relative;
+          width: fit-content;
+        }
+
+        a:hover {
+          //text-decoration: underline !important;
+        }
+
+        a:after {
+          content: '';
+          position: absolute;
+          bottom: 5px;
+          display: block;
+          background: $primaryColor;
+          height: 5px;
+          width: 0;
+          transition: width 150ms ease-in-out;
+        }
+
+
+        a:hover:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

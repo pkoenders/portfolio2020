@@ -1,0 +1,68 @@
+@import "src/styles/scss";
+
+.ourServices {
+    max-width: 1200px;
+    margin: 120px auto;
+    text-align: center;
+
+    div.ourServicesWrapper {
+        //display: flex;
+        width: 100%;
+
+        .intro {
+            padding: 15px;
+            font-family: 'Vollkorn', serif;
+            text-transform: initial;
+            //font-size: 2.0rem;
+            line-height: 2.4rem;
+            letter-spacing: .02rem;
+            margin-bottom: 120px;
+
+
+        }
+
+        ul,
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            width: 50%;
+            margin: 0 auto 60px auto;
+            text-align: left;
+
+            svg {
+                display: inline-block;
+                width: 75px;
+                height: auto;
+                vertical-align: middle;
+                margin: 0 15px 10px -15px;
+            }
+
+            h3 {
+                display: inline-block;
+            }
+
+            p {
+                position: relative;
+                display: inline-block;
+            }
+        }
+    }
+
+    .ctaWorkWithUs {
+
+        margin: 60px auto;
+    }
+
+    a {
+
+        margin: 0 auto;
+    }
+
+
+
+
+}

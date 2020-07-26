@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260px" height="260px" viewBox="0 0 260 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Fill 1</title>
+    <defs>
+        <path d="M124.130208,945.072917 C144.963646,985.437698 175.562302,1016.03635 215.927083,1036.86979 L246.526042,1006.27083 C250.866354,1001.93053 255.640625,1000.84548 260.848958,1003.01562 C276.474063,1008.22399 292.966875,1010.82812 310.328125,1010.82812 C314.234375,1010.82812 317.489583,1012.1302 320.09375,1014.73438 C322.697917,1017.33855 324,1020.59373 324,1024.5 L324,1073.32812 C324,1077.23439 322.697917,1080.48957 320.09375,1083.09375 C317.489583,1085.69793 314.234375,1087 310.328125,1087 C245.223646,1087 189.560104,1063.88825 143.335938,1017.66406 C97.11175,971.439896 74,915.776354 74,850.671875 C74,846.765625 75.3020698,843.510417 77.90625,840.90625 C80.5104302,838.302083 83.7656052,837 87.671875,837 L136.5,837 C140.406271,837 143.661448,838.302083 146.265625,840.90625 C148.869802,843.510417 150.171875,846.765625 150.171875,850.671875 C150.171875,868.033125 152.77601,884.525937 157.984375,900.151042 C159.72049,905.793437 158.635438,910.567708 154.729167,914.473958 L124.130208,945.072917 Z" id="path-1"></path>
+        <filter x="-3.0%" y="-3.0%" width="106.0%" height="106.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.152917395 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-69.000000, -832.000000)">
+            <g id="Fill-1">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#253240" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,190 @@
+@import "./scss";
+@import "./reset";
+@import "./checkbox-radios";
+
+body {
+  background-color: #ededed;
+  background-color: #ffffff;
+  //background-color: #253240;
+
+  @include respond-below(sm) {
+    //  margin: 50px 0 0 0;
+  }
+}
+
+.section-layout {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.section-layout-wide {
+  max-width: 100%;
+  margin: 0px;
+}
+
+p {
+  color: $txtColor;
+
+}
+
+a,
+a:link,
+a:hover {
+  color: $txtColor;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: $primaryColor;
+  //text-decoration: underline;
+}
+
+
+button.buttonPrimary,
+button.buttonPrimaryDark,
+button.buttonSecondary button.buttonTertiary,
+
+.buttonPrimary,
+.buttonPrimaryDark,
+.buttonSecondary,
+.buttonTertiary {
+  padding: 1em 2em;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: inherit;
+  cursor: pointer;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-width: 0;
+  letter-spacing: .075rem;
+  // background-color: $tertiaryColorA;
+  background-color: $primaryColor;
+  color: #ffffff !important;
+}
+
+button.buttonPrimaryDark,
+.buttonPrimaryDark {
+  background-color: $ctaColorDark;
+}
+
+button:hover.buttonPrimary,
+button:hover.buttonPrimaryDark,
+.buttonPrimary:hover,
+.buttonPrimaryDark:hover {
+  color: #ffffff;
+  box-shadow: 0px 0px 5px 0px rgba(35, 35, 35, 0.5);
+  text-decoration: none;
+  //color: #ffffff;
+}
+
+
+// Btn Secondary
+button.buttonSecondary,
+.buttonSecondary,
+button.buttonSecondary:focus,
+.buttonSecondary:focus {
+  padding: 0.5em 1.2em;
+  border: 1px solid #3d5269;
+  border-bottom: 2px solid #3d5269;
+  background-color: #283746;
+}
+
+button.buttonSecondary.isActive,
+.buttonSecondary.isActive {
+  border: 1px solid $primaryColor;
+  border-bottom: 2px solid $primaryColor;
+  background-color: $primaryColor;
+}
+
+button.buttonSecondary:hover,
+.buttonSecondary:hover {
+  border: 1px solid $primaryColor;
+  border-bottom: 2px solid $primaryColor;
+  //background-color: transparent;
+}
+
+// Btn Tertiary
+button.buttonTertiary,
+.buttonTertiary,
+button.buttonTertiary:focus,
+.buttonTertiary:focus {
+  padding: 1em 2em;
+  color: $txtColor;
+  border: 1px solid $txtColor;
+  //border-bottom: 2px solid $txtColor;
+  background-color: #ffffff;
+}
+
+button.buttonTertiary.isActive,
+.buttonTertiary.isActive {
+  border: 1px solid $txtColor;
+  //border-bottom: 2px solid $txtColor;
+  background-color: #ffffff;
+}
+
+button.buttonTertiary:hover,
+.buttonTertiary:hover {
+  border: 1px solid $txtColor;
+  //border-bottom: 2px solid $txtColor;
+  //background-color: transparent;
+}
+
+.fourOfour {
+  display: block;
+  margin: 120px auto;
+  width: fit-content;
+  text-align: center;
+  color: #ffffff;
+
+  a,
+  a:link,
+  a:hover {
+    margin-top: 60px;
+    padding: 1.2rem 4rem;
+    color: $txtColor;
+    text-decoration: none;
+  }
+}
+
+#SRLLightbox {
+  z-index: 10000;
+}
+
+#SRLLightbox {
+
+
+  @include respond-below(sm) {
+    //top:50px !important;
+    bottom: 0px !important
+  }
+
+  .SRLStage {
+    @include respond-below(sm) {
+
+      //top:50px !important;
+      button.SRLPrevButton,
+      button.SRLNextButton,
+      button.SRLCloseButton,
+      button.SRLZoomOutButton {
+        display: block;
+        height: 42px;
+        width: 42px;
+      }
+    }
+  }
+
+  .SRLElementContainer {
+    z-index: 10;
+  }
+}
