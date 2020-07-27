@@ -188,7 +188,7 @@ section.whatWeDoWrapper {
             p,
             li {
 
-                opacity: 82%;
+                opacity: 85%;
             }
         }
 
@@ -206,7 +206,6 @@ section.whatWeDoWrapper {
             text-align: left;
             border-top: 1px solid #ffffff;
 
-
             @include respond-below(lg) {
                 border-top: none;
             }
@@ -220,7 +219,7 @@ section.whatWeDoWrapper {
             li {
                 color: #ffffff;
                 font-weight: 500;
-                opacity: 82%;
+                opacity: 85%;
             }
 
             h2 {
@@ -258,7 +257,7 @@ section.whatWeDoWrapper {
             p,
             li {
 
-                opacity: 82%;
+                opacity: 85%;
             }
 
 
@@ -284,7 +283,7 @@ section.whatWeDoWrapper {
             p,
             li {
 
-                opacity: 82%;
+                opacity: 85%;
             }
 
             @include respond-below(lg) {
