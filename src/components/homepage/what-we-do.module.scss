@@ -87,7 +87,7 @@
                     text-transform: uppercase;
 
                     span {
-                        opacity: 55%;
+                        opacity: .55;
                     }
 
                     @include respond-below(md) {
@@ -187,8 +187,7 @@ section.whatWeDoWrapper {
             h2,
             p,
             li {
-
-                opacity: 85%;
+                opacity: .85;
             }
         }
 
@@ -219,7 +218,7 @@ section.whatWeDoWrapper {
             li {
                 color: #ffffff;
                 font-weight: 500;
-                opacity: 85%;
+                opacity: .85;
             }
 
             h2 {
@@ -256,8 +255,7 @@ section.whatWeDoWrapper {
             h2,
             p,
             li {
-
-                opacity: 85%;
+                opacity: .85;
             }
 
 
@@ -282,8 +280,7 @@ section.whatWeDoWrapper {
             h2,
             p,
             li {
-
-                opacity: 85%;
+                opacity: .85;
             }
 
             @include respond-below(lg) {
