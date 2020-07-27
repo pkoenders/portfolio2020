@@ -17,23 +17,28 @@
     // width: 30px;
 
     //height: 20px;
-
+    height: 12px;
 
 
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
       width: 30px;
-      height: 3px;
+      height: 2px;
       background-color: #bfbfbf;
-      float: left;
+      float: right;
       border-radius: 1.5px;
+    }
+
+    .hamburger-inner {
+      width: 20px;
     }
   }
 
   .hamburger-label {
     color: #bfbfbf;
     color: #ffffff;
+
     float: right;
     font-size: .7rem;
     font-weight: 300;
@@ -50,6 +55,15 @@
   .hamburger-inner::before,
   .hamburger-inner::after {
     background-color: #bfbfbf;
+  }
+
+  .hamburger-inner {
+    width: 30px;
+  }
+
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    margin-left: 0px;
   }
 }
 

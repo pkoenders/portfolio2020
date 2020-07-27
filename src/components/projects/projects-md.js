@@ -49,11 +49,10 @@ const LatestProjects = () => {
     return (
 
         <section className={latestProjectsStyles.latestProjectsSection + ' section-layout-wide'}>
-            <h2>Our projects</h2>
+            <h2>My projects</h2>
 
 
             <div className={latestProjectsStyles.wrapper}>
-                <p>A speil about all our projects gos here...</p>
                 <ul>
                     {data.allMarkdownRemark.edges.map((edge, i) => (
                         <li key={i} >

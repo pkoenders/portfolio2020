@@ -5,40 +5,50 @@ header.header-nav-wrapper {
   display: flex !important;
   position: fixed;
   flex-direction: row;
+  border-bottom: 1px solid #ffffff5a;
   //justify-content: space-between;
   //justify-content: flex-end;
-
+  background-color: $headerBgColor;
   width: 100%;
   z-index: 1000;
+  transition: top 0.4s;
+  /* Transition effect when sliding down (and up) */
   // background-color: #ffffff;
 
   a {
     margin: 0;
     display: flex;
-    z-index: 100;
+    z-index: 1003;
+    //width: 100%;
+
+
 
     svg {
-      background-color: #ffffff94;
-      background-color: #ffffff;
-      padding: 15px 25px 10px 25px;
+      // background-color: #ffffff94;
+      // background-color: $headerBgColor;
+      // padding: 15px 25px 10px 25px;
+      padding: 15px;
       height: 60px;
       width: auto;
-      border: 1px solid #ffffff94;
-      border-top: none;
-      border-left: none;
+      // border: 1px solid #ffffff94;
+      // border-top: none;
+      // border-left: none;
+      // border-right: none;
+      // border-bottom: none;
     }
   }
 
   div.header-nav {
     z-index: 99;
+    z-index: 1001;
+
 
     min-width: 130px;
 
     background-color: $headerBgColor;
     // max-width: 960px;
-    border: 1px solid #ffffff94;
-    border-top: none;
-
+    // border: 1px solid #ffffff94;
+    // border-top: none;
     transition: all .25s linear;
 
     // border-right: none;
@@ -49,8 +59,9 @@ header.header-nav-wrapper {
       align-self: center;
       padding: 5px 15px;
       height: 60px;
-      left: 95px;
+      right: 0px;
       border: none;
+
 
 
 
@@ -95,16 +106,22 @@ header.header-nav-wrapper {
       margin: 0;
       top: 80px;
       position: absolute;
-      left: 130px;
+      right: 30px;
+
 
       li {
+
+
         a {
           font-size: 1.8rem;
           line-height: 2.4rem;
           color: #ffffff;
+          opacity: 66%;
           padding: 10px 0;
           position: relative;
           width: fit-content;
+          float: right;
+
         }
 
         a:hover {
@@ -117,7 +134,8 @@ header.header-nav-wrapper {
           bottom: 5px;
           display: block;
           background: $primaryColor;
-          height: 5px;
+          background: #ffffff;
+          height: 1px;
           width: 0;
           transition: width 150ms ease-in-out;
         }

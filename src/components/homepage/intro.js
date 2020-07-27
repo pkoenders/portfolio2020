@@ -8,7 +8,9 @@ const Intro = () => {
         <section className='section-layout'>
             <div className={introStyles.intro}>
                 <IconCreativeTech />
-                <h1><strong>pixl</strong> studio was born in lockdown. We provide the end to end experience for creating a digital presence, from graphic design, branding &amp; logo to web design &amp; development.</h1>
+                <h1>Kia ora, <br />
+                    Welcome, to the portfolio od Peter Koenders.
+                </h1>
             </div>
         </section>
     )

@@ -6,14 +6,22 @@
     background-color: #efeff0;
     background-color: #253240;
 
-    background: rgb(65, 87, 111);
-    background: radial-gradient(circle, rgba(65, 87, 111, 1) 0%, rgba(37, 50, 64, 1) 100%);
+    // background: rgb(65, 87, 111);
+    // background: radial-gradient(circle, rgba(65, 87, 111, 1) 0%, rgba(37, 50, 64, 1) 100%);
+
+    background: rgb(212, 212, 212);
+    background: linear-gradient(174deg, rgba(212, 212, 212, 1) 0%, rgba(239, 239, 240, 1) 83%);
+
 
     padding: $globalSecionPadding;
 
+    @include respond-below(lg) {
+        padding: 100px 0 5px 0;
+    }
+
     h2 {
         text-align: center;
-        color: #ffffff;
+        //color: #ffffff;
     }
 
     div.wrapper {
@@ -24,6 +32,8 @@
             width: 50%;
             color: #ffffff;
             margin: 30px auto;
+
+
         }
 
 
@@ -44,13 +54,29 @@
             text-align: center;
             list-style: none;
             margin: 0;
-            padding: 0;
+
             width: 100%;
+            padding: 0px;
+
+            @include respond-below(sm) {
+                padding: 7.5px;
+            }
+
         }
 
         ul li {
             flex-basis: calc(50% - 30px);
+
+            @include respond-below(xs) {
+                flex-basis: calc(100% - 15px);
+            }
+
             margin: 15px;
+
+            @include respond-below(sm) {
+                margin: 7.5px;
+            }
+
             vertical-align: top;
             border-radius: $globalBorderRadiusA;
             overflow: hidden;
@@ -63,6 +89,13 @@
 
                 width: auto;
                 padding: 30px 30px 0 30px;
+
+                @include respond-below(sm) {
+                    padding: 15px 15px 0 15px;
+                }
+
+
+
                 margin: 0;
                 border-radius: 0;
             }

@@ -1,7 +1,7 @@
 ---  
     posttype: project
     slug: lynn-pronk-portraits
-    date: 2019-05-01
+    date: 2020-03-01
     category: Website
     url: https://www.lynnpronkportraits.com
     addtohomepage: true

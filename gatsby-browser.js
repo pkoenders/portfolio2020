@@ -6,6 +6,11 @@
 
 // You can delete this file if you're not using it
 
+
+
+
+import mediumZoom from 'medium-zoom'
+
 export const onServiceWorkerUpdateReady = () => {
     const answer = window.confirm(
         `This application has been updated. ` +
@@ -17,8 +22,6 @@ export const onServiceWorkerUpdateReady = () => {
     }
 }
 
-
-import mediumZoom from 'medium-zoom'
 
 
 export const onRouteUpdate = () => {
@@ -44,17 +47,26 @@ function ready() {
 }
 
 function toggleMobileNavOnClick(hamBurgerBtn, headerDiv, headerDivNav, headerDivLogo) {
+
+
     hamBurgerBtn.addEventListener("click", function () {
         //headerDiv.scrollTop = 0
         //console.log('Hamburger Clicked')
+
         if (!headerDiv.classList.contains("open")) {
             headerDiv.classList.add("open")
             hamBurgerBtn.classList.add("is-active")
+
+            // window.onscroll = function () {
+            //     headerWrapper.style.top = "0";
+            // }
 
         } else {
             headerDiv.classList.remove("open")
             hamBurgerBtn.classList.remove("is-active")
         }
+
+
     });
 
     headerDivNav.addEventListener("click", function () {
@@ -70,9 +82,22 @@ function toggleMobileNavOnClick(hamBurgerBtn, headerDiv, headerDivNav, headerDiv
 }
 
 function mobileNav() {
+
     const hamBurgerBtn = document.querySelector(".hamburger")
     const headerDiv = document.querySelector(".header-nav")
     const headerDivNav = document.querySelector(".header-nav ul ")
     const headerDivLogo = document.querySelector(".header-nav-wrapper a ")
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if ((prevScrollpos > currentScrollPos) || (hamBurgerBtn.classList.contains("is-active"))) {
+            document.querySelector(".header-nav-wrapper").style.top = "0";
+        } else {
+            document.querySelector(".header-nav-wrapper").style.top = "-61px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
     toggleMobileNavOnClick(hamBurgerBtn, headerDiv, headerDivNav, headerDivLogo)
 }

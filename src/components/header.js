@@ -2,15 +2,15 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Img from 'gatsby-image'
-import LogoPixel from "../images/svg/logo-pixl.inline.svg"
+import IconCreativeTech from "../images/svg/icon-creative-tech.inline.svg"
 import '../styles/index.scss'
 import "../styles/hamburger.scss"
 import headerStyles from "./header.scss"
 
 const Header = ({ siteTitle }) => (
-  <header className="header-nav-wrapper">
+  <header className="header-nav-wrapper" style={{ top: 0 + 'px' }}>
     <Link to="/" title="Homepage" >
-      <LogoPixel />
+      <IconCreativeTech />
     </Link>
     <div className="header-nav">
       <div className="hamburgerContainer">
@@ -23,23 +23,13 @@ const Header = ({ siteTitle }) => (
       </div>
 
       <ul>
-        <li> <Link to="/" title="Homepage" >Pixl</Link></li>
-        <li> <Link to="/services" title="Our services" >Our services</Link></li>
-        <li> <Link to="/projects" title="Our projects" >Our projects</Link></li>
-        <li> <Link to="/projects-netlify" title="Our projects (Netlify)" >Our projects (Netlify)</Link></li>
-        <li> <Link to="/contact" title="Contact us" >Contact us</Link></li>
+        <li> <Link to="/" title="Homepage" >Peter Koenders</Link></li>
+        <li> <Link to="/projects" title="Our projects" >My projects</Link></li>
+        <li> <Link to="/contact" title="Contact us" >Contact me</Link></li>
       </ul>
 
     </div>
   </header >
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

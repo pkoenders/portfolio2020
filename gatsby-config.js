@@ -3,8 +3,8 @@ module.exports = {
   /* Your site config here */
 
   siteMetadata: {
-    title: `Pixl Studio - New Zealand`,
-    description: `Pixl Studio - New Zealand`,
+    title: `Peter Koenders - New Zealand`,
+    description: `Peter Koenders - New Zealand`,
     author: "Peter Koenders",
     year: "2020",
   },

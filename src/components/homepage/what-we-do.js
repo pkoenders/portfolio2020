@@ -33,14 +33,10 @@ const WhatWeDo = () => {
 
                 <div className={whatWeDoStyles.intro}>
                     <div className={whatWeDoStyles.introWrapper}>
-
-                        <h1><strong> <IconCreativeTech />pixl</strong> studio was born in lockdown. We provide the end to end experience for creating a digital presence, from graphic design, branding &amp; logo to web design &amp; development.</h1>
+                        <h1><strong> <IconCreativeTech /><span>Kia ora</span></strong>Welcome to Peter Koenders's portfolio.</h1>
                     </div>
                 </div>
 
-                {/* <div className={whatWeDoStyles.content}>
-                    <h2>This is what we do</h2>
-                </div> */}
                 <Img
                     width='100%'
                     alt={'Web designer'}
@@ -50,38 +46,49 @@ const WhatWeDo = () => {
 
             <section className={whatWeDoStyles.whatWeDoWrapper + ' section-layout-wide'}>
                 <div className={whatWeDoStyles.whatWeDo}>
+                    <div className={whatWeDoStyles.aboutMe}>
+                        <div>
+                            <h2>About me</h2>
+                            <p>I’m a versatile UI/UX designer with 20+ years of all rounder industry experience. I originally trained in traditional and computer graphic design and transitioned into web. I have worked with small and large organisations. I apply attention to detail in all aspects of my workflow; definition &amp; planning, research, design, technical, management and review.</p>
+                        </div>
 
-                    <div>
-                        <ul>
-                            <IconBrandingDesign />
-                            <li>Modern Web Design</li>
-                            <li>User-centered experience</li>
-                            <li>Graphic design &amp; branding</li>
-                        </ul>
-                        <Img
+                        <span>
+                            <h2>Design</h2>
+                            <p>I cover and range of design tasks and not shy to step up where needed.</p>
+                            <ul>
+                                <li>Implementation of UI/UX design process</li>
+                                <li>Estimating &amp; proposal review</li>
+                                <li>Iterative wire-framing, lo-fi prototypes &amp; concept design</li>
+                                <li>Creating clean &amp; accessible UI designs</li><li>Template design</li>
+                                <li>HTML prototypes &amp; templates</li><li>Style guides &amp; pattern libraries</li>
+                                <li>Graphic design</li><li>Planning &amp; management of projects &amp; assets</li>
+                            </ul>
+                        </span>
+                    </div>
+
+                    <div className={whatWeDoStyles.technical}>
+                        <div>
+                            <h2>Technical</h2>
+                            <p>I can markup HTML/SCSS. I write HTML to meet W3C validations and can create HTML prototypes and templates. I am interested in accessibility best practices which I apply where I can (adhering to WCAG). I am also familiar with task runners and JavaScript/jQuery. I work closely with integration teams across diversified technologies.</p>
+                        </div>
+
+
+                        <span>
+                            <IconDevelopment />
+                            <p>With professionalism, integrity & care, I work in a collaborative manner to plan, design and deliver unique, well-crafted, web-accessible solutions that are quick, optimised & built with best practices in mind.</p>
+
+
+                        </span>
+                        {/* <Img
+                            className={whatWeDoStyles.techImg}
                             width='100%'
                             alt={'UX Wireframes'}
                             fluid={dataWhatWeDo.uxWire.childImageSharp.fluid}
-                        />
-                        <span>
-                            <p>This internet is a busy place. Whether you’ve got a restaurant, e-commerce store, gym or travelling barbershop, it’s no easy task to define your space amongst the crowded and homogenous. Our job is to help you define what makes your business unique, and build you a thoughtfully crafted digital presence that reflects it.</p>
-                        </span>
+                        /> */}
                     </div>
-                    <div>
-                        <span>
-                            <p>We deliver modern, accessible, quick, most appealing and future proof websites, portals and web applications, built on the latest technologies and frameworks, customised to meet your business objectives.</p>
-                            <IconDevice />
-                            <p>Good user experience and interface is the key to customers' loyalty. Our work is always considered for mobile and desktop so your customers find it effortless to navigate your website on the go and look great on any display.</p>
-                        </span>
-                        <ul>
-                            <IconDevelopment />
-                            <li>Accessible, quick &amp; secure</li>
-                            <li>Best practice</li>
-                            <li>Headless CMS</li>
-                        </ul>
-                    </div>
+
+
                 </div>
-                <Link to="/services" title="Our services" className={whatWeDoStyles.consulutation + " buttonPrimary"}>Check out our services</Link>
             </section>
         </>
     )

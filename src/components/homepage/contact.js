@@ -14,13 +14,13 @@ const ContactForm = () => {
 
     return (
         <section className={contactStyles.contactFormSection + ' section-layout-wide'}>
-            <h2>Contact us</h2>
+            <h2>Contact me</h2>
             <div className={contactStyles.contactFormWrapper}>
 
                 <div className={contactStyles.contactForm}>
                     <IconWave />
-                    <p>We would love to be contacted to discuss work commissions or just hear your thoughts and ideas. We will always reply.</p>
-                    <p>You can call us (New Zealand) <a href="tel:+64 21 1551 085">+64 21 1551 085</a>. Alternatively, complete the form for email enquires. Thank you.</p>
+                    <p>I would love to be contacted to discuss work commissions or just hear your thoughts and ideas.</p>
+                    <p>You can call me (New Zealand) <a href="tel:+64 21 1551 085">+64 21 1551 085</a>. Alternatively, complete the form for email enquires. Thank you.</p>
                     <div className={contactStyles.contactFormInput}>
                         <form
                             name="pixl-contact"

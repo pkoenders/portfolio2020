@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import footerStyles from './footer.module.scss'
-import LogoPixel from "../images/svg/logo-pixl-white.inline.svg"
+import IconCreativeTech from "../images/svg/icon-creative-tech.inline.svg"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -18,9 +18,9 @@ const Footer = () => {
   return (
     <footer className={footerStyles.footer}>
       <Link to="/" title="Homepage" >
-        <LogoPixel />
+        <IconCreativeTech />
       </Link>
-      <p>© {new Date().getFullYear()} - Pixl New Zealand</p>
+      <p>© {new Date().getFullYear()} - Peter Koenders</p>
     </footer>
   )
 }
