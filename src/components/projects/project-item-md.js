@@ -1,11 +1,15 @@
 import React from "react"
+import { Link } from "gatsby"
 import SEO from "../seo"
 import projectStyles from './project-item.module.scss'
 import IconOpenExternal from "../../images/svg/icon-open-external.inline.svg"
+import IconNext from "../../images/svg/icon-next.inline.svg"
+import IconPrev from "../../images/svg/icon-prev.inline.svg"
+
 
 //export default function ProjectTemplate({ data }) {
-const ProjectTemplate = ({ data }) => {
-
+const ProjectTemplate = ({ data, pageContext }) => {
+  //console.log(pageContext)
 
   const { markdownRemark } = data // data.markdownRemark holds your post data
   //const { markdownRemark } = data.allMarkdownRemark.edges.node.frontmatter // data.markdownRemark holds your post data
@@ -13,6 +17,7 @@ const ProjectTemplate = ({ data }) => {
   //const link = "http://" + frontmatter.url
   const link = frontmatter.url
 
+  const { next, previous } = pageContext
 
   return (
     <>
@@ -38,13 +43,44 @@ const ProjectTemplate = ({ data }) => {
               </p>
             </div>
 
-            <div
-              className={projectStyles.contentInner}
-              dangerouslySetInnerHTML={{ __html: html }}
-            >
-            </div>
 
+
+
+
+
+
+
+            <div className={projectStyles.contentInner}>
+              <div className={projectStyles.prevNext}>
+                {previous &&
+                  <Link
+                    className={projectStyles.prev}
+                    to={`/projects/${previous.frontmatter.slug}`}
+                  >
+                    <IconPrev />
+                    <span>Previous</span>
+
+                  </Link>
+                }
+
+                {next &&
+                  <Link
+                    className={projectStyles.next}
+                    to={`/projects/${next.frontmatter.slug}`}
+                  >
+                    <span>Next</span>
+                    <IconNext />
+                  </Link>
+                }
+              </div>
+              <div
+                className={projectStyles.contentMD}
+                dangerouslySetInnerHTML={{ __html: html }}>
+              </div>
+
+            </div>
           </div>
+
 
         </div>
       </section>

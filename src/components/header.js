@@ -1,7 +1,5 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import Img from 'gatsby-image'
 import IconCreativeTech from "../images/svg/icon-creative-tech.inline.svg"
 import '../styles/index.scss'
 import "../styles/hamburger.scss"

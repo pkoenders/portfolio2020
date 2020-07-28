@@ -56,7 +56,7 @@ const LatestProjects = () => {
                 <ul>
                     {data.allMarkdownRemark.edges.map((edge, i) => (
                         <li key={i} >
-                            <Link to={`${edge.node.frontmatter.slug}`}>
+                            <Link to={`/projects/${edge.node.frontmatter.slug}`}>
                                 <Img
                                     width='100%'
                                     alt={edge.node.frontmatter.title}

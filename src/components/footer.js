@@ -20,7 +20,7 @@ const Footer = () => {
       <Link to="/" title="Homepage" >
         <IconCreativeTech />
       </Link>
-      <p>© {new Date().getFullYear()} - Peter Koenders</p>
+      <p>© {new Date().getFullYear()} - {data.site.siteMetadata.author}</p>
     </footer>
   )
 }

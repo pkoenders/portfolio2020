@@ -37,11 +37,14 @@ export const onRouteUpdate = () => {
 
 
 
+
+
 }
 
 function ready() {
     //alert('DOM is ready');
 
+    document.querySelector(".header-nav-wrapper").style.top = "0";
     mobileNav()
 
 }
@@ -88,10 +91,11 @@ function mobileNav() {
     const headerDivNav = document.querySelector(".header-nav ul ")
     const headerDivLogo = document.querySelector(".header-nav-wrapper a ")
 
-    var prevScrollpos = window.pageYOffset;
+    var prevScrollpos = 0;
+    //console.log('prevScrollpos = ' + prevScrollpos)
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
-        if ((prevScrollpos > currentScrollPos) || (hamBurgerBtn.classList.contains("is-active"))) {
+        if ((prevScrollpos >= currentScrollPos) || (hamBurgerBtn.classList.contains("is-active"))) {
             document.querySelector(".header-nav-wrapper").style.top = "0";
         } else {
             document.querySelector(".header-nav-wrapper").style.top = "-61px";

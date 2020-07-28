@@ -48,7 +48,7 @@ const LatestProjects = () => {
                         if (edge.node.frontmatter.addtohomepage === true) {
                             return (
                                 < li key={i} >
-                                    <Link to={`${edge.node.frontmatter.slug}`}>
+                                    <Link to={`/projects/${edge.node.frontmatter.slug}`}>
                                         <Img
                                             width='100%'
                                             alt={edge.node.frontmatter.title}
