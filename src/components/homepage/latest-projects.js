@@ -47,7 +47,7 @@ const LatestProjects = () => {
 
                         if (edge.node.frontmatter.addtohomepage === true) {
                             return (
-                                < li
+                                <li
                                     key={i}
                                     data-sal="fade"
                                     data-sal-duration="300"
