@@ -33,7 +33,7 @@ const WhatWeDo = () => {
 
                 <div className={whatWeDoStyles.intro}>
                     <div className={whatWeDoStyles.introWrapper}>
-                        <h1><strong> <IconCreativeTech /><span>Kia ora</span></strong>Welcome to Peter Koenders's portfolio.</h1>
+                        <h1><strong> <IconCreativeTech /><span>Kia ora</span></strong>Welcome to Peter Koenders's portfolio</h1>
                     </div>
                 </div>
 
