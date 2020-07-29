@@ -32,6 +32,7 @@ export const onRouteUpdate = () => {
 
     mediumZoom('.images p span img', {
         //background: '#efeff0',
+
         background: '#ffffff',
     })
 
@@ -92,13 +93,24 @@ function mobileNav() {
     const headerDivLogo = document.querySelector(".header-nav-wrapper a ")
 
     var prevScrollpos = 0;
+    // No errors
+    var projectsNav = document.querySelector('.projects-nav');
+
     //console.log('prevScrollpos = ' + prevScrollpos)
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
         if ((prevScrollpos >= currentScrollPos) || (hamBurgerBtn.classList.contains("is-active"))) {
             document.querySelector(".header-nav-wrapper").style.top = "0";
+
+            if (projectsNav) {
+                projectsNav.style.top = "50px";
+            }
+
         } else {
             document.querySelector(".header-nav-wrapper").style.top = "-61px";
+            if (projectsNav) {
+                projectsNav.style.top = "-10px";
+            }
         }
         prevScrollpos = currentScrollPos;
     }

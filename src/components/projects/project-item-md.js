@@ -25,14 +25,45 @@ const ProjectTemplate = ({ data, pageContext }) => {
         {`
         body  {
           background-color: #efeff0;
+          background: rgb(255,255,255);
+          background: linear-gradient(158deg, rgba(255,255,255,1) 0%, rgba(186,186,186,1) 100%);
         }
       `}
       </style>
       <SEO title="Home" />
       <section className={projectStyles.sectionProject + ' section-layout-wide'}>
+
+        <div className={projectStyles.prevNext + ' projects-nav'}>
+          <div>
+            {previous &&
+              <Link
+                className={projectStyles.prev}
+                to={`/projects/${previous.frontmatter.slug}`}
+              >
+                <IconPrev />
+                <span>Previous</span>
+
+              </Link>
+            }
+
+            {next &&
+              <Link
+                className={projectStyles.next}
+                to={`/projects/${next.frontmatter.slug}`}
+              >
+                <span>Next</span>
+                <IconNext />
+              </Link>
+            }
+          </div>
+        </div>
+
         <div className={projectStyles.sectionProjectWrapper}>
 
           <div className={projectStyles.content}>
+
+
+
 
             <div className={projectStyles.header}>
               <h1>{frontmatter.title}</h1>
@@ -51,28 +82,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
 
 
             <div className={projectStyles.contentInner}>
-              <div className={projectStyles.prevNext}>
-                {previous &&
-                  <Link
-                    className={projectStyles.prev}
-                    to={`/projects/${previous.frontmatter.slug}`}
-                  >
-                    <IconPrev />
-                    <span>Previous</span>
 
-                  </Link>
-                }
-
-                {next &&
-                  <Link
-                    className={projectStyles.next}
-                    to={`/projects/${next.frontmatter.slug}`}
-                  >
-                    <span>Next</span>
-                    <IconNext />
-                  </Link>
-                }
-              </div>
               <div
                 className={projectStyles.contentMD}
                 dangerouslySetInnerHTML={{ __html: html }}>

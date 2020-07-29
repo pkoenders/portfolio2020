@@ -188,3 +188,12 @@ button.buttonTertiary:hover,
     z-index: 10;
   }
 }
+
+.medium-zoom-overlay {
+  z-index: 100000;
+  background: #ffffff;
+}
+
+.medium-zoom-image--opened {
+  z-index: 100001;
+}

@@ -55,7 +55,11 @@ const LatestProjects = () => {
             <div className={latestProjectsStyles.wrapper}>
                 <ul>
                     {data.allMarkdownRemark.edges.map((edge, i) => (
-                        <li key={i} >
+                        <li
+                            key={i}
+                            data-sal="fade"
+                            data-sal-duration="300"
+                            data-sal-easing="ease" >
                             <Link to={`/projects/${edge.node.frontmatter.slug}`}>
                                 <Img
                                     width='100%'
