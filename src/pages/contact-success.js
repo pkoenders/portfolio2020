@@ -10,7 +10,8 @@ const ContactSuccess = () => {
       <style type="text/css">
         {`
         body  {
-          background-color: #96d9df;
+          background: rgb(120, 179, 184);
+          background: linear-gradient(176deg, rgba(150, 217, 223, 1) 0%, rgba(120, 179, 184, 1) 100%);
         }
       `}
       </style>

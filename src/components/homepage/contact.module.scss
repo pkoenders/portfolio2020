@@ -1,13 +1,13 @@
 @import "src/styles/scss";
 
-.contactFormSection {
-    background-color: $tertiaryColorC;
+.contactFormSection,
+.contactFormSectionSuccess {
 
-    background: rgb(120, 179, 184);
-    background: linear-gradient(176deg, rgba(120, 179, 184, 1) 0%, rgba(150, 217, 223, 1) 100%);
-    background: linear-gradient(176deg, rgba(150, 217, 223, 1) 0%, rgba(120, 179, 184, 1) 100%);
 
     padding: $globalSecionPadding;
+
+    background: rgb(120, 179, 184);
+    background: linear-gradient(176deg, rgba(150, 217, 223, 1) 0%, rgba(120, 179, 184, 1) 100%);
 
     @include respond-below(md) {
         padding: 100px 15px 15px 15px;
@@ -115,6 +115,10 @@
             }
         }
     }
+}
+
+.contactFormSectionSuccess {
+    background: none;
 
     .contactSuccessWrapper {
         background-color: transparent;

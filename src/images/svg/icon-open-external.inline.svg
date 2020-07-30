@@ -1,20 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="210px" height="210px" viewBox="0 0 210 210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Fill 1</title>
-    <defs>
-        <path d="M812.464224,508 L890,508 L890,585.535776 L867.623904,585.535776 L867.623904,545.987326 L758.865668,654.745562 L743.254438,639.134332 L852.012674,530.376096 L812.464224,530.376096 L812.464224,508 Z M867.604167,685.604167 L867.604167,608 L890,608 L890,685.604167 C890,691.506975 887.743083,696.715258 883.229167,701.229167 C878.71525,705.743078 873.507,708 867.604167,708 L712.395833,708 C706.1458,708 700.850717,705.743078 696.510417,701.229167 C692.170117,696.715258 690,691.506975 690,685.604167 L690,530.395833 C690,524.493 692.170117,519.28475 696.510417,514.770833 C700.850717,510.256917 706.1458,508 712.395833,508 L790,508 L790,530.395833 L712.395833,530.395833 L712.395833,685.604167 L867.604167,685.604167 Z" id="path-1"></path>
-        <filter x="-3.8%" y="-3.8%" width="107.5%" height="107.5%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.151770105 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-    </defs>
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-685.000000, -503.000000)">
-            <g id="Fill-1">
-                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                <use fill="#253240" fill-rule="evenodd" xlink:href="#path-1"></use>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="210" viewBox="0 0 210 210">
+  <defs>
+    <path id="icon-open-external.inline-b" d="M775.464224,1232 L853,1232 L853,1309.53578 L830.623904,1309.53578 L830.623904,1269.98733 L721.865668,1378.74556 L706.254438,1363.13433 L815.012674,1254.3761 L775.464224,1254.3761 L775.464224,1232 Z M830.604167,1409.60417 L830.604167,1332 L853,1332 L853,1409.60417 C853,1415.50698 850.743083,1420.71526 846.229167,1425.22917 C841.71525,1429.74308 836.507,1432 830.604167,1432 L675.395833,1432 C669.1458,1432 663.850717,1429.74308 659.510417,1425.22917 C655.170117,1420.71526 653,1415.50698 653,1409.60417 L653,1254.39583 C653,1248.493 655.170117,1243.28475 659.510417,1238.77083 C663.850717,1234.25692 669.1458,1232 675.395833,1232 L753,1232 L753,1254.39583 L675.395833,1254.39583 L675.395833,1409.60417 L830.604167,1409.60417 Z"/>
+    <filter id="icon-open-external.inline-a" width="107.5%" height="107.5%" x="-3.8%" y="-3.8%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.151770105 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-648 -1227)">
+    <use fill="#000" filter="url(#icon-open-external.inline-a)" xlink:href="#icon-open-external.inline-b"/>
+    <use fill="#253240" xlink:href="#icon-open-external.inline-b"/>
+  </g>
 </svg>
