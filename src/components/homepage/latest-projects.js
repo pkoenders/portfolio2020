@@ -53,7 +53,6 @@ const LatestProjects = () => {
                                     data-sal-easing="ease" >
                                     <Link to={`/projects/${edge.node.frontmatter.slug}`}>
                                         <Img
-                                            width='100%'
                                             alt={edge.node.frontmatter.title}
                                             fluid={edge.node.frontmatter.coverimage.childImageSharp.fluid}
                                         />
