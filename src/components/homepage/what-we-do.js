@@ -10,16 +10,8 @@ const WhatWeDo = () => {
     query WhatWeDoQuery {
         webDesigner: file(relativePath: { eq: "images/web-designer-b.jpg" }) {
             childImageSharp {
-                fluid(maxWidth: 1200, maxHeight: 550, quality: 100) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-        }
-
-        uxWire: file(relativePath: { eq: "images/ux-wireframes.jpg" }) {
-            childImageSharp {
-                fluid(maxWidth: 1200, maxHeight: 450, quality: 100) {
-                ...GatsbyImageSharpFluid
+                fluid(maxWidth: 1200, maxHeight: 550, quality: 80) {
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
@@ -36,7 +28,6 @@ const WhatWeDo = () => {
                 </div>
 
                 <Img
-                    width='100%'
                     alt={'Web designer'}
                     fluid={dataWhatWeDo.webDesigner.childImageSharp.fluid}
                 />
