@@ -32,7 +32,6 @@ const ProjectTemplate = ({ data, pageContext }) => {
       </style>
       <SEO title="Home" />
       <section className={projectStyles.sectionProject + ' section-layout-wide'}>
-
         <div className={projectStyles.prevNext + ' projects-nav'}>
           <div>
             {previous &&
@@ -45,7 +44,6 @@ const ProjectTemplate = ({ data, pageContext }) => {
 
               </Link>
             }
-
             {next &&
               <Link
                 className={projectStyles.next}
@@ -57,14 +55,8 @@ const ProjectTemplate = ({ data, pageContext }) => {
             }
           </div>
         </div>
-
         <div className={projectStyles.sectionProjectWrapper}>
-
           <div className={projectStyles.content}>
-
-
-
-
             <div className={projectStyles.header}>
               <h1>{frontmatter.title}</h1>
               <p>
@@ -73,25 +65,13 @@ const ProjectTemplate = ({ data, pageContext }) => {
                 <a href={link} title={frontmatter.title} rel="noreferrer" arget="_blank"><IconOpenExternal />{frontmatter.url}</a>
               </p>
             </div>
-
-
-
-
-
-
-
-
             <div className={projectStyles.contentInner}>
-
               <div
                 className={projectStyles.contentMD}
                 dangerouslySetInnerHTML={{ __html: html }}>
               </div>
-
             </div>
           </div>
-
-
         </div>
       </section>
     </>
