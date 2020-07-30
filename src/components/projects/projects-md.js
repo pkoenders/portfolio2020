@@ -27,7 +27,6 @@ const LatestProjects = () => {
                             childImageSharp {
                                 fluid(maxWidth: 570, quality: 50) {
                                     ...GatsbyImageSharpFluid
-                                    ...GatsbyImageSharpFluidLimitPresentationSize
                                 }
                             }
                         }
