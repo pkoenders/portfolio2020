@@ -87,12 +87,17 @@
                     //text-transform: uppercase;
 
                     span {
-                        opacity: .66;
+                        opacity: .72;
                     }
 
                     @include respond-below(md) {
                         font-size: 1.4rem;
                         line-height: 1.8rem;
+                    }
+
+                    @include respond-below(sm) {
+                        font-size: 1.2rem;
+                        line-height: 1.6rem;
                     }
 
                     svg {
@@ -105,6 +110,11 @@
                         @include respond-below(md) {
                             width: 55px;
                             margin: -92px -15px -50px -70px;
+                        }
+
+                        @include respond-below(sm) {
+                            width: 45px;
+                            margin: -82px -15px -50px -70px;
                         }
                     }
                 }
