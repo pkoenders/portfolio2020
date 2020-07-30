@@ -45,8 +45,7 @@ module.exports = {
             family: `Roboto`,
             variable: true,
             weights: [`300..700`],
-          },
-
+          }
         ],
       },
     },
