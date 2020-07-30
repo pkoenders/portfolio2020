@@ -28,6 +28,6 @@ I have also worked on the front end, building HTML/LESS templates and defining r
 
 ![Auckland Airport - Step 2](./step2@2x.jpg "Auckland Airport - Step 2")
 
-![Auckland Airport - Step 2](./step3@2x.jpg "Auckland Airport - Step 2")
+![Auckland Airport - Step 3](./step3@2x.jpg "Auckland Airport - Step 3")
 
 </div>
