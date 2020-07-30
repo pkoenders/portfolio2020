@@ -1,16 +1,9 @@
 import React from 'react'
 import contactStyles from './contact.module.scss'
-import { useForm, ErrorMessage } from "react-hook-form"
 import IconWave from "../../images/svg/icon-wave.inline.svg"
 
 const ContactForm = () => {
-    const { register, handleSubmit, errors } = useForm();
-    const onSubmit = data => {
-        fetch(`./contact-success`)
-            .then(resp => {
-                window.location = "./contact-success";
-            });
-    }
+
 
     return (
         <section className={contactStyles.contactFormSection + ' section-layout-wide'}>
@@ -23,14 +16,15 @@ const ContactForm = () => {
                     <p>You can call me (New Zealand) <a href="tel:+64 21 1551 085">+64 21 1551 085</a>. Alternatively, complete the form for email enquires. Thank you.</p>
                     <div className={contactStyles.contactFormInput}>
                         <form
-                            name="pixl-contact"
-                            onSubmit={handleSubmit(onSubmit)}
+                            name="pkoenders-contact"
                             method="post"
-                            //action="contact-success"
+                            action="contact-success"
                             netlify-honeypot="bot-field"
                             data-netlify="true"
+
                         >
                             <input type="hidden" name="bot-field" />
+                            <input type="hidden" name="form-name" value="pkoenders-contact" />
                             <p>
                                 <label htmlFor="name">
                                     <span>Name (required)</span>
@@ -39,12 +33,8 @@ const ContactForm = () => {
                                         name="name"
                                         placeholder="Your name"
                                         id="name"
-                                        ref={register({
-                                            required: "Your name is required",
-                                            maxLength: 80,
-                                            message: 'Please enter your name'
-                                        })} />
-                                    <ErrorMessage errors={errors} name="name" as="em" />
+                                        required
+                                    />
                                 </label>
                             </p>
                             <p>
@@ -55,15 +45,9 @@ const ContactForm = () => {
                                         name="email"
                                         placeholder="Your email address"
                                         id="email"
-                                        placeholder="Email"
-                                        ref={register({
-                                            required: "Please enter your email address",
-                                            pattern: {
-                                                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                                                message: "Invalid email address"
-                                            }
-                                        })} />
-                                    <ErrorMessage errors={errors} name="email" as="em" />
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        required
+                                    />
                                 </label>
                             </p>
                             <p>
@@ -87,7 +71,7 @@ const ContactForm = () => {
                             <p>
                                 <button
                                     type="submit"
-                                    className="buttonPrimaryDark">Submit</button>
+                                    className="buttonPrimary">Submit</button>
                             </p>
                         </form>
                     </div>

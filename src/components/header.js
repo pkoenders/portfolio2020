@@ -3,7 +3,7 @@ import React from "react"
 import IconCreativeTech from "../images/svg/icon-creative-tech.inline.svg"
 import '../styles/index.scss'
 import "../styles/hamburger.scss"
-import headerStyles from "./header.scss"
+import "./header.scss"
 
 const Header = ({ siteTitle }) => (
   <header className="header-nav-wrapper" style={{ top: 0 + 'px' }}>

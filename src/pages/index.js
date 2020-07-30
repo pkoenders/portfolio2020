@@ -1,9 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import SectionHero from "../components/homepage/section-hero"
-// import SectionIntro from "../components/homepage/intro"
-// import AboutMe from "../components/homepage/about"
 import SectionWhatWeDo from "../components/homepage/what-we-do"
 import SectionVisionMission from "../components/homepage/vision-mission"
 import SectionLatestProjects from "../components/homepage/latest-projects"
@@ -15,10 +12,7 @@ const IndexPage = () => {
     <>
       <Layout>
         <SEO title="Home" />
-        {/* <SectionHero /> */}
-        {/* <SectionIntro /> */}
         <SectionWhatWeDo />
-        {/* <AboutMe /> */}
         <SectionLatestProjects />
         <SectionVisionMission />
         <SectionContact />

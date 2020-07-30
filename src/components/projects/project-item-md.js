@@ -70,7 +70,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
               <p>
                 {frontmatter.category}<br />
                 {frontmatter.date}<br />
-                <a href={link} title={frontmatter.title} target="_blank"><IconOpenExternal />{frontmatter.url}</a>
+                <a href={link} title={frontmatter.title} rel="noreferrer" arget="_blank"><IconOpenExternal />{frontmatter.url}</a>
               </p>
             </div>
 

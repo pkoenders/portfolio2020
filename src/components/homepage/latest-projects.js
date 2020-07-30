@@ -44,7 +44,6 @@ const LatestProjects = () => {
             <div className={latestProjectsStyles.wrapper}>
                 <ul>
                     {data.allMarkdownRemark.edges.map((edge, i) => {
-
                         if (edge.node.frontmatter.addtohomepage === true) {
                             return (
                                 <li
@@ -60,11 +59,12 @@ const LatestProjects = () => {
                                         />
                                         <span>
                                             <h4>{edge.node.frontmatter.title}</h4>
-                                            {/* <p>{edge.node.frontmatter.intro}.</p> */}
                                         </span>
                                     </Link>
                                 </li>
                             )
+                        } else {
+                            return false
                         }
                     })}
                 </ul>

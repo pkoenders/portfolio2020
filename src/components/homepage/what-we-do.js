@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
 import whatWeDoStyles from './what-we-do.module.scss'
 import IconCreativeTech from "../../images/svg/icon-creative-tech.inline.svg"
-import IconBrandingDesign from "../../images/svg/icon-branding-design-white.inline.svg"
-import IconDevice from "../../images/svg/icon-device.inline.svg"
 import IconDevelopment from "../../images/svg/icon-development.inline.svg"
 
 const WhatWeDo = () => {

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "gatsby"
 import ourVisionMissionStyles from './vision-mission.module.scss'
 
 const VisionMissiom = () => {
