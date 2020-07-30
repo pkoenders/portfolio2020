@@ -46,28 +46,6 @@ module.exports = {
             variable: true,
             weights: [`300..700`],
           },
-          {
-            family: `Roboto Slab`,
-            variable: true,
-            weights: [`300..700`],
-          },
-          {
-            family: `Spectral`,
-            variable: true,
-            weights: [`300..700`],
-          },
-
-          {
-            family: `Merriweather`,
-            variable: true,
-            weights: [`300..700`],
-          },
-
-          {
-            family: `Vollkorn`,
-            variable: true,
-            weights: [`400..900`],
-          },
 
         ],
       },
