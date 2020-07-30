@@ -7,14 +7,6 @@ const LatestProjects = () => {
 
     const data = useStaticQuery(graphql`
     query ProjectsMDQuery {
-  
-        lynnPronk: file(relativePath: { eq: "images/projects/lynn-pronk/lynn-pronk-a.jpg" }) {
-            childImageSharp {
-                fluid(maxWidth: 1200, quality: 100) {
-                ...GatsbyImageSharpFluid
-             }
-            }
-        }
 
         allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
@@ -35,6 +27,7 @@ const LatestProjects = () => {
                             childImageSharp {
                                 fluid(maxWidth: 570, quality: 50) {
                                     ...GatsbyImageSharpFluid
+                                    ...GatsbyImageSharpFluidLimitPresentationSize
                                 }
                             }
                         }
