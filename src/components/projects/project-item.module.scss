@@ -169,12 +169,15 @@ section.sectionProject {
 
                         p {
                             border-radius: $globalBorderRadiusA;
-                            padding: 30px;
+                            overflow: hidden;
+                            /* padding: 30px; */
                             background-color: #ffffff;
-                            display: block;
-                            box-shadow: $globalBoxShadowB;
-
+                            border: 1px solid #ffffff;
+                            box-shadow: 0px 0px 5px 0px #cecece;
                             margin: 0 0 60px 0;
+                            // box-shadow: $globalBoxShadowB;
+
+                            // margin: 0 0 60px 0;
 
                             span {
 
