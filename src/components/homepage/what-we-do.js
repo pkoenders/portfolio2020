@@ -2,7 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
 import whatWeDoStyles from './what-we-do.module.scss'
-import IconCreativeTech from "../../images/svg/icon-creative-tech.inline.svg"
+import IconCreativeTech from "../../images/svg/logo-pixl.inline.svg"
 import IconDevelopment from "../../images/svg/icon-development.inline.svg"
 
 const WhatWeDo = () => {

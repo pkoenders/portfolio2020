@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import IconCreativeTech from "../images/svg/icon-creative-tech.inline.svg"
+import IconCreativeTech from "../images/svg/logo-pixl.inline.svg"
 import '../styles/index.scss'
 import "../styles/hamburger.scss"
 import "./header.scss"
