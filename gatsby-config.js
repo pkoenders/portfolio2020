@@ -139,8 +139,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Pixl Studio - New Zealand`,
-        short_name: `Pixl Studio - New Zealand`,
+        name: `Peter Koenders - New Zealand`,
+        short_name: `Peter Koenders - New Zealand`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
