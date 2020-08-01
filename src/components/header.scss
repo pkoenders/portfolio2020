@@ -52,7 +52,7 @@ header.headerNavWrapper {
     // max-width: 960px;
     // border: 1px solid #ffffff94;
     // border-top: none;
-    transition: all .25s linear;
+    transition: all 0.4s;
 
     // border-right: none;
 
@@ -94,6 +94,7 @@ header.headerNavWrapper {
   div.header-nav.open {
     position: absolute;
 
+
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -101,7 +102,7 @@ header.headerNavWrapper {
     height: 100vh;
     max-width: 100%;
     border: none;
-    z-index: 100004;
+
 
 
     ul {
