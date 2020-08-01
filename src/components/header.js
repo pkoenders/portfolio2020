@@ -35,7 +35,7 @@ const Header = ({ location, siteTitle }) => {
             <li> <Link to="/" title="Homepage" >Peter Koenders</Link></li>
             <li> <Link to="/projects" >My projects</Link></li>
             <li> <Link to="/contact" >Contact me</Link></li>
-            <li> <a href="/peter-koenders-cv.pdf" >View my résumé</a></li>
+            <li> <a href="/peter-koenders-resume.pdf" >View my résumé</a></li>
           </ul>
 
         </div>
