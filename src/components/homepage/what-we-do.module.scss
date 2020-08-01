@@ -6,9 +6,43 @@
     display: block;
     position: relative;
     background-color: $headerBgColor;
+    //border-bottom: 1px solid #ffffff5a;
+    padding: 63px 0 0;
 
-    background-color: #000000;
-    border-bottom: 1px solid #ffffff5a;
+
+
+    @include respond-below(sm) {
+        //padding: 60px 0 0;
+    }
+
+    >svg {
+        margin: 0 auto 60px 60%;
+        display: block;
+        opacity: .2;
+        height: 350px;
+        width: auto;
+        transition: all 0.4s;
+        position: relative;
+        z-index: 10003;
+        pointer-events: none;
+
+        @include respond-below(lg) {
+            margin: 0 30px 0px auto;
+            // height: 250px;
+        }
+
+        @include respond-below(sm) {
+            margin: 0 30px 0px auto;
+            height: 250px;
+        }
+
+        @include respond-below(xs) {
+            margin: 0 30px 0px auto;
+            opacity: .1;
+        }
+
+
+    }
 
     @include respond-below(sm) {
         //height: 300px;
@@ -32,13 +66,18 @@
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
-        z-index: 100;
+
+
+        z-index: 10003;
+        pointer-events: none;
 
 
 
 
 
         .introWrapper {
+
+
             width: 100%;
             margin: auto 10% auto;
             align-self: center;
@@ -58,31 +97,35 @@
 
             h1 {
                 font-size: 1.8rem;
+                font-weight: 500;
+                margin-bottom: -50px;
+                //transition: all 0.4s;
 
                 @include respond-below(md) {
                     font-size: 1.2rem;
-                    margin-top: 90px;
-                    //line-height: 1.8rem;
+                    // margin-top: 90px;
+                    margin-bottom: -37.5px;
                 }
 
                 @include respond-below(sm) {
-                    font-size: 1.1rem;
-                    margin-top: 90px;
+                    // font-size: 1.1rem;
+
                 }
 
                 line-height: 2.7rem;
                 color: #ffffff;
+                //color:#2C3B4C;
                 //margin-bottom: 60px;
-                font-weight: 400;
-                text-align: center;
+                text-align: left;
+
 
                 strong {
                     font-size: 2.0rem;
                     letter-spacing: .1rem;
-                    margin: 0 0 0px 50px;
+                    margin: 0 0 0px 0px;
                     font-family: 'Roboto', sans-serif;
                     font-weight: 700;
-                    line-height: 3.8rem;
+                    line-height: 2.8rem;
                     display: block;
                     //text-transform: uppercase;
 
@@ -92,7 +135,8 @@
                     }
 
                     span {
-                        opacity: .72;
+                        color: #99dfbe;
+                        //opacity: .72;
                     }
 
                     @include respond-below(md) {
@@ -101,7 +145,7 @@
                     }
 
                     @include respond-below(sm) {
-                        font-size: 1.2rem;
+                        // font-size: 1.2rem;
                         line-height: 1.6rem;
                     }
 
@@ -109,22 +153,16 @@
                         vertical-align: middle;
                         width: 100px;
                         height: auto;
+                        pointer-events: none;
+
+
+
                         //margin: -15px 0 -40px -65px;
-                        margin: -112px -30px -40px -70px;
+                        margin: -116px -30px -40px 0px;
 
                         @include respond-below(md) {
-                            width: 55px;
-                            margin: -92px -15px -50px -70px;
-                        }
-
-                        @include respond-below(sm) {
-                            width: 45px;
-                            margin: -82px -15px -50px -70px;
-                        }
-
-                        @include respond-below(sm) {
-                            display: none;
-                            margin: -82px 0px -50px 0px;
+                            width: 75px;
+                            margin: -112px -20px -50px 0px;
                         }
                     }
                 }
@@ -161,6 +199,7 @@ section.whatWeDoWrapper {
         overflow: hidden;
         position: relative;
         border-radius: 5px;
+        font-size: 1.1rem;
 
         @include respond-below(sm) {
             display: block;
@@ -189,6 +228,7 @@ section.whatWeDoWrapper {
             box-shadow: none;
             width: 50%;
             text-align: left;
+            margin-inline-end: 0px;
 
             @include respond-below(sm) {
                 padding: 30px;
@@ -200,7 +240,7 @@ section.whatWeDoWrapper {
 
             p {
                 // text-align: center;
-                //font-size: 1.2rem;
+                //
                 //line-height: 1.8rem;
             }
 
@@ -209,6 +249,8 @@ section.whatWeDoWrapper {
             li {
                 opacity: .85;
             }
+
+
         }
 
         span {
@@ -225,6 +267,7 @@ section.whatWeDoWrapper {
             text-align: left;
             border-top: 1px solid #ffffff;
 
+
             @include respond-below(lg) {
                 border-top: none;
             }
@@ -239,6 +282,7 @@ section.whatWeDoWrapper {
                 color: #ffffff;
                 font-weight: 500;
                 opacity: .85;
+
             }
 
             h2 {
@@ -246,6 +290,10 @@ section.whatWeDoWrapper {
             }
 
             p:last-of-type {
+                margin-bottom: 0;
+            }
+
+            ul {
                 margin-bottom: 0;
             }
         }
@@ -289,18 +337,26 @@ section.whatWeDoWrapper {
             display: block;
             height: 100%;
             align-self: stretch;
-            text-align: left;
+            text-align: center;
             //    font-size: 1.2rem;
             //     line-height: 1.8rem; 
             padding: 45px 60px 30px 60px;
             position: relative;
 
             border-top: 1px solid #ffffff;
+            margin-inline-end: 0px;
 
             h2,
             p,
             li {
                 opacity: .85;
+                text-align: left;
+
+            }
+
+            p:last-of-type,
+            li:last-of-type {
+                margin-bottom: 0;
             }
 
             @include respond-below(lg) {
@@ -317,9 +373,11 @@ section.whatWeDoWrapper {
                 width: 50%;
                 height: auto;
                 display: block;
-                margin: 60px auto;
+                margin: 0px auto 30px auto;
+            }
 
-
+            a {
+                margin: 30px auto 0 auto;
             }
         }
     }

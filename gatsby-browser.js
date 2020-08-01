@@ -45,12 +45,12 @@ export const onRouteUpdate = () => {
 function ready() {
     //alert('DOM is ready');
 
-    document.querySelector(".header-nav-wrapper").style.top = "0";
+    document.querySelector(".headerNavWrapper").style.top = "0";
     mobileNav()
 
 }
 
-function toggleMobileNavOnClick(hamBurgerBtn, headerDiv, headerDivNav, headerDivLogo) {
+function toggleMobileNavOnClick(headerNavWrapper, hamBurgerBtn, headerDiv, headerDivNav, headerDivLogo) {
 
 
     hamBurgerBtn.addEventListener("click", function () {
@@ -61,6 +61,8 @@ function toggleMobileNavOnClick(hamBurgerBtn, headerDiv, headerDivNav, headerDiv
             headerDiv.classList.add("open")
             hamBurgerBtn.classList.add("is-active")
 
+            headerNavWrapper.style.zIndex = "100004";
+
             // window.onscroll = function () {
             //     headerWrapper.style.top = "0";
             // }
@@ -68,6 +70,7 @@ function toggleMobileNavOnClick(hamBurgerBtn, headerDiv, headerDivNav, headerDiv
         } else {
             headerDiv.classList.remove("open")
             hamBurgerBtn.classList.remove("is-active")
+            headerNavWrapper.style.zIndex = "1000";
         }
 
 
@@ -76,21 +79,24 @@ function toggleMobileNavOnClick(hamBurgerBtn, headerDiv, headerDivNav, headerDiv
     headerDivNav.addEventListener("click", function () {
         headerDiv.classList.remove("open")
         hamBurgerBtn.classList.remove("is-active")
+        headerNavWrapper.style.zIndex = "1000";
     });
 
     headerDivLogo.addEventListener("click", function () {
         headerDiv.classList.remove("open")
         hamBurgerBtn.classList.remove("is-active")
+        headerNavWrapper.style.zIndex = "1000";
     });
 
 }
 
 function mobileNav() {
-
+    const headerNavWrapper = document.querySelector(".headerNavWrapper")
+    const headerDivLogo = document.querySelector(".headerNavWrapper a ")
     const hamBurgerBtn = document.querySelector(".hamburger")
     const headerDiv = document.querySelector(".header-nav")
     const headerDivNav = document.querySelector(".header-nav ul ")
-    const headerDivLogo = document.querySelector(".header-nav-wrapper a ")
+
 
     var prevScrollpos = 0;
     // No errors
@@ -100,14 +106,14 @@ function mobileNav() {
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
         if ((prevScrollpos >= currentScrollPos) || (hamBurgerBtn.classList.contains("is-active"))) {
-            document.querySelector(".header-nav-wrapper").style.top = "0";
+            document.querySelector(".headerNavWrapper").style.top = "0";
 
             if (projectsNav) {
                 projectsNav.style.top = "50px";
             }
 
         } else {
-            document.querySelector(".header-nav-wrapper").style.top = "-61px";
+            document.querySelector(".headerNavWrapper").style.top = "-61px";
             if (projectsNav) {
                 projectsNav.style.top = "-10px";
             }
@@ -115,5 +121,5 @@ function mobileNav() {
         prevScrollpos = currentScrollPos;
     }
 
-    toggleMobileNavOnClick(hamBurgerBtn, headerDiv, headerDivNav, headerDivLogo)
+    toggleMobileNavOnClick(headerNavWrapper, hamBurgerBtn, headerDiv, headerDivNav, headerDivLogo)
 }

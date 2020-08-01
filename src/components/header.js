@@ -5,29 +5,47 @@ import '../styles/index.scss'
 import "../styles/hamburger.scss"
 import "./header.scss"
 
-const Header = ({ siteTitle }) => (
-  <header className="header-nav-wrapper" style={{ top: 0 + 'px' }}>
-    <Link to="/" title="Homepage" >
-      <IconCreativeTech />
-    </Link>
-    <div className="header-nav">
-      <div className="hamburgerContainer">
-        <button className="hamburger hamburger--squeeze" type="button" aria-label="Menu" aria-controls="navigation" aria-expanded="false">
-          <span className="hamburger-box">
-            <span className="hamburger-inner"></span>
-          </span>
-          <span className="hamburger-label">Menu</span>
-        </button>
-      </div>
 
-      <ul>
-        <li> <Link to="/" title="Homepage" >Peter Koenders</Link></li>
-        <li> <Link to="/projects" title="Our projects" >My projects</Link></li>
-        <li> <Link to="/contact" title="Contact us" >Contact me</Link></li>
-      </ul>
 
-    </div>
-  </header >
-)
+
+
+const Header = ({ location, siteTitle }) => {
+
+  return (
+    <>
+      <header className="headerNavWrapper" style={{ top: 0 + 'px' }}>
+
+        {location.pathname.split('/')[1] !== ""
+          ? <Link to="/" title="Homepage">
+            <IconCreativeTech />
+          </Link>
+          : ""
+        }
+        <div className="header-nav">
+          <div className="hamburgerContainer">
+            <button className="hamburger hamburger--squeeze" type="button" aria-label="Menu" aria-controls="navigation" aria-expanded="false">
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
+              </span>
+              <span className="hamburger-label">Menu</span>
+            </button>
+          </div>
+
+          <ul>
+            <li> <Link to="/" title="Homepage" >Peter Koenders</Link></li>
+            <li> <Link to="/projects" >My projects</Link></li>
+            <li> <Link to="/contact" >Contact me</Link></li>
+            <li> <a href="/peter-koenders-cv.pdf" >View my résumé</a></li>
+          </ul>
+
+        </div>
+      </header >
+    </>
+  )
+};
+
+// const StyledLayout = headerNavWrapper.svg`
+//   display: ${({ path }) => (path === '/' ? 'block' : 'none')};
+// `;
 
 export default Header

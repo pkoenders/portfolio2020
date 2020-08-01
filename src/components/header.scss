@@ -1,11 +1,12 @@
 @import "src/styles/scss";
 
 
-header.header-nav-wrapper {
+header.headerNavWrapper {
+
   display: flex !important;
   position: fixed;
   flex-direction: row;
-  border-bottom: 1px solid #ffffff5a;
+  //border-bottom: 1px solid #ffffff5a;
   //justify-content: space-between;
   //justify-content: flex-end;
   background-color: $headerBgColor;
@@ -14,11 +15,13 @@ header.header-nav-wrapper {
   transition: top 0.4s;
   /* Transition effect when sliding down (and up) */
   // background-color: #ffffff;
+  height: 60px;
 
   a {
     margin: 0;
     display: flex;
     z-index: 1003;
+
     //width: 100%;
 
 
@@ -39,7 +42,7 @@ header.header-nav-wrapper {
   }
 
   div.header-nav {
- 
+
     z-index: 1001;
 
 
@@ -67,6 +70,7 @@ header.header-nav-wrapper {
 
       button {
         align-self: center;
+        cursor: pointer;
       }
 
       h1 {
@@ -89,6 +93,7 @@ header.header-nav-wrapper {
 
   div.header-nav.open {
     position: absolute;
+
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -96,6 +101,8 @@ header.header-nav-wrapper {
     height: 100vh;
     max-width: 100%;
     border: none;
+    z-index: 100004;
+
 
     ul {
       display: block;

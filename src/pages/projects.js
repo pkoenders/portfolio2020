@@ -3,25 +3,24 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SectionProjects from "../components/projects/projects-md"
 
-const Projects
-  = () => {
+const Projects = ({ location }) => {
 
-    return (
-      <>
-        <style type="text/css">
-          {`
+  return (
+    <>
+      <style type="text/css">
+        {`
         body  {
           background-color: #efeff0;
         }
       `}
-        </style>
+      </style>
 
-        <Layout>
-          <SEO title="Projects" />
-          <SectionProjects />
-        </Layout >
-      </>
-    )
-  }
+      <Layout location={location}>
+        <SEO title="Projects" />
+        <SectionProjects />
+      </Layout >
+    </>
+  )
+}
 
 export default Projects

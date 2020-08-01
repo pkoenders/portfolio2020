@@ -14,7 +14,7 @@ import Footer from "./footer"
 import layoutStyles from './layout.module.scss'
 import '../styles/index.scss'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,8 +27,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div id="layoutModule" className={layoutStyles.container}>
-        <Header siteTitle={data.site.siteMetadata.title} />
+      <div id="layoutModule" className={layoutStyles.container} >
+        <Header siteTitle={data.site.siteMetadata.title} location={location} />
         <div className={layoutStyles.content}>
           <main>{children}</main>
         </div>

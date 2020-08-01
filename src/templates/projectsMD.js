@@ -29,11 +29,11 @@ export const query = graphql`
 // const { frontmatter, html } = markdownRemark
 
 
-const PortfolioPage = ({ data, pageContext }) => {
+const PortfolioPage = ({ data, pageContext, location }) => {
 
   return (
     <>
-      <Layout>
+      <Layout location={location}>
         <SEO title="Home" />
         <ProjectTemplate data={data} pageContext={pageContext} />
       </Layout >
