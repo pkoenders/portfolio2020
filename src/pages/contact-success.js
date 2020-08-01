@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SectionContactSuccess from "../components/homepage/contact-success"
 
-const ContactSuccess = () => {
+const ContactSuccess = ({ location }) => {
 
   return (
     <>
@@ -16,7 +16,7 @@ const ContactSuccess = () => {
       `}
       </style>
 
-      <Layout>
+      <Layout location={location}>
         <SEO title="Contsct Success" />
         <SectionContactSuccess />
       </Layout >
