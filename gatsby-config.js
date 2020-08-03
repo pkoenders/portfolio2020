@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
 
-    'gatsby-plugin-preload-link-crossorigin',
+    // 'gatsby-plugin-preload-link-crossorigin',
 
     {
       resolve: `gatsby-plugin-netlify-cms`,
