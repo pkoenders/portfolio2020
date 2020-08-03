@@ -12,7 +12,6 @@ module.exports = {
 
     'gatsby-plugin-preload-link-crossorigin',
 
-
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {

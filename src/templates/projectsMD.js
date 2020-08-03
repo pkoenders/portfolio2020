@@ -17,10 +17,10 @@ export const query = graphql`
         url
         coverimage {
           childImageSharp {
-            fluid(maxWidth: 768) {
-              ...GatsbyImageSharpFluid
+            fluid(maxWidth: 768, quality: 50) {
+                ...GatsbyImageSharpFluid_withWebp
             }
-          }
+        }
         }
       }
     }
