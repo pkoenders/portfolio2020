@@ -125,10 +125,13 @@ module.exports = {
         name: `Peter Koenders - New Zealand`,
         short_name: `Peter Koenders - New Zealand`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#253240`,
+        theme_color: `#253240`,
         display: `minimal-ui`,
         icon: `src/images/svg/logo-pixl.inline.svg`, // This path is relative to the root of the site.
+        icon_options: {
+          purpose: `maskable`,
+        },
       },
     },
 
