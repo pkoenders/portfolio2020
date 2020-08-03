@@ -187,8 +187,9 @@ section.sectionProject {
                                 margin-bottom: 30px;
 
                                 img {
-                                    width: 100%;
-                                    height: auto;
+                                    display: block;
+                                    width: 100% !important;
+                                    height: auto !important;
                                 }
 
 
