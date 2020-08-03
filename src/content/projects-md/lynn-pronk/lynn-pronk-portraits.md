@@ -6,7 +6,7 @@
     url: https://www.lynnpronkportraits.com
     addtohomepage: true
     title: Lynn Pronk Portraits
-    coverimage: ./lynn-pronk-a.jpg
+    coverimage: ./thumb@2x.jpg
     intro: A portfolio website designed and built for a portrait artist.
 ---
 
