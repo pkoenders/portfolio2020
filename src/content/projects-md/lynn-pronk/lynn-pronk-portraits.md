@@ -12,7 +12,7 @@
 
 <div class="description">
 
-A portfolio Progressive Web Application designed and built for a portrait artist. Displaying the artwork at its best, fitting the browser window where possible was a client request. Along with being able to zoom in on images.
+A portfolio designed and built for a portrait artist. Displaying the artwork at its best, fitting the browser window where possible was a client request. Along with being able to zoom in on images.
 
 The client also requested a straight forward, easy to use Content Management System as the technical skills of the client are proudly not the best.
 
