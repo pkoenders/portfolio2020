@@ -188,8 +188,10 @@ section.sectionProject {
 
                                 img {
                                     display: block;
-                                    width: 100% !important;
-                                    height: auto !important;
+                                    // width: 100% !important;
+                                    //height: auto !important;
+                                    width: fit-content;
+                                    height: fit-content;
                                 }
 
 
