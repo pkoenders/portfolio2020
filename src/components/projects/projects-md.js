@@ -58,7 +58,7 @@ const LatestProjects = () => {
                                     fluid={edge.node.frontmatter.coverimage.childImageSharp.fluid}
                                 />
                                 <span>
-                                    <h4>{edge.node.frontmatter.title}</h4>
+                                    <h3>{edge.node.frontmatter.title}</h3>
                                     <p>{edge.node.frontmatter.intro}</p>
                                 </span>
                             </Link>

@@ -5,16 +5,16 @@
     category: Website
     url: http://athemindlab.com
     addtohomepage: true
-    title: The Mind Lab
+    title: The Mind Lab/Tech Futures Lab
     coverimage: ./thumb@2x.jpg
-    intro: Strategy & website course enrolment. Flow, wireframes, UI design, style guide & prototype.
+    intro: Website - Course enrolment. Flow, wireframes, UI design, style guide & prototype.
 ---
 
 <div class="description">
 
-The Mind Lab is a business and technology accelerator for professionals.
+The Mind Lab and Tech Futures Lab is a business and technology accelerator for students and professionals.
 
-I designed user flows & wire-frames. Hi definition mocks and iterations for their stakeholder. Final designs presented in InVison for team members for revision and Salesforce integration.
+Designed user flows & wire-frames and hi definition mocks for course enrolment.
 
 </div>
 

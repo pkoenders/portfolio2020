@@ -14,7 +14,7 @@
 
 ASB bank Single Sign On for their banking products. ASB’s vision was to have a consistent UI login experience across their products. A consistent look with minimal disruption to their users and Call Centre.
 
-I created wireframes, user flows and hi definition mocks for stakeholders. HTML prototypes were also created and handed over to the integration team.
+I created wireframes, user flows and hi definition mocks for stakeholders. HTML prototypes were also created for their integration team.
 
 </div>
 

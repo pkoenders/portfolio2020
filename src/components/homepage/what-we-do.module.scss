@@ -115,6 +115,7 @@
                 line-height: 2.7rem;
                 color: #ffffff;
                 //color:#2C3B4C;
+                color: #99dfbe;
                 //margin-bottom: 60px;
                 text-align: left;
 
@@ -135,7 +136,7 @@
                     }
 
                     span {
-                        color: #99dfbe;
+                        //color: #99dfbe;
                         //opacity: .72;
                     }
 
@@ -200,6 +201,7 @@ section.whatWeDoWrapper {
         position: relative;
         border-radius: 3px;
         font-size: 1.1rem;
+        line-height: 1.7rem;
 
         @include respond-below(sm) {
             display: block;

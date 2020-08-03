@@ -7,7 +7,7 @@
     addtohomepage: true
     title: Byte Media
     coverimage: ./cover-img.jpg
-    intro: Implemented a UI design refresh of their homepage along with a style guide and pattern library.
+    intro: UI design refresh of their homepage & style guide/pattern library.
 ---
 
 <div class="description">

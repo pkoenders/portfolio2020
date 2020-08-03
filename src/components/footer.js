@@ -18,6 +18,7 @@ const Footer = () => {
   return (
     <footer className={footerStyles.footer}>
       <Link to="/" title="Homepage" >
+        <span>Go to the homepage</span>
         <IconCreativeTech />
       </Link>
       <p>© {new Date().getFullYear()} - {data.site.siteMetadata.author}</p>

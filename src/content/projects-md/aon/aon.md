@@ -12,11 +12,11 @@
 
 <div class="description">
 
-AON Insurance bringing their products online. Their first project was to create a web presence for their Landlord Insurance.
+A design project for AON Insurance helping bring their products online.
 
-I designed and wireframes, user flows, hi definition mocks and HTML prototypes for their stakeholders. I was also asked to create the templates for the integration team.
+I designed the wireframes, user flows, hi definition mocks and HTML prototypes for their stakeholders. I was also asked to create HTML templates for their integration team.
 
-The client asked that accessibility be a focus. Web Content Accessibility Guidelines (WCAG) for AA colour contrast standards and accessible keyboard navigation.
+The client asked that accessibility be a focus adhering to Web Content Accessibility Guidelines (WCAG) for AA colour contrast standards and accessible keyboard navigation.
 
 </div>
 

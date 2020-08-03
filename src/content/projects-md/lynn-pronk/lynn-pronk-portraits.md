@@ -7,14 +7,14 @@
     addtohomepage: true
     title: Lynn Pronk Portraits
     coverimage: ./lynn-pronk-a.jpg
-    intro: This is a portfolio website designed and built for Lynn Pronk, a portrait artist.
+    intro: A portfolio website designed and built for a portrait artist.
 ---
 
 <div class="description">
 
-This is a portfolio website designed and built for Lynn Pronk, a portrait artist. Displaying the artwork at its best, fitting the browser window where possible was a  client request. Along with being able to zoom in on images.
+A portfolio Progressive Web Application designed and built for a portrait artist. Displaying the artwork at its best, fitting the browser window where possible was a client request. Along with being able to zoom in on images.
 
-The client requested a straight forward, easy to use Content Management System (CMS) as the technical skills of the client are proudly not the best.
+The client also requested a straight forward, easy to use Content Management System as the technical skills of the client are proudly not the best.
 
 </div>
 

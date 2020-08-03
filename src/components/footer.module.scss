@@ -7,6 +7,12 @@
   background-color: $footerBgColor;
   text-align: center;
 
+  a {
+    span {
+      display: none;
+    }
+  }
+
   svg {
     width: auto;
     height: 40px;

@@ -5,16 +5,16 @@
     category: Print
     url: http://datacom.co.nz  
     addtohomepage: true
-    title: Datacom Systems Limited - BAU, inhouse & print
+    title: Datacom Systems Limited - BAU, in-house & print
     coverimage: ./thumb@2x.jpg
-    intro: Datacom Systems LTD - BAU, inhouse, print, banners & proposals.
+    intro: Datacom Systems LTD - BAU, in-house, print, banners & proposals.
 ---
 
 <div class="description">
 
-Datacom annual financials cover inspired by interior wall textures of the head office in Auckland and a photo of the exterior of the building.
+Datacom annual financials cover inspired by interior textures of the head office in Auckland.
 
-I also worked on various inhouse design projects for print and proposals.
+I also worked on various in-house design projects for print and proposals over a 14-year period.
 
 </div>
 
