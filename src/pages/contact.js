@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from 'react-helmet'
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import SectionContact from "../components/homepage/contact"
 
 const Contact = ({ location }) => {
