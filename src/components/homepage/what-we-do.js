@@ -39,7 +39,7 @@ const WhatWeDo = () => {
                                 <li>HTML prototypes &amp; templates</li>
                                 <li>Style guides &amp; pattern libraries</li>
                                 <li>Graphic design</li>
-                                <li>Planning &amp; management of projects &amp; assets</li>
+                                <li>Planning &amp; management of projects</li>
                             </ul>
                         </span>
                     </div>
