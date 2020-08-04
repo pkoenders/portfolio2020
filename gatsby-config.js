@@ -124,12 +124,11 @@ module.exports = {
       },
     },
 
-
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Portfolio | Peter Koenders`,
-        short_name: `Portfolio | Peter Koenders`,
+        short_name: `Peter Koenders`,
         start_url: `/`,
         background_color: `#253240`,
         theme_color: `#253240`,
