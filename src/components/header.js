@@ -16,7 +16,7 @@ const Header = ({ location, siteTitle }) => {
       <header className="headerNavWrapper" style={{ top: 0 + 'px' }}>
 
         {location.pathname.split('/')[1] !== ""
-          ? <Link to="/">
+          ? <Link to="/" title="Link to homepage">
             <span>Link to homepage</span>
             <IconCreativeTech alt={"Logo - Link to homepage"} />
           </Link>
