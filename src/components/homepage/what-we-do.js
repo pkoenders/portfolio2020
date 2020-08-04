@@ -46,7 +46,7 @@ const WhatWeDo = () => {
 
                     <div className={whatWeDoStyles.technical}>
                         <div>
-                            <p>I can mark-up HTML/SCSS. I am curious, interested in web accessibility and working with integration teams across diversified technologies.</p>
+                            <p>I am curious, interested in web accessibility and working with integration teams across diversified technologies and projects.</p>
                         </div>
                         <span>
                             <IconDevelopment />
