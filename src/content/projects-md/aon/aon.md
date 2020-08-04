@@ -16,7 +16,7 @@ A design project for AON Insurance helping bring their products online.
 
 I designed the wireframes, user flows, hi definition mocks and HTML prototypes for their stakeholders. I was also asked to create HTML templates for their integration team.
 
-The client asked that web accessibility be a focus adhering to Web Content Accessibility Guidelines (WCAG) for AA colour contrast standards and accessible keyboard navigation.
+The client asked that web accessibility be a focus adhering to Web Content Accessibility Guidelines (WCAG) for AA colour contrast and keyboard navigation.
 
 </div>
 
