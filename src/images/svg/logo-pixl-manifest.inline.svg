@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="341" height="341" viewBox="0 0 341 341">
+  <g fill="none" fill-rule="evenodd" transform="rotate(-90 170.5 269.5)">
+    <ellipse cx="270" cy="269" rx="270" ry="269"/>
+    <polygon fill="#972363" points="267 99 99 267 267 267"/>
+    <polygon fill="#B42A76" points="99 99 99 267 267 99"/>
+    <polygon fill="#53A3C1" points="272 272 440 440 440 272" transform="rotate(-90 356 356)"/>
+    <polygon fill="#68C9EE" points="272 440 440 440 272 272" transform="rotate(-90 356 356)"/>
+    <polygon fill="#C6756D" points="272 99 272 267 440 267"/>
+    <polygon fill="#F9CC6D" points="272 99 440 267 440 99"/>
+  </g>
+</svg>

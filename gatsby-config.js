@@ -4,7 +4,7 @@ module.exports = {
 
   siteMetadata: {
     title: `Peter Koenders`,
-    description: `Portfolio | Peter Koenders | New Zealand`,
+    description: `Portfolio | Peter Koenders`,
     author: "Peter Koenders",
     year: "2020",
   },
@@ -129,13 +129,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Peter Koenders - New Zealand`,
-        short_name: `Peter Koenders - New Zealand`,
+        name: `Portfolio | Peter Koenders`,
+        short_name: `Portfolio | Peter Koenders`,
         start_url: `/`,
         background_color: `#253240`,
         theme_color: `#253240`,
-        display: `minimal-ui`,
-        icon: `src/images/svg/logo-pixl.inline.svg`, // This path is relative to the root of the site.
+        lang: `en`,
+        display: `standalone`,
+        icon: `src/images/svg/logo-pixl-manifest.inline.svg`, // This path is relative to the root of the site.
         icon_options: {
           purpose: `maskable`,
         },
