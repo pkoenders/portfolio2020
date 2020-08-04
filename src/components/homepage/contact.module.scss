@@ -130,20 +130,21 @@
                 display: block;
                 width: 200px;
                 height: auto;
-                margin: 120px auto 60px auto;
+                margin: 100px auto 60px auto;
             }
 
 
 
             p {
                 //color: #ffffff;
-                font-size: 1.1rem;
+                font-size: 1.0rem;
                 font-weight: 500;
+                line-height: 1.0rem;
 
                 a,
                 a:hover {
                     //display: block;
-                    margin-top: 15px;
+                    margin: 15px 0;
                     //color: #ffffff;
                     color: $txtColor;
                     text-decoration: none;
@@ -154,7 +155,7 @@
                         vertical-align: middle;
                         width: 42px;
                         height: auto;
-                        margin: 0 15px 0 15px;
+                        margin: 10px 0px 0 0px;
                     }
                 }
             }
