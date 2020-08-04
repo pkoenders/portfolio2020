@@ -46,7 +46,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
 
       <Helmet data={data}>
         <html lang="en" />
-        <title>{frontmatter.title} - {Metadata.site.siteMetadata.title}</title>
+        <title>{frontmatter.title} - Projects | {Metadata.site.siteMetadata.title}</title>
         <meta name="description" content={frontmatter.intro} />
       </Helmet>
       <section className={projectStyles.sectionProject + ' section-layout-wide'}>

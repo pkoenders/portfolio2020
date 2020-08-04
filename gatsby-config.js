@@ -3,8 +3,8 @@ module.exports = {
   /* Your site config here */
 
   siteMetadata: {
-    title: `Portfolio - Peter Koenders`,
-    description: `Portfolio - Peter Koenders - New Zealand`,
+    title: `Peter Koenders`,
+    description: `Portfolio | Peter Koenders | New Zealand`,
     author: "Peter Koenders",
     year: "2020",
   },

@@ -25,7 +25,7 @@ const Projects = ({ location }) => {
       </style>
       <Helmet>
         <html lang="en" />
-        <title>Projects | {data.site.siteMetadata.title}</title>
+        <title>Projects - {data.site.siteMetadata.title}</title>
         <meta name="description" content="Listing all UI/UX and Grahic design projects." />
       </Helmet>      <Layout location={location}>
         <SectionProjects />
