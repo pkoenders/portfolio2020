@@ -1,9 +1,20 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from 'react-helmet'
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import SectionContactSuccess from "../components/homepage/contact-success"
 
 const ContactSuccess = ({ location }) => {
+
+  const data = useStaticQuery(graphql`
+    query ContactSuccessData {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
 
   return (
     <>
@@ -15,9 +26,11 @@ const ContactSuccess = ({ location }) => {
         }
       `}
       </style>
-
+      <Helmet>
+        <html lang="en" />
+        <title>Contact success | {data.site.siteMetadata.title}</title>
+      </Helmet>
       <Layout location={location}>
-        <SEO title="Contsct Success" />
         <SectionContactSuccess />
       </Layout >
     </>

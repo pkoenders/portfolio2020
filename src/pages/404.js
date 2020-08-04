@@ -1,15 +1,31 @@
 import React from "react"
-
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { Helmet } from 'react-helmet'
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import "../styles/index.scss"
 
 const NotFoundPage = ({ location }) => {
+  const data = useStaticQuery(graphql`
+  query ErrorData {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`)
   return (
     <>
+      <Helmet>
+        <html lang="en" />
+        <title>Page not found | {data.site.siteMetadata.title}</title>
+      </Helmet>
       <Layout location={location}>
-        <SEO title="404: Not found" />
-        <h1>NOT FOUND</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <div className={'fourOfour'}>
+          <h1>Sorry</h1>
+          <h2>The requested page was not found.</h2>
+          <Link className={'buttonPrimary'} to="/">Go back to my portfolio</Link>
+        </div>
       </Layout>
     </>
   )

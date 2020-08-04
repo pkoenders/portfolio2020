@@ -28,6 +28,18 @@ body {
   margin: 0px;
 }
 
+.fourOfour {
+  display: block;
+  margin: 120px auto;
+  width: fit-content;
+  text-align: center;
+  color: #ffffff;
+
+  a {
+    margin-top: 60px;
+    padding: 1.2rem 4rem;
+  }
+}
 
 p {
   color: $txtColor;

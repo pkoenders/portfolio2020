@@ -26,7 +26,7 @@ const Contact = ({ location }) => {
 
       <Helmet>
         <html lang="en" />
-        <title>Contact - {data.site.siteMetadata.title}</title>
+        <title>Contact | {data.site.siteMetadata.title}</title>
         <meta name="description" content="I would love to be contacted to discuss work commissions or just hear your thoughts and ideas." />
       </Helmet>
       <Layout location={location}>
