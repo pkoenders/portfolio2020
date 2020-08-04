@@ -14,7 +14,7 @@ const ContactForm = () => {
                 <div className={contactStyles.contactForm}>
                     <IconWave />
                     <p>I would love to be contacted to discuss work commissions or just hear your thoughts and ideas.</p>
-                    <p>You can text or all me (New Zealand) <a href="tel:+64 21 155 1085"><IconPhone className={contactStyles.contactIconPhone} />+64 21 155 1085</a>. Alternatively, complete the form for email enquires. Thanks.</p>
+                    <p>You can text or all me <a href="tel:+64 21 155 1085"><IconPhone className={contactStyles.contactIconPhone} />+64 21 155 1085</a>. Alternatively, complete the following form for email enquires. Thanks.</p>
                     <div className={contactStyles.contactFormInput}>
                         <form
                             name="pkoenders-contact"
