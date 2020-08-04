@@ -13,7 +13,7 @@ const contactFormSucess = () => {
                 <div className={contactStyles.contactSuccess}>
                     <IconSuccess />
                     <p>We have received your request and will reply to you soon.</p>
-                    <p><em>You can always call us</em> <strong><a href="tel:+64 21 155 1085"><IconPhone className={contactStyles.contactIconPhone} />+64 21 155 1085</a></strong></p>
+                    <p><em>You can always call me</em> <strong><a href="tel:+64 21 155 1085"><IconPhone className={contactStyles.contactIconPhone} />+64 21 155 1085</a></strong></p>
                 </div>
             </div>
         </section>
