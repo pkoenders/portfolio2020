@@ -5,9 +5,9 @@
     category: Print
     url: http://datacom.co.nz  
     addtohomepage: true
-    title: Datacom Systems Limited - BAU, in-house & print
+    title: Datacom Systems Limited
     coverimage: ./thumb@2x.jpg
-    intro: Datacom Systems LTD - BAU, in-house, print, banners & proposals.
+    intro: BAU, in-house, print, banners & proposals.
 ---
 
 <div class="description">

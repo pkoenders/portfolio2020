@@ -1,8 +1,9 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Layout from "../components/layout"
 import ProjectTemplate from "../components/projects/project-item-md"
-import SEO from "../components/seo"
+
+
 
 
 export const query = graphql`
@@ -15,17 +16,19 @@ export const query = graphql`
         title
         category
         url
+        intro
         coverimage {
           childImageSharp {
             fluid(maxWidth: 768, quality: 50) {
                 ...GatsbyImageSharpFluid_withWebp
             }
-        }
+          }
         }
       }
     }
   }
 `
+
 
 //import latestProjectsStyles from '../components/homepage/latest-projects.module.scss'
 
@@ -41,7 +44,6 @@ const PortfolioPage = ({ data, pageContext, location }) => {
   return (
     <>
       <Layout location={location}>
-        <SEO title="Home" />
         <ProjectTemplate data={data} pageContext={pageContext} />
       </Layout >
     </>

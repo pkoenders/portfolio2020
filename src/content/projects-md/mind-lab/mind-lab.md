@@ -7,7 +7,7 @@
     addtohomepage: true
     title: The Mind Lab/Tech Futures Lab - Course enrolment 
     coverimage: ./thumb@2x.jpg
-    intro: Website - Course enrolment. Flow, wireframes, UI design, style guide & prototype.
+    intro: User flow, wireframes, UI design, style guide & prototype.
 ---
 
 <div class="description">

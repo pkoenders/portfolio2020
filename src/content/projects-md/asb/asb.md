@@ -7,7 +7,7 @@
     addtohomepage: true
     title: ASB Bank - Single Sign On
     coverimage: ./thumb@2x.jpg
-    intro: Wireframes, user flows, hi definition mocks and HTML prototypes for their stakeholders.
+    intro: Wireframes, user flow, hi definition mocks and HTML prototypes for their stakeholders.
 ---
 
 <div class="description">

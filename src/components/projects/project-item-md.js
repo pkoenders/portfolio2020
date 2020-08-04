@@ -1,14 +1,27 @@
 import React from "react"
 import { Link } from "gatsby"
-import SEO from "../seo"
+import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from 'react-helmet'
 import projectStyles from './project-item.module.scss'
 import IconOpenExternal from "../../images/svg/icon-open-external.inline.svg"
 import IconNext from "../../images/svg/icon-next.inline.svg"
 import IconPrev from "../../images/svg/icon-prev.inline.svg"
 
 
+
 //export default function ProjectTemplate({ data }) {
 const ProjectTemplate = ({ data, pageContext }) => {
+
+  const Metadata = useStaticQuery(graphql`
+    query projectsData {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+`)
+
   //console.log(pageContext)
 
   const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -30,7 +43,12 @@ const ProjectTemplate = ({ data, pageContext }) => {
         }
       `}
       </style>
-      <SEO title="Home" />
+
+      <Helmet data={data}>
+        <html lang="en" />
+        <title>{frontmatter.title} - {Metadata.site.siteMetadata.title}</title>
+        <meta name="description" content={frontmatter.intro} />
+      </Helmet>
       <section className={projectStyles.sectionProject + ' section-layout-wide'}>
         <div className={projectStyles.prevNext + ' projects-nav'}>
           <div>
