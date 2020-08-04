@@ -36,8 +36,8 @@ const WhatWeDo = () => {
                                 <li>Implementation of UI/UX design process</li>
                                 <li>Estimating &amp; proposal review</li>
                                 <li>Iterative wire-framing, prototypes &amp; concept design</li>
-                                <li>HTML prototypes &amp; templates</li>
                                 <li>Style guides &amp; pattern libraries</li>
+                                <li>HTML prototypes &amp; templates</li>
                                 <li>Graphic design</li>
                                 <li>Planning &amp; management of projects</li>
                             </ul>
