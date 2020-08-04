@@ -35,6 +35,11 @@ body {
   text-align: center;
   color: #ffffff;
 
+  h1,
+  p {
+    color: $whiteText;
+  }
+
   a {
     margin-top: 60px;
     padding: 1.2rem 4rem;

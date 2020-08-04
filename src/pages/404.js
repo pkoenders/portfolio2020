@@ -23,7 +23,7 @@ const NotFoundPage = ({ location }) => {
       <Layout location={location}>
         <div className={'fourOfour'}>
           <h1>Sorry</h1>
-          <h2>The requested page was not found.</h2>
+          <p>The requested page was not found.</p>
           <Link className={'buttonPrimary'} to="/">Go back to my portfolio</Link>
         </div>
       </Layout>
