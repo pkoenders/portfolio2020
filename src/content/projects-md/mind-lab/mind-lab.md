@@ -1,11 +1,11 @@
 ---  
     posttype: project
     slug: the-mind-lab
-    date: 2016-08-01
+    date: 2017-12-01
     category: Website
     url: http://athemindlab.com
     addtohomepage: true
-    title: The Mind Lab/Tech Futures Lab
+    title: The Mind Lab/Tech Futures Lab - Course enrolment 
     coverimage: ./thumb@2x.jpg
     intro: Website - Course enrolment. Flow, wireframes, UI design, style guide & prototype.
 ---
@@ -14,7 +14,7 @@
 
 The Mind Lab and Tech Futures Lab is a business and technology accelerator for students and professionals.
 
-Designed user flows & wire-frames and hi definition mocks for course enrolment.
+I created the user flows & wire-frames and hi definition designs for course enrolment module.
 
 </div>
 

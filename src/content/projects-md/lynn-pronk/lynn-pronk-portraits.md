@@ -12,7 +12,7 @@
 
 <div class="description">
 
-A portfolio design and build for a portrait artist. Displaying the artwork at its best, fitting the browser window where possible was a client request and able to zoom in on images.
+A portfolio design and build for a portrait artist. Displaying the artwork at its best, fitting the browser window where possible and the ability to zoom on images was the client request/requirement.
 
 The client also requested a straight forward, easy to use Content Management System as the technical skills of the client are proudly not the best.
 

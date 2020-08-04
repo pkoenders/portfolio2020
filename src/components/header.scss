@@ -22,6 +22,10 @@ header.headerNavWrapper {
     display: flex;
     z-index: 1003;
 
+    span {
+      display: none;
+    }
+
     //width: 100%;
 
 

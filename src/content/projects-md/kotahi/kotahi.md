@@ -1,31 +1,29 @@
 ---  
     posttype: project
-    slug: kothahi
+    slug: kotahi
     date: 2017-10-01
-    category: Website
+    category: Website application
     url: http://kotahi.com
     addtohomepage: true
-    title: Kothahi - Web application
+    title: Kotahi - Web application
     coverimage: ./thumb@2x.jpg
     intro: Web application. UI Design, HTML prototypes & templates.
 ---
 
 <div class="description">
 
-Implementing UI design refresh across legacy pages.
+Implemented a UI design refresh across legacy pages.
 
-Re-design and rebuild web pages, journeys, components and assets.
-
-Design, build and maintain style guides and pattern library.
+I designed and built web pages, flow and components. Designed, built and managed style guides and HTML component library.
 
 </div>
 
 <div class="images">
 
-![Kothahi - Order list](./order-list@2x.jpg "Kothahi - Order list")
+![Kotahi - Order list](./order-list@2x.jpg "Kotahi - Order list")
 
-![Kothahi - Order view](./order-view@2x.jpg "Kothahi - Order view")
+![Kotahi - Order view](./order-view@2x.jpg "Kotahi - Order view")
 
-![Kothahi - Order plan](./plan@2x.jpg "Kothahi - Order plan")
+![Kotahi - Order plan](./plan@2x.jpg "Kotahi - Order plan")
 
 </div>

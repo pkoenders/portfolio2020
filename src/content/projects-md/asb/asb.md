@@ -5,14 +5,14 @@
     category: Website
     url: http://asb.co.nz
     addtohomepage: true
-    title: ASB - Single Sign On
+    title: ASB Bank - Single Sign On
     coverimage: ./thumb@2x.jpg
     intro: Wireframes, user flows, hi definition mocks and HTML prototypes for their stakeholders.
 ---
 
 <div class="description">
 
-ASB bank Single Sign On for their banking products. ASB’s vision was to have a consistent UI login experience across their products. A consistent look with minimal disruption to their users and Call Centre.
+ASB bank Single Sign On for their banking products. The vision from ASB was to have a consistent UI login experience across their products. The login re-design had minimal disruption to their users and Call Centre.
 
 I created wireframes, user flows and hi definition mocks for stakeholders. HTML prototypes were also created for their integration team.
 

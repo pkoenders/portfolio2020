@@ -14,9 +14,9 @@
 
 Auckland Airport Concierge Service is a module add-on incorporated into their existing website.
 
-I created wireframes, user flows and hi definition mocks for stakeholders.
+I created wireframes, user flows and hi definition designs for stakeholders.
 
-I have also worked on the front end, building HTML/LESS templates and defining responsive layouts for the Auckland Airports site redesign.
+I also worked on the front end, building HTML/LESS templates and defining responsive layouts for the Auckland Airports site redesign.
 
 </div>
 

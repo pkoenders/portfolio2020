@@ -4,7 +4,7 @@
     date: 2019-08-01
     category: Website
     url: http://bytemedia.co.nz
-    addtohomepage: true
+    addtohomepage: false
     title: Byte Media
     coverimage: ./cover-img.jpg
     intro: UI design refresh of their homepage & style guide/pattern library.
@@ -12,7 +12,7 @@
 
 <div class="description">
 
-Implemented a UI design refresh of their homepage along with a style guide and pattern library.
+I implemented a design refresh of their homepage.
 
 This project was undertaken in good faith and regrettably this client did not pay for my services (for no reason). A reminder to ask for a deposit or sign a contract before commencing any work.
 
