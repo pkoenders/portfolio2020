@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="470" height="470" viewBox="0 0 470 470">
-  <g fill="none" fill-rule="evenodd" transform="rotate(-90 235 235)">
-    <rect width="470" height="470"/>
-    <polygon fill="#972363" points="232 62 64 230 232 230"/>
-    <polygon fill="#B42A76" points="64 62 64 230 232 62"/>
-    <polygon fill="#53A3C1" points="237 235 405 403 405 235" transform="rotate(-90 321 319)"/>
-    <polygon fill="#68C9EE" points="237 403 405 403 237 235" transform="rotate(-90 321 319)"/>
-    <polygon fill="#C6756D" points="237 62 237 230 405 230"/>
-    <polygon fill="#F9CC6D" points="237 62 405 230 405 62"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520">
+  <g fill="none" fill-rule="evenodd" transform="rotate(-90 260 260)">
+    <rect width="520" height="520"/>
+    <polygon fill="#972363" points="257 87 89 255 257 255"/>
+    <polygon fill="#B42A76" points="89 87 89 255 257 87"/>
+    <polygon fill="#53A3C1" points="262 260 430 428 430 260" transform="rotate(-90 346 344)"/>
+    <polygon fill="#68C9EE" points="262 428 430 428 262 260" transform="rotate(-90 346 344)"/>
+    <polygon fill="#C6756D" points="262 87 262 255 430 255"/>
+    <polygon fill="#F9CC6D" points="262 87 430 255 430 87"/>
   </g>
 </svg>
