@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="532" height="532" viewBox="0 0 532 532">
-  <g fill="none" fill-rule="evenodd" transform="rotate(-90 266 266)">
-    <rect width="532" height="532"/>
-    <polygon fill="#972363" points="263 89 91 261 263 261"/>
-    <polygon fill="#B42A76" points="91 89 91 261 263 89"/>
-    <polygon fill="#53A3C1" points="268 266 440 438 440 266" transform="rotate(-90 354 352)"/>
-    <polygon fill="#68C9EE" points="268 438 440 438 268 266" transform="rotate(-90 354 352)"/>
-    <polygon fill="#C6756D" points="268 89 268 261 440 261"/>
-    <polygon fill="#F9CC6D" points="268 89 440 261 440 89"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="602" height="602" viewBox="0 0 602 602">
+  <g fill="none" fill-rule="evenodd" transform="rotate(-90 301 301)">
+    <rect width="532" height="532" x="35" y="37"/>
+    <circle cx="301" cy="301" r="301"/>
+    <polygon fill="#972363" points="298 127 126 299 298 299"/>
+    <polygon fill="#B42A76" points="126 127 126 299 298 127"/>
+    <polygon fill="#53A3C1" points="303 304 475 476 475 304" transform="rotate(-90 389 390)"/>
+    <polygon fill="#68C9EE" points="303 476 475 476 303 304" transform="rotate(-90 389 390)"/>
+    <polygon fill="#C6756D" points="303 127 303 299 475 299"/>
+    <polygon fill="#F9CC6D" points="303 127 475 299 475 127"/>
   </g>
 </svg>
