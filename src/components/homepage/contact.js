@@ -1,6 +1,7 @@
 import React from 'react'
 import contactStyles from './contact.module.scss'
 import IconWave from "../../images/svg/icon-wave.inline.svg"
+import IconPhone from "../../images/svg/icon-phone.inline.svg"
 
 const ContactForm = () => {
 
@@ -13,7 +14,7 @@ const ContactForm = () => {
                 <div className={contactStyles.contactForm}>
                     <IconWave />
                     <p>I would love to be contacted to discuss work commissions or just hear your thoughts and ideas.</p>
-                    <p>You can call me (New Zealand) <a href="tel:+64 21 1551 085">+64 21 1551 085</a>. Alternatively, complete the form for email enquires. Thank you.</p>
+                    <p>You can text or all me (New Zealand) <a href="tel:+64 21 155 1085"><IconPhone className={contactStyles.contactIconPhone} />+64 21 155 1085</a>. Alternatively, complete the form for email enquires. Thanks.</p>
                     <div className={contactStyles.contactFormInput}>
                         <form
                             name="pkoenders-contact"

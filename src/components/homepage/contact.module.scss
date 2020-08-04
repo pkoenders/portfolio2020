@@ -51,6 +51,15 @@
                     text-decoration: none;
                     font-weight: bold;
                     color: inherit;
+                    white-space: nowrap;
+
+                    .contactIconPhone {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 24px;
+                        height: auto;
+                        margin: 0px 0px 0 4px;
+                    }
                 }
             }
 
@@ -140,22 +149,25 @@
                 font-size: 1.0rem;
                 font-weight: 500;
                 line-height: 1.0rem;
+                margin-bottom: 1rem;
 
                 a,
                 a:hover {
                     //display: block;
+                    display: inline-block;
+
                     margin: 15px 0;
                     //color: #ffffff;
                     color: $txtColor;
                     text-decoration: none;
-
+                    white-space: nowrap;
 
                     .contactIconPhone {
                         display: inline-block;
                         vertical-align: middle;
-                        width: 42px;
+                        width: 32px;
                         height: auto;
-                        margin: 10px 0px 0 0px;
+                        margin: 0px 0px 0 0px;
                     }
                 }
             }
