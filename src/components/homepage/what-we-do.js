@@ -12,7 +12,7 @@ const WhatWeDo = () => {
 
                 <div className={whatWeDoStyles.intro}>
                     <div className={whatWeDoStyles.introWrapper}>
-                        <h1><strong> <IconCreativeTech />Kia ora </strong><span>Welcome to my portfolio.</span></h1>
+                        <h1><strong> <IconCreativeTech />Kia ora, </strong><span>Welcome to my portfolio.</span></h1>
                     </div>
                 </div>
 
