@@ -27,19 +27,18 @@ const WhatWeDo = () => {
                 <div className={whatWeDoStyles.whatWeDo}>
                     <div className={whatWeDoStyles.aboutMe}>
                         <div>
-                            <p>I’m a versatile UI/UX designer with 20+ years of all-rounder industry experience. I originally trained in traditional and computer graphic design and transitioned into web. I have worked with small and large organisations. I apply attention to detail in all aspects of my work flow; definition and planning, research, design, technical, management and review.</p>
+                            <p>I’m a versatile UI/UX designer with over 20 years of all-rounder industry experience. I originally trained in traditional Graphic Design and transitioned into Digital and Web Design. I have worked with small and large organisations.  I am fastidious in work flow; definition and planning, research, design, technical, management and review.</p>
                         </div>
 
                         <span>
                             <p>I cover and range of design tasks.</p>
                             <ul>
-                                <li>Implementation of UI/UX design process</li>
+                                <li>Implementation of the UI/UX design process</li>
                                 <li>Estimating &amp; proposal review</li>
-                                <li>Iterative wire-framing, prototypes &amp; concept design</li>
-                                <li>Style guides &amp; pattern libraries</li>
-                                <li>HTML prototypes &amp; templates</li>
+                                <li>Iterative wire-framing, prototypes &amp; design</li>
+                                <li>Pattern libraries &amp; styleguides</li>
+                                <li>HTML prototypes</li>
                                 <li>Graphic design</li>
-                                <li>Planning &amp; management of projects</li>
                             </ul>
                         </span>
                     </div>

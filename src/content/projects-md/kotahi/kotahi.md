@@ -14,7 +14,7 @@
 
 Implemented a UI design refresh across legacy pages.
 
-I designed and built web pages, flow and components. Designed, built and managed style guides and HTML component library.
+I designed and built web app pages, flow and components. Designed, built and managed pattern library and HTML component library.
 
 </div>
 
