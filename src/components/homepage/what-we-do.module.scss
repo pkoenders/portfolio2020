@@ -27,15 +27,15 @@
         pointer-events: none;
         // animation: fadein 4s;
 
- // @keyframes fadein {
- //     from {
- //         opacity: 0;
- //     }
+        // @keyframes fadein {
+        //     from {
+        //         opacity: 0;
+        //     }
 
- //     to {
- //         opacity: .2;
- //     }
- // }
+        //     to {
+        //         opacity: .2;
+        //     }
+        // }
 
         @include respond-below(lg) {
             margin: 0 30px 0px auto;
@@ -162,7 +162,7 @@
                         width: 100px;
                         height: auto;
                         pointer-events: none;
-
+                        animation: fadein 4s;
 
 
                         //margin: -15px 0 -40px -65px;
