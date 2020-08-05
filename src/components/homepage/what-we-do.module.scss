@@ -25,6 +25,17 @@
         position: relative;
         z-index: 10003;
         pointer-events: none;
+        // animation: fadein 4s;
+
+ // @keyframes fadein {
+ //     from {
+ //         opacity: 0;
+ //     }
+
+ //     to {
+ //         opacity: .2;
+ //     }
+ // }
 
         @include respond-below(lg) {
             margin: 0 30px 0px auto;
@@ -129,15 +140,11 @@
                     line-height: 2.8rem;
                     display: block;
                     //text-transform: uppercase;
+                    animation: fadein 2s;
 
                     @include respond-below(sm) {
                         margin: 0;
 
-                    }
-
-                    span {
-                        //color: #99dfbe;
-                        //opacity: .72;
                     }
 
                     @include respond-below(md) {
@@ -167,7 +174,24 @@
                         }
                     }
                 }
+
+                span {
+                    animation: fadein 4s;
+
+                    @keyframes fadein {
+                        from {
+                            opacity: 0;
+                        }
+
+                        to {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+
             }
+
         }
     }
 }
