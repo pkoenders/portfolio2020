@@ -37,7 +37,7 @@ const WhatWeDo = () => {
                                 <li>Estimating &amp; proposal review</li>
                                 <li>Iterative wire-framing, prototypes &amp; design</li>
                                 <li>Pattern libraries &amp; styleguides</li>
-                                <li>HTML prototypes</li>
+                                <li>HTML templates &amp; components</li>
                                 <li>Graphic design</li>
                             </ul>
                         </span>
