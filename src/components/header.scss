@@ -127,8 +127,8 @@ header.headerNavWrapper {
 
 
         a {
-          font-size: 1.6rem;
-          line-height: 1.68rem;
+          font-size: 1.5rem;
+          line-height: 1.5rem;
           color: #ffffff;
           opacity: .85;
           padding: 10px 0;
@@ -148,9 +148,12 @@ header.headerNavWrapper {
           bottom: 5px;
           display: block;
           background: $primaryColor;
-          background: #ffffff;
-          height: 1px;
+          border-radius: 1.5px;
+
+          background: #bfbfbf;
+          height: 2px;
           width: 0;
+          right: 0px;
           transition: width 150ms ease-in-out;
         }
 
