@@ -18,6 +18,8 @@
 
     //height: 20px;
     height: 12px;
+    width: 30px;
+    margin-right: 10px;
 
 
     .hamburger-inner,
@@ -26,12 +28,19 @@
       width: 30px;
       height: 2px;
       background-color: #bfbfbf;
-      float: right;
+      //float: left;
+
       border-radius: 1.5px;
     }
 
     .hamburger-inner {
       width: 20px;
+      right: 0px;
+    }
+
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      right: 0px;
     }
   }
 
