@@ -12,6 +12,7 @@ section.sectionProject {
         padding: 20px 0 10px 0;
         background: #b4cae0;
         top: 50px;
+        border-bottom: 1px solid #ffffff;
 
 
         div {
@@ -173,7 +174,8 @@ section.sectionProject {
                             /* padding: 30px; */
                             background-color: #ffffff;
                             border: 1px solid #ffffff;
-                            box-shadow: 0px 0px 5px 0px #cecece;
+                            //box-shadow: 0px 0px 5px 0px #cecece;
+                            box-shadow: 0 0 10px 0 #827e7ec9;
                             margin: 0 0 60px 0;
                             // box-shadow: $globalBoxShadowB;
 
