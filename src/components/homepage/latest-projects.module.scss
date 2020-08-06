@@ -66,13 +66,18 @@
 
         ul li {
             position: relative;
-            flex-basis: calc(50% - 30px);
+            flex-basis: calc(50% - 60px);
+
+            @include respond-below(md) {
+                flex-basis: calc(50% - 30px);
+                margin: 15px;
+            }
 
             @include respond-below(sm) {
                 flex-basis: calc(100% - 15px);
             }
 
-            margin: 15px;
+            margin: 30px;
 
             @include respond-below(sm) {
                 // margin: 15px 7.5px;
@@ -82,10 +87,13 @@
             border-radius: $globalBorderRadiusA;
             overflow: hidden;
             box-shadow: $globalBoxShadowB;
+            box-shadow: 0 0 10px 0 #a49e9e;
             background-color: #ffffff;
+            border: 1px solid #ffffff;
             //padding: 30px;
 
             img {
+
                 display: block;
                 width: max-content !important;
                 height: auto !important;
@@ -98,7 +106,7 @@
 
 
                 margin: 0;
-                border-radius: 0;
+                border-radius: 0px;
             }
 
             span {
