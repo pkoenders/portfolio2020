@@ -55,6 +55,7 @@ const LatestProjects = () => {
                                         <Img
                                             alt={edge.node.frontmatter.title}
                                             fluid={edge.node.frontmatter.coverimage.childImageSharp.fluid}
+                                            loading="lazy"
                                         />
                                         <span>
                                             <h3>{edge.node.frontmatter.title}</h3>
