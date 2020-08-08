@@ -45,7 +45,7 @@ const WhatWeDo = () => {
 
                     <div className={whatWeDoStyles.technical}>
                         <div>
-                            <p>I am curious, interested in web accessibility and working with integration teams across diversified technologies and projects.</p>
+                            <p>I am curious, interested in web accessibility and enjoy working in collaborative teams on diversified digital projects.</p>
                         </div>
                         <span>
                             <IconDevelopment />
