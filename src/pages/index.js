@@ -23,7 +23,7 @@ const IndexPage = ({ location }) => {
     <>
       <Helmet>
         <html lang="en" />
-        <title>A ersatile UI/UX designer - Kia ora, Welcome to my portfolio. | {data.site.siteMetadata.title}</title>
+        <title>A versatile UI/UX designer - Kia ora, Welcome to my portfolio. | {data.site.siteMetadata.title}</title>
         <meta name="description" content="A versatile UI/UX designer with 20+ years of all-round industry experience." />
       </Helmet>
       <Layout location={location}>
