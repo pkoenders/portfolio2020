@@ -44,7 +44,9 @@ export const onRouteUpdate = () => {
 
 function ready() {
     //alert('DOM is ready');
-
+    // document.addEventListener('touchmove', function (e) {
+    //     mobileNav()
+    // });
     document.querySelector(".headerNavWrapper").style.top = "0";
     mobileNav()
 
@@ -103,9 +105,14 @@ function mobileNav() {
     var projectsNav = document.querySelector('.projects-nav');
 
     //console.log('prevScrollpos = ' + prevScrollpos)
+
+
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
         if ((prevScrollpos >= currentScrollPos) || (hamBurgerBtn.classList.contains("is-active"))) {
+
+            //alert('currentScrollPos = ' + currentScrollPos, 'prevScrollpos = ' + prevScrollpos);
+
             document.querySelector(".headerNavWrapper").style.top = "0";
 
             if (projectsNav) {
@@ -117,6 +124,10 @@ function mobileNav() {
             if (projectsNav) {
                 projectsNav.style.top = "-10px";
             }
+        }
+
+        if (window.pageYOffset <= 0) {
+            currentScrollPos = 0;
         }
         prevScrollpos = currentScrollPos;
     }
