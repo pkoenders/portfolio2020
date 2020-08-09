@@ -9,7 +9,7 @@
 
 
 
-import mediumZoom from 'medium-zoom'
+//import mediumZoom from 'medium-zoom'
 
 export const onServiceWorkerUpdateReady = () => {
     const answer = window.confirm(
@@ -30,11 +30,11 @@ export const onRouteUpdate = () => {
     // Load page
     document.addEventListener("DOMContentLoaded", ready())
 
-    mediumZoom('.images p span img', {
-        //background: '#efeff0',
+    // mediumZoom('.images p span img', {
+    //     //background: '#efeff0',
 
-        background: '#ffffff',
-    })
+    //     background: '#ffffff',
+    // })
 
 
 
@@ -110,11 +110,7 @@ function mobileNav() {
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
         if ((prevScrollpos >= currentScrollPos) || (hamBurgerBtn.classList.contains("is-active"))) {
-
-            //alert('currentScrollPos = ' + currentScrollPos, 'prevScrollpos = ' + prevScrollpos);
-
             document.querySelector(".headerNavWrapper").style.top = "0";
-
             if (projectsNav) {
                 projectsNav.style.top = "50px";
             }

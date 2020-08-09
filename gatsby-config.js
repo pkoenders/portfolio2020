@@ -117,10 +117,21 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               linkImagesToOriginal: false,
-              maxWidth: 960,
+              maxWidth: 1824,
               quality: 100,
               withWebp: true,
               loading: `lazy`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`, // Important!
+            options: {
+              background: `#ffffff`,
+              zIndex: 100000,
+              //container: '.zoom-container',
+              // template: {
+              //   border: `1px solid #ffffff`,
+              // },
             },
           },
         ],
