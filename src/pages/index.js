@@ -25,6 +25,7 @@ const IndexPage = ({ location }) => {
         <html lang="en" />
         <title>A versatile UI/UX designer - Kia ora, Welcome to my portfolio. | {data.site.siteMetadata.title}</title>
         <meta name="description" content="A versatile UI/UX designer with 20+ years of all-round industry experience." />
+        <meta property="og:image" content="../images/svg/logo-pixel.inline.svg" />
       </Helmet>
       <Layout location={location}>
         <SectionWhatWeDo />

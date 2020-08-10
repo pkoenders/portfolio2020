@@ -11,6 +11,18 @@ module.exports = {
   plugins: [
 
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `#99DFBE`,
+        // Disable the loading spinner.
+        showSpinner: false,
+        parent: '.headerNavWrapper',
+      },
+    },
+
+
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
