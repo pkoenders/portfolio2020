@@ -14,10 +14,10 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `#99DFBE`,
+        //color: `#99DFBE`,
         // Disable the loading spinner.
         showSpinner: false,
-        parent: '.headerNavWrapper',
+        //parent: '.headerNavWrapper',
       },
     },
 

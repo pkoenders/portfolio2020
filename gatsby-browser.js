@@ -24,8 +24,8 @@ export const onServiceWorkerUpdateReady = () => {
 
 
 
-export const onRouteUpdate = () => {
 
+export const onRouteUpdate = () => {
 
     // Load page
     document.addEventListener("DOMContentLoaded", ready())
