@@ -25,7 +25,7 @@ const LatestProjects = () => {
                         title
                         coverimage{
                             childImageSharp {
-                                fluid(maxWidth: 722, maxHeight: 460, quality: 50) {
+                                fluid(maxWidth: 720, maxHeight: 460, quality: 50) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
