@@ -29,7 +29,8 @@ The website downloads incredibly quickly.
 And maybe best of all Peter has made the administration side of the website super easy. Now, even a techno luddite like me can control and edit most of the material myself, which I definitely couldn’t do before. **Very empowering!**
 
 Thanks Peter for my new website! I’m so thrilled with it.
-####- Lynn Pronk
+
+Lynn Pronk
 </div>
 
 
