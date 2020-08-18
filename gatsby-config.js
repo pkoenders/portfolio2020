@@ -70,6 +70,11 @@ module.exports = {
             variable: true,
             weights: [`300..700`],
           },
+          {
+            family: `Spectral`,
+            variable: true,
+            weights: [`400..700`],
+          },
 
         ],
       },
