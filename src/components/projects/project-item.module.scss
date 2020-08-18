@@ -134,16 +134,17 @@ section.sectionProject {
 
                             p:last-of-type::after {
                                 content: "\201D";
-                                bottom: 5px;
+                                bottom: 3px;
                             }
 
 
                             p:first-of-type::before,
                             p:last-of-type::after {
-                                font-size: 2.5rem;
+                                font-size: 2.7rem;
                                 line-height: 0px;
                                 position: absolute;
                                 font-family: 'Spectral', serif;
+                                color: #25324094;
                             }
 
                             p:first-of-type {
