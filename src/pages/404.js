@@ -16,14 +16,29 @@ const NotFoundPage = ({ location }) => {
 `)
   return (
     <>
+
+      <style type="text/css">
+        {`
+        body  {
+          // background-color:none;
+          // background: url(../images/zoe.jpg) no-repeat center center fixed !important; 
+          // -webkit-background-size: cover;
+          // -moz-background-size: cover;
+          // -o-background-size: cover;
+          // background-size: cover;
+          
+        }
+      `}
+      </style>
+
       <Helmet>
         <html lang="en" />
         <title>Page not found | {data.site.siteMetadata.title}</title>
       </Helmet>
       <Layout location={location}>
         <div className={'fourOfour'}>
-          <h1>Sorry.</h1>
-          <p>The requested page was not found.</p>
+          <h1>Oh no!</h1>
+          <p>Looks like this page has been removed...</p>
           <Link className={'buttonPrimary'} to="/">Go back to my portfolio</Link>
         </div>
       </Layout>

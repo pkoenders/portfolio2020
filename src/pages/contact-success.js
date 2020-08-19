@@ -21,8 +21,8 @@ const ContactSuccess = ({ location }) => {
       <style type="text/css">
         {`
         body  {
-          background: rgb(120, 179, 184);
-          background: linear-gradient(176deg, rgba(150, 217, 223, 1) 0%, rgba(120, 179, 184, 1) 100%);
+          background: rgb(194, 242, 247);
+          background: linear-gradient(176deg, rgba(194, 242, 247, 1) 0%, rgba(150, 198, 202, 1) 100%);
         }
       `}
       </style>

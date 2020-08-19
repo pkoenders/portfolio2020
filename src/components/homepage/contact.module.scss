@@ -6,8 +6,8 @@
 
     padding: $globalSecionPadding;
 
-    background: rgb(120, 179, 184);
-    background: linear-gradient(176deg, rgba(150, 217, 223, 1) 0%, rgba(120, 179, 184, 1) 100%);
+    background: rgb(194, 242, 247);
+    background: linear-gradient(176deg, rgba(194, 242, 247, 1) 0%, rgba(150, 198, 202, 1) 100%);
 
     @include respond-below(md) {
         padding: 100px 15px 15px 15px;
@@ -51,6 +51,7 @@
                     text-decoration: none;
                     font-weight: bold;
                     color: inherit;
+                    color: $primaryColor;
                     white-space: nowrap;
 
                     .contactIconPhone {
@@ -151,6 +152,10 @@
                 line-height: 1.0rem;
                 margin-bottom: 1rem;
 
+                a {
+                    color: $primaryColor;
+                }
+
                 a,
                 a:hover {
                     //display: block;
@@ -158,7 +163,7 @@
 
                     margin: 15px 0;
                     //color: #ffffff;
-                    color: $txtColor;
+                    color: $primaryColor;
                     text-decoration: none;
                     white-space: nowrap;
 
