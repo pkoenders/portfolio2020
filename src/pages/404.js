@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Helmet } from 'react-helmet'
 import Layout from "../components/layout"
+import Bground404 from "../components/404-bground"
 import "../styles/index.scss"
 
 const NotFoundPage = ({ location }) => {
@@ -16,31 +17,29 @@ const NotFoundPage = ({ location }) => {
 `)
   return (
     <>
-
       <style type="text/css">
         {`
-        body  {
-          // background-color:none;
-          // background: url(../images/zoe.jpg) no-repeat center center fixed !important; 
-          // -webkit-background-size: cover;
-          // -moz-background-size: cover;
-          // -o-background-size: cover;
-          // background-size: cover;
-          
+        footer  {
+          background-color: #25324000 !important;
+          border-top:none  !important;
         }
       `}
       </style>
+
 
       <Helmet>
         <html lang="en" />
         <title>Page not found | {data.site.siteMetadata.title}</title>
       </Helmet>
+
       <Layout location={location}>
+        <Bground404 />
         <div className={'fourOfour'}>
-          <h1>Oh no!</h1>
-          <p>Looks like this page has been removed...</p>
+          <h1>Oh purr-leaze !</h1>
+          <p>Looks like Zoe has hidden this page.</p>
           <Link className={'buttonPrimary'} to="/">Go back to my portfolio</Link>
         </div>
+
       </Layout>
     </>
   )

@@ -167,10 +167,15 @@ button.buttonTertiary:hover,
 
 .fourOfour {
   display: block;
-  margin: 120px auto;
+  margin: 60px auto;
   width: fit-content;
   text-align: center;
   color: #ffffff;
+
+  h1 {
+    padding-top: 120px;
+  }
+
 
   a,
   a:link,
