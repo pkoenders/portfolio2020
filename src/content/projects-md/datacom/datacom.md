@@ -4,7 +4,7 @@
     date: 2003-01-01
     category: Print
     url: http://datacom.co.nz  
-    addtohomepage: true
+    addtohomepage: false
     title: Datacom Systems Limited
     coverimage: ./thumb@2x.jpg
     intro: BAU, in-house, print, banners & proposals.

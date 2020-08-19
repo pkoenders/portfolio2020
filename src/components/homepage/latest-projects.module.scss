@@ -9,8 +9,8 @@
     // background: rgb(65, 87, 111);
     // background: radial-gradient(circle, rgba(65, 87, 111, 1) 0%, rgba(37, 50, 64, 1) 100%);
 
-    background: rgb(212, 212, 212);
-    background: linear-gradient(174deg, rgba(212, 212, 212, 1) 0%, rgba(239, 239, 240, 1) 83%);
+    background: rgb(288, 288, 288);
+    background: linear-gradient(174deg, rgba(288, 288, 288, 1) 0%, rgba(208, 208, 210, 1) 83%);
 
 
     padding: $globalSecionPadding;
@@ -129,9 +129,10 @@
 
                 h3 {
 
+                    color: $txtColor;
                     font-weight: 600;
                     margin: 0 0 0 0;
-                    font-size: 1.0rem;
+                    font-size: .9rem;
                     text-transform: uppercase;
                     //text-align: center;
                     letter-spacing: .03rem;
@@ -141,10 +142,22 @@
 
             }
 
+            a:hover {
+                text-decoration: none !important;
+
+                span {
+                    h3 {
+                        color: $primaryColor;
+                        //text-decoration: none;
+                    }
+                }
+            }
         }
 
         li:hover {
             box-shadow: $globalBoxShadowA;
+
+
         }
 
     }

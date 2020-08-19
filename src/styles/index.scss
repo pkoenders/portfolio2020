@@ -55,12 +55,13 @@ a,
 a:link,
 a:hover {
   color: $txtColor;
-  text-decoration: none !important;
+  color: $primaryColor;
+  text-decoration: none;
 }
 
 a:hover {
   color: $primaryColor;
-  //text-decoration: underline;
+  text-decoration: underline;
 }
 
 
