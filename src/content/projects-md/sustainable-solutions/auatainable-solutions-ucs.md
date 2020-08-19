@@ -1,11 +1,11 @@
 ---  
     posttype: project
-    slug: sustainable-soultions-ucs
+    slug: sustainable-solutions-ucs
     date: 2020-08-01
     category: Web application
     url: https://sussol.net
     addtohomepage: true
-    title: Sustainable Soultions - Universal Code Server
+    title: Sustainable Solutions - Universal Code Server
     coverimage: ./sign-in-1.2.png
     intro: Web application for management and distribution of pharmicutical products.
 ---
