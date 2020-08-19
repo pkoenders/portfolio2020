@@ -66,10 +66,12 @@ a:hover {
 
 
 button.buttonPrimary,
+button.buttonPrimaryGhost,
 button.buttonPrimaryDark,
 button.buttonSecondary button.buttonTertiary,
 
 .buttonPrimary,
+.buttonPrimaryGhost,
 .buttonPrimaryDark,
 .buttonSecondary,
 .buttonTertiary {
@@ -98,14 +100,24 @@ button.buttonSecondary button.buttonTertiary,
   color: #ffffff !important;
 }
 
+button.buttonPrimaryGhost,
+.buttonPrimaryGhost {
+  background-color: #2532406f;
+  border: 2px solid $primaryColor;
+
+}
+
+
 button.buttonPrimaryDark,
 .buttonPrimaryDark {
   background-color: $ctaColorDark;
 }
 
 button:hover.buttonPrimary,
+button:hover.buttonPrimaryGhost,
 button:hover.buttonPrimaryDark,
 .buttonPrimary:hover,
+.buttonPrimaryGhost:hover,
 .buttonPrimaryDark:hover {
   color: #ffffff;
   box-shadow: 0px 0px 5px 0px rgba(35, 35, 35, 0.5);
