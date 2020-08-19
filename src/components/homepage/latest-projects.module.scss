@@ -86,8 +86,8 @@
             vertical-align: top;
             border-radius: $globalBorderRadiusA;
             overflow: hidden;
-            box-shadow: $globalBoxShadowB;
-            box-shadow: 0 0 10px 0 #a49e9e;
+            box-shadow: $globalBoxShadowA;
+            //box-shadow: 0 0 10px 0 #a49e9e;
             background-color: #ffffff;
             border: 1px solid #ffffff;
             //padding: 30px;
@@ -155,8 +155,8 @@
         }
 
         li:hover {
-            box-shadow: $globalBoxShadowA;
-
+            box-shadow: $globalBoxShadowB;
+            box-shadow: 0 0 15px 0 #a49e9e;
 
         }
 

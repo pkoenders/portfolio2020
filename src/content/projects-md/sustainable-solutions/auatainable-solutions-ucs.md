@@ -14,7 +14,7 @@
 
 A web application for pharmaceutical supply chain software is used in national drug distribution projects, warehouses and hospitals in more than 20 countries around the world. Screen designs are of the search functionality for desktop and mobile.
 
-A pattern library was created in Sketch for the components using [Material-UI](https://material-ui.com) as the design and build framework.
+A pattern library was created for the components using [Material-UI](https://material-ui.com) as the design framework.
 
 </div>
 
