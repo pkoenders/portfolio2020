@@ -1,7 +1,20 @@
 @import "src/styles/scss";
 
 .footer {
-  border-top: 1px solid $headerBgColor;
+  position: relative;
+  //width: 100%;
+
+  >svg {
+    position: absolute;
+    //
+    top: -75px;
+    left: 0px;
+    right: 0px;
+    width: 100% !important;
+    height: 75px !important;
+  }
+
+  //border-top: 1px solid $headerBgColor;
   color: #f6f4f2;
   padding: 120px 60px 120px 60px;
   background-color: $footerBgColor;
