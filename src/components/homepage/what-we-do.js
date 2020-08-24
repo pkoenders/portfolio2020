@@ -11,6 +11,8 @@ const WhatWeDo = () => {
         <>
             <section className={whatWeDoStyles.sectionHeroImg + ' section-layout-wide'}>
 
+                {/* <canvas id="canv" width="32" height="32" /> */}
+
                 <div className={whatWeDoStyles.intro}>
                     <div className={whatWeDoStyles.introWrapper}>
                         <h1><strong> <IconCreativeTech />Kia ora, </strong><span>Welcome to my portfolio.</span></h1>
@@ -25,7 +27,9 @@ const WhatWeDo = () => {
             </section>
 
             <section className={whatWeDoStyles.whatWeDoWrapper + ' section-layout-wide'}>
+
                 <div className={whatWeDoStyles.whatWeDo}>
+
                     <div className={whatWeDoStyles.aboutMe}>
                         <div>
                             <p>I’m a versatile UI/UX designer with over 20 years of all-round industry experience. I originally trained in traditional Graphic Design and transitioned into Digital and Web Design. I have worked with small and large organisations.  I am fastidious in work flow; definition and planning, research, design, technical, management and review.</p>
@@ -46,7 +50,7 @@ const WhatWeDo = () => {
 
                     <div className={whatWeDoStyles.technical}>
                         <div>
-                            <p>I am curious, interested in web accessibility and enjoy working in collaborative teams on diversified digital projects.</p>
+                            <p>I am curious, interested in web accessibility and enjoy working in creative teams on diversified digital projects.</p>
                         </div>
                         <span>
                             <IconDevelopment />

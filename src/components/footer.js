@@ -20,7 +20,8 @@ const Footer = () => {
     <>
 
       <footer className={footerStyles.footer}>
-        <FooterBGround />
+        <canvas id="canv" width="32" height="32" />
+        {/* <FooterBGround /> */}
         <Link to="/" title="Homepage" >
           <span>Go to the homepage</span>
           <IconCreativeTech />

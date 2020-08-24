@@ -16,7 +16,7 @@
     padding: $globalSecionPadding;
 
     @include respond-below(lg) {
-        padding: 100px 0 50px 0;
+        padding: 100px 0 5px 0;
     }
 
     h2 {
@@ -151,9 +151,13 @@
                 text-decoration: none !important;
                 background-color: $primaryColor !important;
 
+                // *img {
+                //     filter: grayscale(100%);
+                // }
+
                 img {
                     transform: scale(1.033);
-                    //filter: grayscale(0);
+                    filter: grayscale(0);
                 }
 
                 span {
@@ -175,6 +179,9 @@
             box-shadow: 0 0 15px 0 #a49e9e;
 
 
+
         }
+
+
     }
 }
