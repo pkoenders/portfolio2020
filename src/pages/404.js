@@ -20,8 +20,7 @@ const NotFoundPage = ({ location }) => {
       <style type="text/css">
         {`
         footer  {
-          background-color: #25324000 !important;
-          border-top:none  !important;
+        display:none !important;
           
         }
 
