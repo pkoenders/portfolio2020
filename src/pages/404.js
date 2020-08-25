@@ -25,12 +25,16 @@ const NotFoundPage = ({ location }) => {
           
         }
 
+        // canvas {
+        //   position: absolute !important;
+        //   top: -9999px !important;
+        //   left: -9999px !important;
+        // }
+
         canvas {
-          position: absolute !important;
-          top: -9999px !important;
-          left: -9999px !important;
+          z-index:-1 !important;
         }
-        
+
       `}
       </style>
 
@@ -42,6 +46,7 @@ const NotFoundPage = ({ location }) => {
 
       <Layout location={location}>
         <Bground404 />
+        <canvas id="canv" width="32" height="32" />
         <div className={'fourOfour'}>
           <h1>Oh purr-leaze !</h1>
           <p>It appears that Zoe has hidden this page.</p>

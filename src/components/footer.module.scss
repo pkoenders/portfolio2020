@@ -30,6 +30,8 @@
   text-align: center;
 
   a {
+    z-index: 100 !important;
+    position: relative;
 
 
     span {
@@ -48,6 +50,8 @@
     color: $footerFgColor;
     color: #ffffff;
     margin-bottom: 10px;
+    z-index: 100 !important;
+    position: relative;
   }
 
   p+p {
