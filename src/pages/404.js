@@ -22,7 +22,15 @@ const NotFoundPage = ({ location }) => {
         footer  {
           background-color: #25324000 !important;
           border-top:none  !important;
+          
         }
+
+        canvas {
+          position: absolute !important;
+          top: -9999px !important;
+          left: -9999px !important;
+        }
+        
       `}
       </style>
 
