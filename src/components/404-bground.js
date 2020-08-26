@@ -5,8 +5,8 @@ import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
 const BackgroundSection = ({ className }) => (
-    <StaticQuery
-        query={graphql`
+  <StaticQuery
+    query={graphql`
       query {
         desktop: file(relativePath: { eq: "images/zoe.jpg" }) {
           childImageSharp {
@@ -17,20 +17,20 @@ const BackgroundSection = ({ className }) => (
         }
       }
     `}
-        render={data => {
-            // Set ImageData.
-            const imageData = data.desktop.childImageSharp.fluid
-            return (
-                <BackgroundImage
-                    Tag="section"
-                    className={className}
-                    fluid={imageData}
-                //backgroundColor={`#253240`}
-                >
-                </BackgroundImage>
-            )
-        }}
-    />
+    render={data => {
+      // Set ImageData.
+      const imageData = data.desktop.childImageSharp.fluid
+      return (
+        <BackgroundImage
+          Tag="section"
+          className={className}
+          fluid={imageData}
+        //backgroundColor={`#253240`}
+        >
+        </BackgroundImage>
+      )
+    }}
+  />
 )
 
 const StyledBackgroundSection = styled(BackgroundSection)`
@@ -39,6 +39,7 @@ min-height: 100vh;
   background-position: center center;
   background-repeat: repeat-y;
   background-size: cover;
+  background-color: #697684;
   position: absolute !important;
   top:0px;
     z-index: -1 !important;

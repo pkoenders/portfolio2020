@@ -61,7 +61,7 @@ function ready() {
 }
 
 function canvasAnin() {
-    var c = document.getElementById('canv');
+    var c = document.getElementsByClassName("canv")[0];
     var $ = c.getContext('2d');
 
     var col = function (x, y, r, g, b) {
