@@ -35,8 +35,10 @@ const BackgroundSection = ({ className }) => (
 )
 
 const StyledBackgroundSection = styled(BackgroundSection)`
-width: 100%;
-min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: #000000;
   background-position: center center;
   background-repeat: repeat-y;
   background-size: cover;
