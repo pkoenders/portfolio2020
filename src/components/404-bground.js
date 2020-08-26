@@ -25,8 +25,8 @@ const BackgroundSection = ({ className }) => (
           Tag="section"
           className={className}
           fluid={imageData}
-
-          backgroundColor={`#697684`}
+          color={`#ffffff`}
+          backgroundColor={`#000000`}
         >
         </BackgroundImage>
       )
@@ -40,7 +40,6 @@ min-height: 100vh;
   background-position: center center;
   background-repeat: repeat-y;
   background-size: cover;
-  background-color: #697684;
   position: absolute !important;
   top:0px;
     z-index: -1 !important;
