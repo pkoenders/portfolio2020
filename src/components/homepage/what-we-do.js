@@ -40,7 +40,7 @@ const WhatWeDo = () => {
                         </div>
 
                         <span>
-                            <p>I cover and range of design tasks.</p>
+                            {/* <p>I cover and range of design tasks.</p> */}
                             <ul>
                                 <li>Implementation of the UI/UX design process</li>
                                 <li>Estimating &amp; proposal review</li>
@@ -54,7 +54,7 @@ const WhatWeDo = () => {
 
                     <div className={whatWeDoStyles.technical}>
                         <div>
-                            <p>I am curious, interested in web accessibility and enjoy working in creative teams on diversified digital projects.</p>
+                            <p>I am curious, interested in web accessibility and enjoy working with creative teams on diversified digital projects.</p>
                         </div>
                         <span>
                             <IconDevelopment />

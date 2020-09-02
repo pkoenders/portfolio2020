@@ -111,7 +111,7 @@
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
-        z-index: 10003;
+        z-index: 10004;
         pointer-events: none;
 
         .introWrapper {
@@ -314,7 +314,7 @@ section.whatWeDoWrapper {
             height: 100%;
             padding: 45px 60px 30px 60px;
             background-color: #2d1330;
-            background-color: #772151;
+            background-color: #6b3452;
             font-size: 1.1rem;
             line-height: 1.6rem;
             letter-spacing: .03rem;
@@ -409,6 +409,8 @@ section.whatWeDoWrapper {
             border-top: 1px solid #ffffff;
             margin-inline-end: 0px;
 
+
+
             h2,
             p,
             li {
@@ -442,6 +444,8 @@ section.whatWeDoWrapper {
 
             a {
                 margin: 30px auto 0 auto;
+                background-color: #c34d38;
+                background-color: #356b51;
             }
         }
     }
