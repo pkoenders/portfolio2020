@@ -13,7 +13,7 @@ const Header = ({ location, siteTitle }) => {
 
   return (
     <>
-      <header className="headerNavWrapper" style={{ top: 0 + 'px' }}>
+      <header className="headerNavWrapper fillBground" style={{ top: 0 + 'px' }}>
 
         {location.pathname.split('/')[1] !== ""
           ? <Link to="/" title="Link to homepage">

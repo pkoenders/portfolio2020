@@ -1,5 +1,9 @@
 @import "src/styles/scss";
 
+.fillBground {
+  transition: all 0.2s !important;
+  background-color: $headerBgColor !important;
+}
 
 header.headerNavWrapper {
 
@@ -9,10 +13,12 @@ header.headerNavWrapper {
   //border-bottom: 1px solid #ffffff5a;
   //justify-content: space-between;
   //justify-content: flex-end;
-  background-color: $headerBgColor;
+
+  //background-color: $headerBgColor;
+  background-color: transparent;
   width: 100%;
-  z-index: 1000;
-  transition: top 0.4s;
+  z-index: 100000;
+  transition: all 0.4s;
   /* Transition effect when sliding down (and up) */
   // background-color: #ffffff;
   height: 60px;
@@ -52,7 +58,7 @@ header.headerNavWrapper {
 
     min-width: 130px;
 
-    background-color: $headerBgColor;
+    //background-color: $headerBgColor;
     // max-width: 960px;
     // border: 1px solid #ffffff94;
     // border-top: none;

@@ -19,14 +19,18 @@ const WhatWeDo = () => {
                     </div>
                 </div>
 
-                <Pkoenders />
+                <span>
+
+                    <canvas className="headAnim" width="32" height="32" />
+                    <Pkoenders />
+                </span>
                 {/* <Img
                     alt={'Web designer'}
                     fluid={dataWhatWeDo.webDesigner.childImageSharp.fluid}
                 /> */}
             </section>
 
-            <section className={whatWeDoStyles.whatWeDoWrapper + ' section-layout-wide'}>
+            <section className={whatWeDoStyles.whatWeDoWrapper + ' section-layout-wide contentStart'}>
 
                 <div className={whatWeDoStyles.whatWeDo}>
 

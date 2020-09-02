@@ -51,51 +51,60 @@ function ready() {
     mobileNav()
     canvasAnin()
 
-
-
-
-
-
-
-
 }
 
 function canvasAnin() {
-    var c = document.getElementsByClassName("canv")[0];
-    var $ = c.getContext('2d');
+    var animsToRun = [
+        document.querySelector('.headAnim'),
+        document.querySelector('.footerAnim'),
+        document.querySelector('.catAnim'),
+    ]
+    var i
 
-    var col = function (x, y, r, g, b) {
-        $.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
-        $.fillRect(x, y, 1, 1);
-    }
-    var R = function (x, y, t) {
-        return (Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + t)));
-    }
-
-    var G = function (x, y, t) {
-        return (Math.floor(192 + 64 * Math.sin((x * x * Math.cos(t / 4) + y * y * Math.sin(t / 3)) / 300)));
-    }
-
-    var B = function (x, y, t) {
-        return (Math.floor(192 + 64 * Math.sin(5 * Math.sin(t / 9) + ((x - 100) * (x - 100) + (y - 100) * (y - 100)) / 1100)));
-    }
-
-    var t = 0;
-
-    var x = 0;
-    var y = 0;
-
-    var run = function () {
-        for (x = 0; x <= 35; x++) {
-            for (y = 0; y <= 35; y++) {
-                col(x, y, R(x, y, t), G(x, y, t), B(x, y, t));
-            }
+    for (i = 0; i < animsToRun.length; i++) {
+        if (animsToRun[i] !== null) {
+            const animItem = animsToRun[i]
+            runCanvasAnin(animItem)
         }
-        t = t + 0.0330;
-        window.requestAnimationFrame(run);
     }
+}
 
-    run();
+function runCanvasAnin(animItem) {
+    if (animItem) {
+        var $ = animItem.getContext('2d');
+        var col = function (x, y, r, g, b) {
+            $.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+            $.fillRect(x, y, 1, 1);
+        }
+        var R = function (x, y, t) {
+            return (Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + t)));
+        }
+
+        var G = function (x, y, t) {
+            return (Math.floor(192 + 64 * Math.sin((x * x * Math.cos(t / 4) + y * y * Math.sin(t / 3)) / 300)));
+        }
+
+        var B = function (x, y, t) {
+            return (Math.floor(192 + 64 * Math.sin(5 * Math.sin(t / 9) + ((x - 100) * (x - 100) + (y - 100) * (y - 100)) / 1100)));
+        }
+
+        var t = 0;
+
+        var x = 0;
+        var y = 0;
+
+        var run = function () {
+            for (x = 0; x <= 35; x++) {
+                for (y = 0; y <= 35; y++) {
+                    col(x, y, R(x, y, t), G(x, y, t), B(x, y, t));
+                }
+            }
+            t = t + 0.0330;
+            window.requestAnimationFrame(run);
+        }
+
+        run();
+    }
 }
 
 function toggleMobileNavOnClick(headerNavWrapper, hamBurgerBtn, headerDiv, headerDivNav, headerDivLogo) {
@@ -106,34 +115,35 @@ function toggleMobileNavOnClick(headerNavWrapper, hamBurgerBtn, headerDiv, heade
         //console.log('Hamburger Clicked')
 
         if (!headerDiv.classList.contains("open")) {
-            headerDiv.classList.add("open")
+            headerDiv.classList.add("open", "fillBground")
             hamBurgerBtn.classList.add("is-active")
 
-            headerNavWrapper.style.zIndex = "100004";
+            // headerNavWrapper.classList.add("fillBground")
+            //headerNavWrapper.style.zIndex = "100004";
 
             // window.onscroll = function () {
             //     headerWrapper.style.top = "0";
             // }
 
         } else {
-            headerDiv.classList.remove("open")
+            headerDiv.classList.remove("open", "fillBground")
             hamBurgerBtn.classList.remove("is-active")
-            headerNavWrapper.style.zIndex = "1000";
+            //headerNavWrapper.style.zIndex = "100000";
         }
 
 
     });
 
     headerDivNav.addEventListener("click", function () {
-        headerDiv.classList.remove("open")
+        headerDiv.classList.remove("open", "fillBground")
         hamBurgerBtn.classList.remove("is-active")
-        headerNavWrapper.style.zIndex = "1000";
+        //headerNavWrapper.style.zIndex = "100000";
     });
 
     headerDivLogo.addEventListener("click", function () {
-        headerDiv.classList.remove("open")
+        headerDiv.classList.remove("open", "fillBground")
         hamBurgerBtn.classList.remove("is-active")
-        headerNavWrapper.style.zIndex = "1000";
+        //headerNavWrapper.style.zIndex = "100000";
     });
 
 }
@@ -144,6 +154,8 @@ function mobileNav() {
     const hamBurgerBtn = document.querySelector(".hamburger")
     const headerDiv = document.querySelector(".header-nav")
     const headerDivNav = document.querySelector(".header-nav ul ")
+
+    const contentStart = document.querySelector(".contentStart");
 
 
     var prevScrollpos = 0;
@@ -165,6 +177,19 @@ function mobileNav() {
             document.querySelector(".headerNavWrapper").style.top = "-61px";
             if (projectsNav) {
                 projectsNav.style.top = "-10px";
+            }
+        }
+
+
+
+        if (contentStart) {
+            var rect = contentStart.getBoundingClientRect()
+            headerNavWrapper.classList.remove("fillBground")
+            //console.log(rect.top);
+            if (rect.top <= 61) {
+                headerNavWrapper.classList.add("fillBground")
+            } else {
+                headerNavWrapper.classList.remove("fillBground")
             }
         }
 
