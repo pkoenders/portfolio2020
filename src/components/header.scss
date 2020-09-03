@@ -127,12 +127,15 @@ header.headerNavWrapper {
       top: 80px;
       position: absolute;
       right: 15px;
-
+      float: right;
 
       li {
+        float: right;
+        clear: both;
 
-
-        a {
+        a,
+        p,
+        span {
           font-size: 1.5rem;
           line-height: 1.5rem;
           color: #ffffff;
@@ -140,8 +143,9 @@ header.headerNavWrapper {
           padding: 10px 0;
           position: relative;
           width: fit-content;
+          text-align: right;
           float: right;
-
+          display: block;
         }
 
         a:hover {
@@ -155,7 +159,6 @@ header.headerNavWrapper {
           display: block;
           background: $primaryColor;
           border-radius: 1.5px;
-
           background: #bfbfbf;
           height: 2px;
           width: 0;
@@ -163,10 +166,34 @@ header.headerNavWrapper {
           transition: width 150ms ease-in-out;
         }
 
-
         a:hover:after {
           width: 100%;
         }
+      }
+
+      li.status {
+        margin-top: 30px;
+
+      }
+    }
+
+    div {
+      float: right;
+      clear: both;
+      width: auto;
+
+      svg {
+        height: 75px;
+        width: auto;
+        float: left;
+        margin-left: 15px;
+      }
+
+      div {
+        clear: none;
+        width: 90px;
+        height: fit-content;
+        float: left;
       }
     }
   }

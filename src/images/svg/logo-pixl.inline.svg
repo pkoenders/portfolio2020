@@ -7,12 +7,18 @@
       <use xlink:href="#logo-pixl.inline-a"/>
     </mask>
     <g mask="url(#logo-pixl.inline-b)">
-      <polygon fill="#972363" points="168 0 0 168 168 168"/>
-      <polygon fill="#B42A76" points="0 0 0 168 168 0"/>
-      <polygon fill="#53A3C1" points="173 173 341 341 341 173" transform="rotate(-90 257 257)"/>
-      <polygon fill="#68C9EE" points="173 341 341 341 173 173" transform="rotate(-90 257 257)"/>
-      <polygon fill="#C6756D" points="173 0 173 168 341 168"/>
-      <polygon fill="#F9CC6D" points="173 0 341 168 341 0"/>
+      <g transform="rotate(-180 170.5 170.5)">
+        <polygon fill="#972363" points="168 0 0 168 168 168"/>
+        <polygon fill="#B42A76" points="0 0 0 168 168 0"/>
+      </g>
+      <g transform="rotate(-90 170.5 -2.5)">
+        <polygon fill="#53A3C1" points="0 0 168 168 168 0" transform="rotate(-90 84 84)"/>
+        <polygon fill="#68C9EE" points="0 168 168 168 0 0" transform="rotate(-90 84 84)"/>
+      </g>
+      <g transform="rotate(-90 84 84)">
+        <polygon fill="#C6756D" points="0 0 0 168 168 168"/>
+        <polygon fill="#F9CC6D" points="0 0 168 168 168 0"/>
+      </g>
     </g>
   </g>
 </svg>

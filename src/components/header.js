@@ -1,16 +1,16 @@
-import { Link } from "gatsby"
 import React from "react"
+import { Link } from "gatsby"
+//import Img from 'gatsby-image'
+import PlaceImage from './image/image'
 import IconCreativeTech from "../images/svg/logo-pixl.inline.svg"
+import EmojiUnemployed from "../images/svg/emoji-unemployed.inline.svg"
+import EmojiToday from "../images/svg/emoji-today-i-am.inline.svg"
+import EmojiWorking from "../images/svg/emoji-working.inline.svg"
 import '../styles/index.scss'
 import "../styles/hamburger.scss"
 import "./header.scss"
 
-
-
-
-
-const Header = ({ location, siteTitle }) => {
-
+const Header = ({ data, location }) => {
   return (
     <>
       <header className="headerNavWrapper fillBground" style={{ top: 0 + 'px' }}>
@@ -33,10 +33,27 @@ const Header = ({ location, siteTitle }) => {
           </div>
 
           <ul>
-            <li> <Link to="/" title="Homepage" >Peter Koenders</Link></li>
-            <li> <Link to="/projects" >My projects</Link></li>
-            <li> <Link to="/contact" >Contact me</Link></li>
-            <li> <a href="/peter-koenders-resumé.pdf" >View my resumé</a></li>
+            <li><Link to="/" title="Homepage" >Peter Koenders</Link></li>
+            <li><Link to="/projects" >My projects</Link></li>
+            <li><Link to="/contact" >Contact me</Link></li>
+            <li><a href="/peter-koenders-resumé.pdf" >View my resumé</a></li>
+            <li className="status">
+              <span>Status</span>
+              <div>
+                {/* <PlaceImage
+                  width='100%'
+                  filename="emoji-unemployed.png"
+                  alt="Unemplyed"
+                /> */}
+
+                <EmojiUnemployed alt="Emoji status - Unemployed" />
+                <EmojiToday alt="Emoji status - Today I am doing.." />
+                <EmojiWorking alt="Emoji status - Working" />
+
+
+
+              </div>
+            </li>
           </ul>
 
         </div>
@@ -44,9 +61,5 @@ const Header = ({ location, siteTitle }) => {
     </>
   )
 };
-
-// const StyledLayout = headerNavWrapper.svg`
-//   display: ${({ path }) => (path === '/' ? 'block' : 'none')};
-// `;
 
 export default Header
