@@ -47,10 +47,8 @@ const Header = ({ data, location }) => {
                 /> */}
 
                 <EmojiUnemployed alt="Emoji status - Unemployed" />
-                <EmojiToday alt="Emoji status - Today I am doing.." />
                 <EmojiWorking alt="Emoji status - Working" />
-
-
+                <EmojiToday alt="Emoji status - Today I am doing.." />
 
               </div>
             </li>

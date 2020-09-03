@@ -127,10 +127,10 @@ header.headerNavWrapper {
       top: 80px;
       position: absolute;
       right: 15px;
-      float: right;
+      left: 15px;
 
       li {
-        float: right;
+        // float: right;
         clear: both;
 
         a,
@@ -172,28 +172,24 @@ header.headerNavWrapper {
       }
 
       li.status {
-        margin-top: 30px;
+        padding-top: 30px;
 
       }
     }
 
     div {
-      float: right;
-      clear: both;
+      //float: right;
+      clear: right;
       width: auto;
+      direction: ltr;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
 
       svg {
         height: 60px;
         width: auto;
-        float: left;
-        margin-left: 15px;
-      }
-
-      div {
-        clear: none;
-        width: 90px;
-        height: fit-content;
-        float: left;
+        margin: 0 0 15px 15px;
       }
     }
   }
