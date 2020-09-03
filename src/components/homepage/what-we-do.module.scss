@@ -75,13 +75,13 @@
         }
 
         @include respond-below(sm) {
-            margin: 0 30px 0px auto;
+            margin: 0 15px 0px auto;
             height: 250px;
             width: 210px;
         }
 
         @include respond-below(xs) {
-            margin: 0 30px 0px auto;
+            margin: 0 15px 0px auto;
             //opacity: .1;
             height: 250px;
             width: 210px;
