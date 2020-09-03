@@ -16,7 +16,7 @@
     padding: $globalSecionPadding;
 
     @include respond-below(lg) {
-        padding: 60px 0 5px 0;
+        padding: 45px 0 5px 0;
     }
 
     h2 {
