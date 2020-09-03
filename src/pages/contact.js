@@ -21,6 +21,9 @@ const Contact = ({ location }) => {
         body  {
           background-color: #96d9df;
         }
+        .section-layout-wide {
+          margin-top:60px !important;
+        }
       `}
       </style>
 

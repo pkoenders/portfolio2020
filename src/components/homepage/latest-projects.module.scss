@@ -16,7 +16,7 @@
     padding: $globalSecionPadding;
 
     @include respond-below(lg) {
-        padding: 100px 0 5px 0;
+        padding: 60px 0 5px 0;
     }
 
     h2 {
@@ -79,7 +79,7 @@
                 flex-basis: calc(100% - 15px);
             }
 
-            margin: 30px;
+            margin: 15px 30px 30px 30px;
 
             @include respond-below(sm) {
                 // margin: 15px 7.5px;

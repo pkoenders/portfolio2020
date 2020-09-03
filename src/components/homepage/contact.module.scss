@@ -10,7 +10,7 @@
     background: linear-gradient(176deg, rgba(194, 242, 247, 1) 0%, rgba(150, 198, 202, 1) 100%);
 
     @include respond-below(md) {
-        padding: 100px 15px 15px 15px;
+        padding: 60px 15px 20px 15px;
     }
 
     h2 {
@@ -22,7 +22,7 @@
     .contactSuccessWrapper {
         display: block;
         max-width: 800px;
-        margin: 0 auto 0;
+        margin: 45px auto 0;
         border-radius: $globalBorderRadiusA;
         background-color: #ffffff;
         box-shadow: $globalBoxShadowA;

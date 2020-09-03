@@ -21,6 +21,9 @@ const Projects = ({ location }) => {
         body  {
           background-color: #efeff0;
         }
+        .section-layout-wide {
+          margin-top:60px !important;
+        }
       `}
       </style>
       <Helmet>
