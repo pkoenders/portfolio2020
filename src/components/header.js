@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 //import Img from 'gatsby-image'
-import PlaceImage from './image/image'
+//import PlaceImage from './image/image'
 import IconCreativeTech from "../images/svg/logo-pixl.inline.svg"
 import EmojiUnemployed from "../images/svg/emoji-unemployed.inline.svg"
 import EmojiToday from "../images/svg/emoji-today-i-am.inline.svg"
