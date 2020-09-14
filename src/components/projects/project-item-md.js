@@ -44,7 +44,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
       `}
       </style>
       <SEO
-        title={frontmatter.title + '- Projects |' + Metadata.site.siteMetadata.title}
+        title={frontmatter.title + ' - Projects | ' + Metadata.site.siteMetadata.title}
         description={frontmatter.intro}
         image={frontmatter.coverimage.childImageSharp.fluid.src}
       />
