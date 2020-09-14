@@ -6,7 +6,9 @@ module.exports = {
     title: `Peter Koenders`,
     description: `Portfolio | Peter Koenders`,
     siteUrl: "https://pkoenders.netlify.app", // No trailing slash allowed!
-    defaultImage: "/images/svg/logo-pixl.inline.svg", // Path to your image you placed in the 'static' folder
+    // defaultImage: "/images/svg/logo-pixl.inline.svg", // Path to your image you placed in the 'static' folder
+    defaultImage: "/images/pkoenders.png", // Path to your image you placed in the 'static' folder
+
     author: "Peter Koenders",
     year: "2020",
   },
