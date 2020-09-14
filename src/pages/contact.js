@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Helmet } from 'react-helmet'
+import SEO from '../components/seo/seo'
 import Layout from "../components/layout"
 import SectionContact from "../components/homepage/contact"
 
@@ -26,12 +26,10 @@ const Contact = ({ location }) => {
         }
       `}
       </style>
-
-      <Helmet>
-        <html lang="en" />
-        <title>Contact | {data.site.siteMetadata.title}</title>
-        <meta name="description" content="I would love to be contacted to discuss work commissions or just hear your thoughts and ideas." />
-      </Helmet>
+      <SEO
+        title={'Contact | ' + data.site.siteMetadata.title}
+        description={'I would love to be contacted to discuss work commissions or just hear your thoughts and ideas.'}
+      />
       <Layout location={location}>
         <SectionContact />
       </Layout >

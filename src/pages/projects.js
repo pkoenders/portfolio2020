@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Helmet } from 'react-helmet'
+import SEO from '../components/seo/seo'
 import Layout from "../components/layout"
 import SectionProjects from "../components/projects/projects-md"
 
@@ -26,11 +26,12 @@ const Projects = ({ location }) => {
         }
       `}
       </style>
-      <Helmet>
-        <html lang="en" />
-        <title>Projects - {data.site.siteMetadata.title}</title>
-        <meta name="description" content="Listing all UI/UX and Grahic design projects." />
-      </Helmet>      <Layout location={location}>
+
+      <SEO
+        title={'Projects | ' + data.site.siteMetadata.title}
+        description={'Listing all UI/UX and Graphic Design projects.'}
+      />
+      <Layout location={location}>
         <SectionProjects />
       </Layout >
     </>

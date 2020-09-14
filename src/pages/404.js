@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { Helmet } from 'react-helmet'
+import SEO from '../components/seo/seo'
 import Layout from "../components/layout"
 import Bground404 from "../components/404-bground"
 import "../styles/index.scss"
@@ -37,11 +37,10 @@ const NotFoundPage = ({ location }) => {
       `}
       </style>
 
-
-      <Helmet>
-        <html lang="en" />
-        <title>Page not found | {data.site.siteMetadata.title}</title>
-      </Helmet>
+      <SEO
+        title={'Page not found | ' + data.site.siteMetadata.title}
+        description={'Error 404, page not found.'}
+      />
 
       <Layout location={location}>
         <Bground404 />

@@ -1,10 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Helmet } from 'react-helmet'
 import Layout from "../components/layout"
 import SectionWhatWeDo from "../components/homepage/what-we-do"
 import SectionLatestProjects from "../components/homepage/latest-projects"
 import SectionContact from "../components/homepage/contact"
+import SEO from '../components/seo/seo'
 
 
 const IndexPage = ({ location }) => {
@@ -21,12 +21,10 @@ const IndexPage = ({ location }) => {
 
   return (
     <>
-      <Helmet>
-        <html lang="en" />
-        <title>A versatile UI/UX designer - Kia ora, Welcome to my portfolio. | {data.site.siteMetadata.title}</title>
-        <meta name="description" content="A versatile UI/UX designer with 20+ years of all-round industry experience." />
-        <meta property="og:image" content="../images/svg/logo-pixel.inline.svg" />
-      </Helmet>
+      <SEO
+        title={'A versatile UI/UX designer - Tēnā koe, Welcome to my portfolio | ' + data.site.siteMetadata.title}
+        description={'A versatile UI/UX designer with 20+ years of all-round industry experience.'}
+      />
       <Layout location={location}>
         <SectionWhatWeDo />
         <SectionLatestProjects />

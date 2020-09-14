@@ -5,6 +5,8 @@ module.exports = {
   siteMetadata: {
     title: `Peter Koenders`,
     description: `Portfolio | Peter Koenders`,
+    siteUrl: "https://pkoenders.netlify.app", // No trailing slash allowed!
+    defaultImage: "/images/svg/logo-pixl.inline.svg", // Path to your image you placed in the 'static' folder
     author: "Peter Koenders",
     year: "2020",
   },
@@ -123,8 +125,16 @@ module.exports = {
       },
     },
 
-    `gatsby-transformer-sharp`,
+    //`gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        // The option defaults to true
+        checkSupportedExtensions: false,
+      },
+    },
 
     {
       resolve: `gatsby-transformer-remark`,

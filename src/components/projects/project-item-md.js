@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
-import { Helmet } from 'react-helmet'
+import SEO from '../seo/seo'
 import projectStyles from './project-item.module.scss'
 import IconOpenExternal from "../../images/svg/icon-open-external.inline.svg"
 import IconNext from "../../images/svg/icon-next.inline.svg"
@@ -43,12 +43,11 @@ const ProjectTemplate = ({ data, pageContext }) => {
         }
       `}
       </style>
-
-      <Helmet data={data}>
-        <html lang="en" />
-        <title>{frontmatter.title} - Projects | {Metadata.site.siteMetadata.title}</title>
-        <meta name="description" content={frontmatter.intro} />
-      </Helmet>
+      <SEO
+        title={frontmatter.title + '- Projects |' + Metadata.site.siteMetadata.title}
+        description={frontmatter.intro}
+        image={frontmatter.coverimage.childImageSharp.fluid.src}
+      />
       <section className={projectStyles.sectionProject + ' section-layout-wide'}>
         <div className={projectStyles.prevNext + ' projects-nav'}>
           <div>
@@ -80,7 +79,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
               <p>
                 {frontmatter.category}<br />
                 {frontmatter.date}<br />
-                <a href={link} title={frontmatter.title} rel="noreferrer" arget="_blank"><IconOpenExternal />{frontmatter.url}</a>
+                <a href={link} title={frontmatter.title} rel="noreferrer" target="_blank"><IconOpenExternal />{frontmatter.url}</a>
               </p>
             </div>
             <div className={projectStyles.contentInner}>
