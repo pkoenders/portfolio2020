@@ -36,22 +36,55 @@ export const onRouteUpdate = () => {
     //     background: '#ffffff',
     // })
 
-
-
-
-
+    "resize reload click keydown keyup orientationchange".split(" ").forEach(function (e) {
+        window.addEventListener(e, () => {
+            resizeAllGridItems()
+        })
+    })
 }
 
 function ready() {
-    //alert('DOM is ready');
-    // document.addEventListener('touchmove', function (e) {
-    //     mobileNav()
-    // });
-    document.querySelector(".headerNavWrapper").style.top = "0";
-    mobileNav()
+    document.addEventListener('click', function (e) {
+        srollNav()
+    })
+
+    resizeAllGridItems()
+    srollNav()
     canvasAnin()
 
 }
+
+// Resize grid
+const resizeGridItem = item => {
+
+    const grid = document.querySelector(".grid"),
+        rowHeight = parseInt(
+            window.getComputedStyle(grid).getPropertyValue("grid-auto-rows")
+        ),
+        rowGap = parseInt(
+            window.getComputedStyle(grid).getPropertyValue("grid-row-gap")
+        ),
+        rowSpan = Math.ceil(
+            // (item.querySelector(".item-content").getBoundingClientRect().height +
+            //     rowGap) /
+            // (rowHeight + rowGap)
+
+            (item.getBoundingClientRect().height +
+                rowGap) /
+            (rowHeight + rowGap)
+        )
+    item.style.gridRowEnd = `span ${rowSpan}`
+    //console.log("Grid updated")
+
+}
+function resizeAllGridItems() {
+    const allItems = document.querySelectorAll(".grid li")
+    for (let x = 0; x < allItems.length; x += 1) {
+        resizeGridItem(allItems[x])
+        //console.log("allItems = " + allItems)
+    }
+}
+
 
 function canvasAnin() {
     var animsToRun = [
@@ -107,86 +140,40 @@ function runCanvasAnin(animItem) {
     }
 }
 
-function toggleMobileNavOnClick(headerNavWrapper, hamBurgerBtn, headerDiv, headerDivNav, headerDivLogo) {
 
 
-    hamBurgerBtn.addEventListener("click", function () {
-        //headerDiv.scrollTop = 0
-        //console.log('Hamburger Clicked')
-
-        if (!headerDiv.classList.contains("open")) {
-            headerDiv.classList.add("open", "fillBground")
-            hamBurgerBtn.classList.add("is-active")
-
-            // headerNavWrapper.classList.add("fillBground")
-            //headerNavWrapper.style.zIndex = "100004";
-
-            // window.onscroll = function () {
-            //     headerWrapper.style.top = "0";
-            // }
-
-        } else {
-            headerDiv.classList.remove("open", "fillBground")
-            hamBurgerBtn.classList.remove("is-active")
-            //headerNavWrapper.style.zIndex = "100000";
-        }
-
-
-    });
-
-    headerDivNav.addEventListener("click", function () {
-        headerDiv.classList.remove("open", "fillBground")
-        hamBurgerBtn.classList.remove("is-active")
-        //headerNavWrapper.style.zIndex = "100000";
-    });
-
-    headerDivLogo.addEventListener("click", function () {
-        headerDiv.classList.remove("open", "fillBground")
-        hamBurgerBtn.classList.remove("is-active")
-        //headerNavWrapper.style.zIndex = "100000";
-    });
-
-}
-
-function mobileNav() {
+function srollNav() {
+    const contentStart = document.querySelector(".contentStart")
     const headerNavWrapper = document.querySelector(".headerNavWrapper")
-    const headerDivLogo = document.querySelector(".headerNavWrapper a ")
+    const secondaryNav = document.querySelector(".secondaryNav")
     const hamBurgerBtn = document.querySelector(".hamburger")
-    const headerDiv = document.querySelector(".header-nav")
-    const headerDivNav = document.querySelector(".header-nav ul ")
-
-    const contentStart = document.querySelector(".contentStart");
-
-
     var prevScrollpos = 0;
     // No errors
-    var projectsNav = document.querySelector('.projects-nav');
-
-    //console.log('prevScrollpos = ' + prevScrollpos)
-
 
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
         if ((prevScrollpos >= currentScrollPos) || (hamBurgerBtn.classList.contains("is-active"))) {
-            document.querySelector(".headerNavWrapper").style.top = "0";
-            if (projectsNav) {
-                projectsNav.style.top = "50px";
+            headerNavWrapper.classList.remove("slide")
+            // toggleMainMenu.classList.remove("slide")
+            if (secondaryNav) {
+                secondaryNav.classList.remove("slide")
             }
-
         } else {
-            document.querySelector(".headerNavWrapper").style.top = "-61px";
-            if (projectsNav) {
-                projectsNav.style.top = "-10px";
+            headerNavWrapper.classList.add("slide")
+            // toggleMainMenu.classList.add("slide")
+            if (secondaryNav) {
+                secondaryNav.classList.add("slide")
             }
         }
-
-
 
         if (contentStart) {
             var rect = contentStart.getBoundingClientRect()
             headerNavWrapper.classList.remove("fillBground")
+            var rectHeight = rect.top
+            //console.log(rectHeight)
             //console.log(rect.top);
-            if (rect.top <= 61) {
+            //if (rect.bottom <= 61) {
+            if (rectHeight <= -60) {
                 headerNavWrapper.classList.add("fillBground")
             } else {
                 headerNavWrapper.classList.remove("fillBground")
@@ -199,5 +186,18 @@ function mobileNav() {
         prevScrollpos = currentScrollPos;
     }
 
-    toggleMobileNavOnClick(headerNavWrapper, hamBurgerBtn, headerDiv, headerDivNav, headerDivLogo)
+    if (contentStart) {
+        var rect = contentStart.getBoundingClientRect()
+        headerNavWrapper.classList.remove("fillBground")
+        headerNavWrapper.classList.remove("fillBgroundQuick")
+        //console.log(rect.top);
+        if (rect.bottom <= 61) {
+            headerNavWrapper.classList.add("fillBground")
+        } else {
+            headerNavWrapper.classList.remove("fillBground")
+            headerNavWrapper.classList.remove("fillBgroundQuick")
+        }
+    } else {
+        headerNavWrapper.classList.add("fillBgroundQuick")
+    }
 }

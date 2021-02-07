@@ -1,0 +1,82 @@
+@import "src/styles/scss";
+
+.wrapper {
+    z-index: 100;
+    position: sticky;
+
+    padding: 15px 0 15px 0;
+    background-color: #ffffff;
+    //background-color: #99dfbe;
+    background-color: #96D8F3;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    will-change: transform;
+    transition: all .25s linear;
+    border-bottom: 1px solid #efeff0;
+    box-shadow: $globalBoxShadowB;
+
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        align-items: center;
+        flex-basis: 100%;
+
+        @include respond-below(md) {
+            width: 100%;
+            position: relative;
+            top: 0px;
+        }
+
+        @include respond-below(md) {
+            flex-basis: 100%;
+        }
+
+        button,
+        a {
+            @include secondayNavTxt;
+            display: flex;
+            align-items: center;
+            margin: 0 5px 0 0;
+            padding: 0;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            text-align: left;
+
+            i {
+                pointer-events: none;
+                font-size: 24px;
+            }
+        }
+
+        .alignRight {
+            display: flex;
+            align-items: center;
+            margin: 0 0 0 auto;
+
+            button:last-child,
+            a:last-child {
+                margin: 0 0 0 15px !important;
+                text-align: right;
+            }
+        }
+
+        button:hover,
+        a:hover {
+            outline: none;
+            color: $tertiaryColor;
+            color: $secondaryColor;
+            color: $primaryColor;
+            text-decoration: none;
+
+            i {
+                color: inherit;
+            }
+        }
+    }
+}

@@ -1,16 +1,7 @@
 @import "src/styles/scss";
 
 .latestProjectsSection {
-    background-color: #efeff0;
-    background-color: #657688;
-    background-color: #efeff0;
-    background-color: #253240;
-
-    // background: rgb(65, 87, 111);
-    // background: radial-gradient(circle, rgba(65, 87, 111, 1) 0%, rgba(37, 50, 64, 1) 100%);
-
-    background: rgb(288, 288, 288);
-    background: linear-gradient(174deg, rgba(288, 288, 288, 1) 0%, rgba(208, 208, 210, 1) 83%);
+    background-color: #ffffff;
 
 
     padding: $globalSecionPadding;
@@ -28,102 +19,74 @@
         max-width: 1200px;
         margin: 0 auto;
 
+        @include respond-below(lg) {
+            padding: 15px;
+        }
+
         p {
             width: 50%;
             color: #ffffff;
             margin: 30px auto;
 
-
         }
-
 
         ul {
-
-            // display: grid;
-            // padding: 0 15px;
-            // grid-template-columns: repeat(2, [col] 1fr);
-            // // grid-template-rows: repeat(5, [row] auto);
-            // grid-column-gap: 30px;
-            // grid-row-gap: 30px;
-
-            display: flex;
-            flex-wrap: wrap;
-            /*  allow items to wrap  */
-            justify-content: center;
-
-            text-align: center;
+            display: grid;
+            position: relative;
+            grid-gap: 30px 60px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 0;
             list-style: none;
-            margin: 0;
+            margin: 0px;
+            align-content: space-between;
+            justify-content: space-around;
 
-            width: 100%;
-            padding: 0px;
-
-            @include respond-below(sm) {
-                padding: 7.5px;
+            @include respond-below(lg) {
+                grid-template-columns: repeat(2, 1fr);
             }
 
+            // @include respond-below(md) {
+            //     grid-template-columns: repeat(2, 1fr);
+            // }
+
+            @include respond-below(sm) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            @include respond-below(xs) {
+                grid-gap: 30px;
+                // grid-template-columns: repeat(1, 1fr);
+            }
         }
 
+
         ul li {
-
-
+            // margin-bottom: 30px;
+            display: block;
             position: relative;
-            flex-basis: calc(50% - 60px);
+            height: max-content;
+            z-index: 5;
+            width: 100%;
 
-            @include respond-below(md) {
-                flex-basis: calc(50% - 30px);
-                margin: 15px;
-            }
-
-            @include respond-below(sm) {
-                flex-basis: calc(100% - 15px);
-                // border-bottom: 1px solid #d8d8d8;
-                margin-bottom: 30px;
-            }
-
-            margin: 15px 30px 30px 30px;
-
-            @include respond-below(sm) {
-                // margin: 15px 7.5px;
-            }
-
-            vertical-align: top;
-            // border-radius: $globalBorderRadiusA;
-            //overflow: hidden;
-            //box-shadow: $globalBoxShadowA;
-            //box-shadow: 0 0 10px 0 #a49e9e;
-            // background-color: #ffffff;
-            //border-radius: 5px;
-
-
-            //padding: 30px;
             a {
                 color: $txtColor !important;
-                //background-color: #ffffff;
                 width: 100%;
                 height: 100%;
+                height: max-content;
                 display: block;
-                //overflow: hidden;
+                //  position: relative;
 
-                >div {
+                div {
 
                     border-radius: $globalBorderRadiusA;
                     overflow: hidden;
                     box-shadow: $globalBoxShadowA;
                     border: 1px solid #ffffff;
 
-                    >div {}
-
                     img {
-
-
-                        display: block;
-                        width: 100% !important;
-                        height: auto !important;
-                        margin: 0;
-                        border-radius: 0px;
                         transition: all 0.2s ease-in-out !important;
 
+                        // transform: scale(1.0);
 
                         //filter: grayscale(100%);
                         @include respond-below(sm) {
@@ -135,13 +98,9 @@
                 span {
                     display: block;
                     padding: 20px 15px;
-                    //border-top: 1px solid #2e3e4f;
+                    text-align: center;
 
-
-
-                    //color: $primaryColor;
                     p {
-                        text-align: center;
                         padding: 0px;
                         width: 100%;
                         margin: 010px 0 0 0;
@@ -162,13 +121,9 @@
             }
 
             a:hover {
-                //color: #ffffff !important;
                 text-decoration: none !important;
                 color: $primaryColor !important;
 
-                // *img {
-                //     filter: grayscale(100%);
-                // }
                 h3 {
                     text-decoration: underline;
                 }

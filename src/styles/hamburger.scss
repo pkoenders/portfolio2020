@@ -1,60 +1,46 @@
 @import "../styles/media-queries";
 @import "./hamburgers/hamburgers";
 
+.hamburger:hover,
+.hamburger.is-active:hover {
+  opacity: 1;
+}
+
 .hamburger {
   position: relative;
-  //display: none;
-  //position: fixed;
-  //right: 5px;
-  //top: 0px;
   z-index: 3002;
-  //height: 50px;
-  //padding: 13px 0px !important;
   padding: 0 10px;
 
 
   .hamburger-box {
-    // width: 30px;
-
-    //height: 20px;
-    height: 12px;
+    //height: 12px;
     width: 30px;
-    margin-right: 10px;
-
+    margin-right: 0px;
 
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
       width: 30px;
       height: 2px;
-      background-color: #bfbfbf;
-      //float: left;
-
+      background-color: #ffffff;
       border-radius: 1.5px;
     }
 
     .hamburger-inner {
       width: 20px;
-      right: 0px;
+      left: 0px;
     }
 
     .hamburger-inner::before,
     .hamburger-inner::after {
-      right: 0px;
+      left: 0px;
     }
   }
 
   .hamburger-label {
-    color: #bfbfbf;
     color: #ffffff;
-
-    float: right;
-    font-size: .7rem;
-    font-weight: 300;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    //display: flex;
-    margin: 0px 0px 0 0;
+    float: left;
+    margin: 0px 8px 0 0;
   }
 }
 
@@ -63,7 +49,7 @@
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
-    background-color: #bfbfbf;
+    background-color: #ffffff;
   }
 
   .hamburger-inner {

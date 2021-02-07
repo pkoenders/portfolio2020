@@ -18,9 +18,6 @@ const Projects = ({ location }) => {
     <>
       <style type="text/css">
         {`
-        body  {
-          background-color: #efeff0;
-        }
         .section-layout-wide {
           margin-top:60px !important;
         }

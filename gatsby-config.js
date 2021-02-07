@@ -10,7 +10,7 @@ module.exports = {
     defaultImage: "/images/pkoenders.png", // Path to your image you placed in the 'static' folder
 
     author: "Peter Koenders",
-    year: "2020",
+    year: "2021",
   },
   plugins: [
 
@@ -34,12 +34,6 @@ module.exports = {
       },
     },
 
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        enableIdentityWidget: true,
-      }
-    },
 
     `gatsby-plugin-sass`,
 
@@ -61,26 +55,42 @@ module.exports = {
     },
 
     {
-      resolve: `gatsby-plugin-google-fonts-v2`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            variable: true,
-            weights: [`300..700`],
-          },
-          {
-            family: `Roboto Slab`,
-            variable: true,
-            weights: [`300..700`],
-          },
-          {
-            family: `Spectral`,
-            variable: true,
-            weights: [`400..700`],
-          },
+        fonts: {
+          google: [
+            {
+              family: `Material+Icons`,
+              // fontDisplay: 'swap',
+              strategy: 'base64', // 'base64' || 'cdn'
+            },
 
-        ],
+            {
+              family: "Roboto",
+              variants: ["300", "400", "500", "700"],
+              // fontDisplay: 'swap',
+              strategy: 'base64', // 'base64' || 'cdn'
+            },
+            {
+              family: "Roboto+Slab",
+              variants: ["400", "600", "700", "900"],
+              // fontDisplay: 'swap',
+              strategy: 'base64',
+            },
+
+
+          ],
+        },
+        // formatAgents: {
+        //   eot: `Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)`,
+        //   ttf: `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.8 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.8`,
+        //   woff: `Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; rv:11.0) like Gecko`,
+        //   woff2: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; ServiceUI 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393`,
+        // },
+        // formats: ['woff2', 'woff'],
+        useMinify: true,
+        //sePreload: true,
+        // usePreconnect: false,
       },
     },
 
@@ -122,10 +132,11 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `projects`,
-        path: `${__dirname}/src/content/netlifycms/`,
+        name: `blog-md`,
+        path: `${__dirname}/src/content/blog-md/`,
       },
     },
+
 
     //`gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

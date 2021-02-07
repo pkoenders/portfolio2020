@@ -1,11 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import SEO from '../seo/seo'
 import projectStyles from './project-item.module.scss'
-import IconOpenExternal from "../../images/svg/icon-open-external.inline.svg"
-import IconNext from "../../images/svg/icon-next.inline.svg"
-import IconPrev from "../../images/svg/icon-prev.inline.svg"
+
 
 
 
@@ -30,16 +28,12 @@ const ProjectTemplate = ({ data, pageContext }) => {
   //const link = "http://" + frontmatter.url
   const link = frontmatter.url
 
-  const { next, previous } = pageContext
-
   return (
     <>
       <style type="text/css">
         {`
         body  {
-          background-color: #efeff0;
-          background: rgb(255,255,255);
-          background: linear-gradient(158deg, rgba(255,255,255,1) 0%, rgba(186,186,186,1) 100%);
+          background-color: #ffffff;
         }
       `}
       </style>
@@ -49,29 +43,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
         image={frontmatter.coverimage.childImageSharp.fluid.src}
       />
       <section className={projectStyles.sectionProject + ' section-layout-wide'}>
-        <div className={projectStyles.prevNext + ' projects-nav'}>
-          <div>
-            {previous &&
-              <Link
-                className={projectStyles.prev}
-                to={`/projects/${previous.frontmatter.slug}`}
-              >
-                <IconPrev />
-                <span>Previous</span>
 
-              </Link>
-            }
-            {next &&
-              <Link
-                className={projectStyles.next}
-                to={`/projects/${next.frontmatter.slug}`}
-              >
-                <span>Next</span>
-                <IconNext />
-              </Link>
-            }
-          </div>
-        </div>
         <div className={projectStyles.sectionProjectWrapper}>
           <div className={projectStyles.content}>
             <div className={projectStyles.header}>
@@ -79,7 +51,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
               <p>
                 {frontmatter.category}<br />
                 {frontmatter.date}<br />
-                <a href={link} title={frontmatter.title} rel="noreferrer" target="_blank"><IconOpenExternal />{frontmatter.url}</a>
+                <a href={link} title={frontmatter.title} rel="noreferrer" target="_blank"><i className={"material-icons"} aria-hidden="true">launch</i>{frontmatter.url}</a>
               </p>
             </div>
             <div className={projectStyles.contentInner}>

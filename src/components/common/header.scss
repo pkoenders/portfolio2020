@@ -1,0 +1,247 @@
+@import "src/styles/scss";
+
+
+
+header.headerNavWrapper.slide {
+  // will-change: transform;
+  // transition: translate 1.4s;
+  transform: translate(0, -61px);
+}
+
+header.headerNavWrapper {
+  position: fixed;
+
+  //width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100000;
+  will-change: transform;
+  transition: all .4s;
+  height: 60px;
+
+  nav.headerNav {
+    z-index: 1001;
+    min-width: 130px;
+    //background-color: $headerBgColor;
+    background-color: #25324000;
+    transition: all 0.4s;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+
+
+    a.brand {
+      order: 0;
+      display: flex;
+      // align-items: stretch;
+      padding: 5px 12px 5px 15px;
+      height: 45px;
+      margin: auto 0 auto auto;
+      //margin: 0;
+      z-index: 1003;
+      position: absolute;
+      //align-self: center;
+      top: 7.5px;
+      right: 3px;
+
+      @include respond-below(sm) {
+        order: 1;
+      }
+
+      span {
+        display: none;
+      }
+
+
+      svg {
+        // 
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    a.brand.homePage {
+      @include respond-below(sm) {
+        display: none;
+      }
+    }
+
+    a:focus {
+      outline: none;
+    }
+
+    a:focus-visible {
+      @include focusVisibleForDark;
+    }
+
+    a:-moz-focusring {
+      @include focusVisibleForDark;
+    }
+
+    button {
+      order: 0;
+      //display: none;
+      display: flex;
+      position: absolute;
+      left: 0px;
+      margin: 3px 0 auto 3px;
+      width: fit-content;
+      white-space: nowrap;
+      align-items: center;
+      height: 56px;
+      padding: 0 15px;
+      background-color: $headerBgColor;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      span {
+        @include headerTxt;
+      }
+
+      @include respond-below(sm) {
+        display: flex;
+      }
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    button:focus-visible {
+      @include focusVisibleForDark;
+    }
+
+    button:-moz-focusring {
+      @include focusVisibleForDark;
+    }
+
+    ul {
+      justify-self: start;
+      display: none;
+      list-style: none;
+      padding: 3px 0 120px 3px;
+      margin: 0;
+      top: 60px;
+      left: 0px;
+      position: relative;
+      width: 100%;
+      overflow-x: scroll;
+
+      li {
+        display: block;
+        clear: both;
+
+        a,
+        p,
+        span,
+        button {
+
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          font-weight: 300;
+          color: #ffffff;
+          padding: 15px 60px;
+          position: relative;
+          text-align: left;
+          display: inline-block;
+          cursor: pointer;
+          z-index: 10000;
+        }
+
+        i {
+          padding: 0;
+          margin: 0 0 0 15px;
+          font-size: 28px;
+          width: auto;
+          vertical-align: middle;
+        }
+
+        a:hover {
+          text-decoration: none !important;
+        }
+
+        a.activeNavItem {
+          pointer-events: none !important;
+          border-left: 5px solid $primaryColorA;
+          margin-left: -5px;
+        }
+
+        a:after,
+        button:after {
+          content: '';
+          position: absolute;
+          bottom: 0px;
+          display: flex;
+          border-radius: 1.5px;
+          background-color: $primaryColorA;
+          height: 1px;
+          width: 0;
+          left: -3px;
+          transition: width 150ms ease-in-out;
+        }
+
+        a:hover:after,
+        button:hover:after {
+          width: 100%;
+        }
+      }
+
+      li.hide {
+        display: block;
+      }
+    }
+
+  }
+
+  nav.open {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 100vh;
+    max-width: 100%;
+    border: none;
+    background: $headerBgColor;
+
+    >a {
+      display: none;
+    }
+
+    ul {
+      display: block;
+    }
+  }
+}
+
+
+
+header.headerNavWrapper::before {
+  content: "";
+  background-color: $headerBgColor;
+  opacity: .0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  will-change: transform;
+  transition: opacity 0.4s;
+  transition-timing-function: ease-in;
+}
+
+header.headerNavWrapper.fillBground::before {
+  opacity: 1;
+
+}
+
+header.headerNavWrapper.fillBgroundQuick::before {
+  opacity: 1;
+  transition: opacity 0s;
+  @include minNavBottomBorder;
+}

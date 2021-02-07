@@ -6,8 +6,7 @@
 
     padding: $globalSecionPadding;
 
-    background: rgb(194, 242, 247);
-    background: linear-gradient(176deg, rgba(194, 242, 247, 1) 0%, rgba(150, 198, 202, 1) 100%);
+    background-color: $tertiaryColorA;
 
     @include respond-below(md) {
         padding: 45px 15px 20px 15px;
@@ -47,6 +46,7 @@
             }
 
             p {
+
                 a {
                     text-decoration: none;
                     font-weight: bold;
@@ -54,12 +54,12 @@
                     color: $primaryColor;
                     white-space: nowrap;
 
-                    .contactIconPhone {
-                        display: inline-block;
+                    i {
                         vertical-align: middle;
-                        width: 20px;
-                        height: auto;
-                        margin: 0px 0px 0 1px;
+                        display: inline-flex;
+                        align-self: center;
+                        font-size: 28px;
+                        margin: auto 1px auto 0;
                     }
                 }
             }

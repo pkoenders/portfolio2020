@@ -18,9 +18,7 @@ const Contact = ({ location }) => {
     <>
       <style type="text/css">
         {`
-        body  {
-          background-color: #C1F1F6;
-        }
+       
         .section-layout-wide {
           margin-top:60px !important;
         }

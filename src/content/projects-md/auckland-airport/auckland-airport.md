@@ -6,7 +6,7 @@
     url: http://aucklandairport.co.nz   
     addtohomepage: true
     title: Auckland Airport - Concierge Service
-    coverimage: ./thumb@2x.jpg
+    coverimage: ./thumb@2x.png
     intro: Web design - Wireframes & UI design.
 ---
 

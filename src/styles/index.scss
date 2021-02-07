@@ -14,6 +14,12 @@ body {
   }
 }
 
+.secondaryNav.slide {
+  will-change: transform;
+  transition: all .4s;
+  top: 0px;
+}
+
 
 ::selection {
   background-color: #B3D7FE;
@@ -34,6 +40,23 @@ canvas {
 
 #gatsby-announcer {
   color: #ffffff !important;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
 }
 
 .section-layout {
@@ -80,6 +103,20 @@ a:hover {
 a:hover {
   color: $primaryColor;
   text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  @include focusVisibleForDark;
 }
 
 

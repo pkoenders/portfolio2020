@@ -1,6 +1,6 @@
 import React from 'react'
 import whatWeDoStyles from './what-we-do.module.scss'
-import IconCreativeTech from "../../images/svg/logo-pixl.inline.svg"
+import PixlLogo from "../../images/svg/logo-pixl.inline.svg"
 import IconDevelopment from "../../images/svg/icon-development.inline.svg"
 import Pkoenders from "../../images/svg/pkoenders.inline.svg"
 //import Pkoenders from "../../images/svg/pkoenders-anim.inline.svg"
@@ -15,7 +15,7 @@ const WhatWeDo = () => {
 
                 <div className={whatWeDoStyles.intro}>
                     <div className={whatWeDoStyles.introWrapper}>
-                        <h1><strong> <IconCreativeTech />Tēnā koe, </strong><span>Welcome to my portfolio.</span></h1>
+                        <h1><strong> <PixlLogo />Tēnā koe, </strong><span>Welcome to my portfolio.</span></h1>
                     </div>
                 </div>
 

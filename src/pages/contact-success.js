@@ -20,10 +20,6 @@ const ContactSuccess = ({ location }) => {
     <>
       <style type="text/css">
         {`
-        body  {
-          background: rgb(194, 242, 247);
-          background: linear-gradient(176deg, rgba(194, 242, 247, 1) 0%, rgba(150, 198, 202, 1) 100%);
-        }
         .section-layout-wide {
           margin-top:60px !important;
         }

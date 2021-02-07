@@ -24,7 +24,7 @@ const LatestProjects = () => {
                         title
                         coverimage{
                             childImageSharp {
-                                fluid(maxWidth: 720, maxHeight: 460, quality: 50) {
+                                fluid(maxWidth: 720, maxHeight: 455, quality: 50) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
@@ -42,16 +42,17 @@ const LatestProjects = () => {
         <section className={latestProjectsStyles.latestProjectsSection + ' section-layout-wide'}>
             <h2>My latest projects</h2>
             <div className={latestProjectsStyles.wrapper}>
-                <ul>
+                <ul className={"grid"}>
                     {data.allMarkdownRemark.edges.map((edge, i) => {
                         if (edge.node.frontmatter.addtohomepage === true) {
                             return (
                                 <li
                                     key={i}
-                                    data-sal="fade"
-                                    data-sal-duration="300"
-                                    data-sal-easing="ease" >
-                                    <Link to={`/projects/${edge.node.frontmatter.slug}`}>
+                                    // data-sal="fade"
+                                    // data-sal-duration="300"
+                                    // data-sal-easing="ease"
+                                    className={"item"} >
+                                    <Link to={`/projects/${edge.node.frontmatter.slug}`} className={'item-content'}>
                                         <Img
                                             alt={edge.node.frontmatter.title}
                                             fluid={edge.node.frontmatter.coverimage.childImageSharp.fluid}

@@ -1,13 +1,12 @@
 import React from 'react'
 import introStyles from './intro.module.scss'
-import IconCreativeTech from "../../images/svg/icon-creative-tech.inline.svg"
-
+import LogoPixel from "../../images/svg/logo-pixel.inline.svg"
 const Intro = () => {
 
     return (
         <section className='section-layout'>
             <div className={introStyles.intro}>
-                <IconCreativeTech />
+                <LogoPixel />
                 <h1>Kia ora, <br />
                     Welcome, to the portfolio od Peter Koenders.
                 </h1>

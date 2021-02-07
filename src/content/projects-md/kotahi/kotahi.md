@@ -6,7 +6,7 @@
     url: http://kotahi.com
     addtohomepage: true
     title: Kotahi - Web application
-    coverimage: ./thumb@2x.jpg
+    coverimage: ./thumb@2x.png
     intro: Web application. UI Design, HTML prototypes & templates.
 ---
 
