@@ -84,7 +84,6 @@ header.headerNavWrapper {
 
     button {
       order: 0;
-      //display: none;
       display: flex;
       position: absolute;
       left: 0px;
@@ -94,7 +93,7 @@ header.headerNavWrapper {
       align-items: center;
       height: 56px;
       padding: 0 12px;
-      //background-color: $headerBgColor;
+      background-color: $headerBgColor;
       background-color: transparent;
       border: none;
       cursor: pointer;
