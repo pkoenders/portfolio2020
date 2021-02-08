@@ -52,6 +52,7 @@ const FormContact = ({ location }) => {
         }).then(res => {
             if (res.ok) {
                 setSuccessMsg(` `)
+                document.querySelector('.contactForm').classList.add('hide')
                 document.querySelector('.inputFields').classList.add('hide')
             }
         }).catch(error =>
@@ -61,32 +62,32 @@ const FormContact = ({ location }) => {
     }
 
     return (
-        <form
-            className={contactStyles.contactFormInput}
-            name="ContactForm"
-            method="post"
-            data-netlify="true"
-            onSubmit={handleSubmit}
-        >
-            <input type="hidden" name="form-name" value="ContactForm" />
-            <input type="hidden" name="location" value={location.pathname} />
-            <span className={'inputFields'}>
-                <InputName inputName={inputName} onNameChange={onNameChange} />
-                <InputEmail inputEmail={inputEmail} onEmailChange={onEmailChange} />
-                <InputSubject inputSubject={inputSubject} onSubjectChange={onSubjectChange} />
-                <InputMessage inputMessage={inputMessage} onMessageChange={onMessageChange} />
-                <FormSubmit />
-            </span>
+        <>
+            <form
+                className={contactStyles.contactFormInput}
+                name="ContactForm"
+                method="post"
+                data-netlify="true"
+                onSubmit={handleSubmit}
+            >
+                <input type="hidden" name="form-name" value="ContactForm" />
+                <input type="hidden" name="location" value={location.pathname} />
+                <span className={'inputFields'}>
+                    <InputName inputName={inputName} onNameChange={onNameChange} />
+                    <InputEmail inputEmail={inputEmail} onEmailChange={onEmailChange} />
+                    <InputSubject inputSubject={inputSubject} onSubjectChange={onSubjectChange} />
+                    <InputMessage inputMessage={inputMessage} onMessageChange={onMessageChange} />
+                    <FormSubmit />
+                </span>
 
-            {errorMessage &&
-                <SubmitError />
-            }
-            {successMessage &&
-                <SubmitThankYou />
-            }
-            {/* <SubmitError />
-            <SubmitThankYou /> */}
-        </form>
+                {errorMessage &&
+                    <SubmitError />
+                }
+                {successMessage &&
+                    <SubmitThankYou />
+                }
+            </form>
+        </>
     )
 }
 

@@ -64,35 +64,35 @@
                     }
                 }
             }
+        }
 
-            form {
-                span {
-                    label {
-                        display: block;
-                        margin-bottom: 15px;
+        form {
+            span {
+                label {
+                    display: block;
+                    margin-bottom: 15px;
 
-                        input,
-                        textarea {
-                            margin-top: 5px;
-                            background-color: #e4f4fb;
-                            border: 1px solid $tertiaryColorA;
-                        }
+                    input,
+                    textarea {
+                        margin-top: 5px;
+                        background-color: #e4f4fb;
+                        border: 1px solid $tertiaryColorA;
                     }
+                }
 
-                    // label:last-of-type {
-                    //     margin-bottom: 30px;
-                    // }
+                // label:last-of-type {
+                //     margin-bottom: 30px;
+                // }
 
-                    button {
-                        display: flex;
-                        margin: 30px auto;
-                        align-items: center;
-                        line-height: initial;
-                        padding: 15px 30px;
+                button {
+                    display: flex;
+                    margin: 30px auto;
+                    align-items: center;
+                    line-height: initial;
+                    padding: 15px 30px;
 
-                        i {
-                            margin-right: 10px;
-                        }
+                    i {
+                        margin-right: 10px;
                     }
                 }
             }
