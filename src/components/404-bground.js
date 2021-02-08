@@ -22,11 +22,8 @@ const BackgroundSection = ({ className }) => (
       const imageData = data.desktop.childImageSharp.fluid
       return (
         <BackgroundImage
-          Tag="section"
           className={className}
           fluid={imageData}
-          color={`#ffffff`}
-          backgroundColor={`#000000`}
         >
         </BackgroundImage>
       )
@@ -44,9 +41,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-size: cover;
   position: absolute !important;
   top:0px;
-    z-index: -1 !important;
-
-
+  z-index: -1 !important;
 `
 
 export default StyledBackgroundSection

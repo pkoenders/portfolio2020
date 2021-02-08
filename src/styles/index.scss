@@ -154,12 +154,22 @@ button.buttonSecondary button.buttonTertiary,
   background-color: $primaryColor;
   color: #ffffff !important;
   box-shadow: 0px 0px 5px 0px rgba(35, 35, 35, 0.5);
+
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  line-height: initial;
+  width: fit-content;
+
+  i {
+    margin-right: 10px;
+  }
 }
 
 button.buttonPrimaryGhost,
 .buttonPrimaryGhost {
-  background-color: #25324091;
-  border: 1px solid $primaryColor;
+  background-color: #EB568650;
+  border: 3px solid $primaryColor;
 
 }
 

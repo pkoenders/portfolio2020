@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import SEO from '../components/seo/seo'
 import Layout from "../components/layout"
-import SectionContact from "../components/homepage/contact"
+import SectionContact from "../components/forms/contact"
 
 const Contact = ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -29,7 +29,7 @@ const Contact = ({ location }) => {
         description={'I would love to be contacted to discuss work commissions or just hear your thoughts and ideas.'}
       />
       <Layout location={location}>
-        <SectionContact />
+        <SectionContact location={location} />
       </Layout >
     </>
   )

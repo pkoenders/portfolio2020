@@ -285,9 +285,8 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  $tertiaryColor: #1AACE5;
   border: 1px solid $tertiaryColor !important;
-  border-bottom: 2px solid $tertiaryColor !important;
+  // border-bottom: 2px solid $tertiaryColor !important;
   border-radius: 2px;
   outline: none;
   -webkit-text-fill-color: $txtColor;

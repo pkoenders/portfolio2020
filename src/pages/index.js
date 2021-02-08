@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SectionWhatWeDo from "../components/homepage/what-we-do"
 import SectionLatestProjects from "../components/homepage/latest-projects"
-import SectionContact from "../components/homepage/contact"
+import SectionContact from "../components/forms/contact"
 import SEO from '../components/seo/seo'
 
 
@@ -28,7 +28,7 @@ const IndexPage = ({ location }) => {
       <Layout location={location}>
         <SectionWhatWeDo />
         <SectionLatestProjects />
-        <SectionContact />
+        <SectionContact location={location} />
       </Layout>
     </>
   )

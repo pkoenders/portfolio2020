@@ -1,0 +1,101 @@
+@import "src/styles/scss";
+
+.contactFormSection,
+.contactFormSectionSuccess {
+    padding: $globalSecionPadding;
+    background-color: $tertiaryColorA;
+
+
+    h2 {
+        text-align: center;
+    }
+
+    @include respond-below(md) {
+        padding: 20px 15px 15px;
+    }
+
+    @include respond-below(sm) {
+        padding: 0px;
+    }
+
+    .contactFormWrapper,
+    .contactSuccessWrapper {
+        display: block;
+        max-width: 992px;
+        margin: 0 auto;
+        border-radius: $globalBorderRadiusA;
+        background-color: #ffffff;
+        box-shadow: $globalBoxShadowB;
+
+
+
+        .contactForm {
+            display: block;
+            padding: 30px;
+
+
+
+            @include respond-below(sm) {
+                padding: 30px 15px 15px;
+            }
+
+            svg {
+                width: 90px;
+                height: auto;
+                display: block;
+                margin: 30px auto;
+            }
+
+            p {
+
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: inherit;
+                    color: $primaryColor;
+                    white-space: nowrap;
+
+                    i {
+                        vertical-align: middle;
+                        display: inline-flex;
+                        align-self: center;
+                        font-size: 28px;
+                        margin: auto 1px auto 0;
+                    }
+                }
+            }
+
+            form {
+                span {
+                    label {
+                        display: block;
+                        margin-bottom: 15px;
+
+                        input,
+                        textarea {
+                            margin-top: 5px;
+                            background-color: #e4f4fb;
+                            border: 1px solid $tertiaryColorA;
+                        }
+                    }
+
+                    // label:last-of-type {
+                    //     margin-bottom: 30px;
+                    // }
+
+                    button {
+                        display: flex;
+                        margin: 30px auto;
+                        align-items: center;
+                        line-height: initial;
+                        padding: 15px 30px;
+
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
