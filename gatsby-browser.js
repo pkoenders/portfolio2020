@@ -173,7 +173,7 @@ function srollNav() {
             //console.log(rectHeight)
             //console.log(rect.top);
             //if (rect.bottom <= 61) {
-            if (rectHeight <= -60) {
+            if (rectHeight <= 60) {
                 headerNavWrapper.classList.add("fillBground")
             } else {
                 headerNavWrapper.classList.remove("fillBground")
