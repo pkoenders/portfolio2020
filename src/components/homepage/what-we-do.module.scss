@@ -278,9 +278,14 @@ section.whatWeDoWrapper {
         text-align: center;
         color: #2d1330;
         background-color: $tertiaryColorA;
+        border-right: 1px solid #ffffff;
+
+        @include respond-below(sm) {
+            border-right: none;
+        }
 
         div {
-            padding: 45px 60px 30px 60px;
+            padding: 60px;
             overflow: hidden;
             box-shadow: none;
             width: 50%;
@@ -292,11 +297,9 @@ section.whatWeDoWrapper {
             }
 
 
-
             h2,
             p,
             li {
-
                 margin-block-end: 0;
                 -webkit-margin-after: 0;
             }
@@ -309,7 +312,7 @@ section.whatWeDoWrapper {
             display: block;
             align-self: stretch;
             height: 100%;
-            padding: 45px 60px 30px 60px;
+            padding: 60px;
             background-color: $secondaryColorA;
             text-align: left;
             border-top: 1px solid #ffffff;
@@ -352,7 +355,7 @@ section.whatWeDoWrapper {
         position: relative;
 
         div {
-            padding: 45px 60px 30px 60px;
+            padding: 60px;
             overflow: hidden;
             box-shadow: none;
             width: 50%;
@@ -383,8 +386,8 @@ section.whatWeDoWrapper {
             height: auto;
             display: block;
             height: 100%;
-            align-self: stretch;
-            padding: 45px 60px 30px 60px;
+            align-self: center;
+            padding: 60px;
             position: relative;
             border-top: 1px solid #ffffff;
             margin-inline-end: 0px;
