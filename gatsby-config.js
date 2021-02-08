@@ -72,12 +72,26 @@ module.exports = {
               // fontDisplay: 'swap',
               strategy: 'base64', // 'base64' || 'cdn'
             },
+
             {
               family: "Roboto+Slab",
               variants: ["600", "900"],
               // fontDisplay: 'swap',
               strategy: 'base64',
             },
+
+
+            {
+              family: "Bodoni+Moda",
+              variants: ["800"],
+              // fontDisplay: 'swap',
+              text: "“ ”",
+              strategy: 'base64',
+            },
+
+
+
+
 
 
           ],
