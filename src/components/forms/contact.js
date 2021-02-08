@@ -14,7 +14,7 @@ const ContactForm = ({ data, location }) => {
                     <span className={"contactForm"}>
                         <IconWave />
                         <p>I would love to be contacted to discuss work commissions or just hear your thoughts and ideas.</p>
-                        <p>You can text or call me <a href="tel:+64 21 155 1085"><i className={"material-icons"} aria-hidden="true">call</i>+64 21 155 1085</a>. Alternatively, complete the following form for email enquires. Thanks.</p>
+                        <p>You can text or call me <a href="tel:+64 21 155 1085"><i className={"material-icons-round"} aria-hidden="true">call</i>+64 21 155 1085</a>. Alternatively, complete the following form for email enquires. Thanks.</p>
                         <FormContact data={data} location={location} />
                     </span>
                 </div>

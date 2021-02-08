@@ -36,7 +36,7 @@ const PostPage = ({ data, pageContext, location }) => {
             aria-label="Back"
             to="../"
           >
-            <i className={"material-icons"} aria-hidden="true">arrow_back</i>
+            <i className={"material-icons-round"} aria-hidden="true">arrow_back</i>
            Back
           </Link>
 
@@ -46,7 +46,7 @@ const PostPage = ({ data, pageContext, location }) => {
                 aria-label={previous.frontmatter.title}
                 to={`../${previous.frontmatter.slug}`}
               >
-                <i className={"material-icons left"} aria-hidden="true">chevron_left</i>
+                <i className={"material-icons-round left"} aria-hidden="true">chevron_left</i>
               Previous
               </Link>
             }
@@ -56,7 +56,7 @@ const PostPage = ({ data, pageContext, location }) => {
                 to={`../${next.frontmatter.slug}`}
               >
                 Next
-                <i className={"material-icons"} aria-hidden="true">chevron_right</i>
+                <i className={"material-icons-round"} aria-hidden="true">chevron_right</i>
               </Link>
             }
           </span>

@@ -51,7 +51,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
               <p>
                 {frontmatter.category}<br />
                 {frontmatter.date}<br />
-                <a href={link} title={frontmatter.title} rel="noreferrer" target="_blank"><i className={"material-icons"} aria-hidden="true">launch</i>{frontmatter.url}</a>
+                <a href={link} title={frontmatter.title} rel="noreferrer" target="_blank"><i className={"material-icons-round"} aria-hidden="true">launch</i>{frontmatter.url}</a>
               </p>
             </div>
             <div className={projectStyles.contentInner}>

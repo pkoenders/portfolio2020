@@ -52,7 +52,7 @@ const FormContact = ({ location }) => {
         }).then(res => {
             if (res.ok) {
                 setSuccessMsg(` `)
-                document.querySelector('.inputfields').classList.add('hide')
+                document.querySelector('.inputFields').classList.add('hide')
             }
         }).catch(error =>
             setErrorMsg(` `)

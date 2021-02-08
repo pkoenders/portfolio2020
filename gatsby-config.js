@@ -60,7 +60,7 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: `Material+Icons`,
+              family: `Material+Icons|Material+Icons+Round`,
               // fontDisplay: 'swap',
               text: "call clear send arrow_forward arrow_back arrow_forward chevron_left chevron_right launch",
               strategy: 'base64', // 'base64' || 'cdn'

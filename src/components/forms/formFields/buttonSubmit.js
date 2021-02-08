@@ -7,7 +7,7 @@ const Submit = () => {
       id="submitBtn"
       name="submit"
       className="buttonPrimary"
-    ><i className={"material-icons"} aria-hidden="true">send</i>Submit</button>
+    ><i className={"material-icons-round"} aria-hidden="true">send</i>Submit</button>
   )
 }
 export default Submit

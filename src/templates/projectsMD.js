@@ -51,7 +51,7 @@ const PortfolioPage = ({ data, pageContext, location }) => {
             aria-label="Back"
             to="../"
           >
-            <i className={"material-icons"} aria-hidden="true">arrow_back</i>
+            <i className={"material-icons-round"} aria-hidden="true">arrow_back</i>
            Back
           </Link>
 
@@ -61,7 +61,7 @@ const PortfolioPage = ({ data, pageContext, location }) => {
                 aria-label={previous.frontmatter.title}
                 to={`../${previous.frontmatter.slug}`}
               >
-                <i className={"material-icons left"} aria-hidden="true">chevron_left</i>
+                <i className={"material-icons-round left"} aria-hidden="true">chevron_left</i>
               Previous
               </Link>
             }
@@ -71,7 +71,7 @@ const PortfolioPage = ({ data, pageContext, location }) => {
                 to={`../${next.frontmatter.slug}`}
               >
                 Next
-                <i className={"material-icons"} aria-hidden="true">chevron_right</i>
+                <i className={"material-icons-round"} aria-hidden="true">chevron_right</i>
               </Link>
             }
           </span>

@@ -48,7 +48,7 @@ const LatestBlogPosts = () => {
                                     className={"item"} >
                                     <Link to={`/blog/${edge.node.frontmatter.slug}`}>
                                         <span>
-                                            <i className={'material-icons md-36'}>arrow_forward</i>
+                                            <i className={'material-icons-round md-36'}>arrow_forward</i>
                                             <h3>{edge.node.frontmatter.title}</h3>
                                             <p>{edge.node.frontmatter.category}</p>
                                             <p>{moment(edge.node.frontmatter.date).format(`dddd DD MMM YYYY`)}</p>

@@ -133,7 +133,7 @@ const Header = ({ data, location }) => {
               <button
                 onClick={toggleMobileNav}>
                 Close
-                <i className={"material-icons"} aria-hidden="true">clear</i>
+                <i className={"material-icons-round"} aria-hidden="true">clear</i>
               </button>
             </li>
           </ul>
