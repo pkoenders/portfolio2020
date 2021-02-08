@@ -62,6 +62,7 @@ module.exports = {
             {
               family: `Material+Icons`,
               // fontDisplay: 'swap',
+              text: "call clear arrow_forward arrow_back arrow_forward chevron_left chevron_right launch",
               strategy: 'base64', // 'base64' || 'cdn'
             },
 
@@ -73,7 +74,7 @@ module.exports = {
             },
             {
               family: "Roboto+Slab",
-              variants: ["400", "600", "700", "900"],
+              variants: ["600", "900"],
               // fontDisplay: 'swap',
               strategy: 'base64',
             },
