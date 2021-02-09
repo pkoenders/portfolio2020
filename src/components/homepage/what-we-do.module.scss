@@ -133,6 +133,7 @@
 
             h1 {
                 margin-bottom: -50px;
+                font-size: 2.4rem;
                 width: fit-content;
                 text-align: left;
                 background: rgb(224, 152, 175);
@@ -143,7 +144,7 @@
                 animation: fadein 1s;
 
                 @include respond-below(md) {
-                    font-size: 1.4rem //margin-bottom: -37.5px;
+                    // font-size: 1.4rem //margin-bottom: -37.5px;
                 }
 
                 @include respond-below(sm) {
@@ -151,7 +152,7 @@
                 }
 
                 @include respond-below(md) {
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                     line-height: 1.8rem;
                 }
 
@@ -170,7 +171,7 @@
                 }
 
                 span {
-                    animation: fadein 2s;
+                    // animation: fadein 2s;
                 }
             }
         }
