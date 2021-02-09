@@ -92,7 +92,6 @@ const FormContact = ({ location }) => {
                 {successMessage &&
                     <SubmitThankYou resetSubmit={resetSubmit} />
                 }
-                <SubmitThankYou resetSubmit={resetSubmit} />
             </form>
         </>
     )
