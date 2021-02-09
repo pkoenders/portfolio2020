@@ -7,12 +7,14 @@
     padding: $globalSectionPadding;
 
     @include respond-below(lg) {
-        padding: 45px 0 5px 0;
+        // padding: 30px 0 0 0;
     }
 
     h1,
     h2 {
         text-align: center;
+        line-height: normal;
+        margin: 45px 0;
         //color: #ffffff;
     }
 

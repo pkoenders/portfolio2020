@@ -8,10 +8,12 @@
 
     h2 {
         text-align: center;
+        line-height: normal;
+        margin: 45px 0;
     }
 
     @include respond-below(md) {
-        padding: 45px 15px 15px;
+        padding: 1px 15px 15px;
     }
 
     @include respond-below(sm) {

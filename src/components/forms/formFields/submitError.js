@@ -10,8 +10,9 @@ const SubmitError = (resetSubmit) => {
       <IconSubmitError aria-hidden="true" />
       <p>Looks like there was a problem receiving the form on our end.</p>
       <Link
+        to="/"
         onClick={resetSubmit}
-        className={'buttonPrimary'} to="/"
+        className={'buttonPrimary'}
       >
         <i className={"material-icons-round md-36"} aria-hidden="true">arrow_back</i>
           Back to my portfolio
