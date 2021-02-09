@@ -61,6 +61,12 @@ const FormContact = ({ location }) => {
         e.preventDefault()
     }
 
+    const resetSubmit = () => {
+        setSuccessMsg('')
+        document.querySelector('.contactForm').classList.remove('hide')
+        document.querySelector('.inputFields').classList.remove('hide')
+    }
+
     return (
         <>
             <form
@@ -81,11 +87,12 @@ const FormContact = ({ location }) => {
                 </span>
 
                 {errorMessage &&
-                    <SubmitError />
+                    <SubmitError resetSubmit={resetSubmit} />
                 }
                 {successMessage &&
-                    <SubmitThankYou />
+                    <SubmitThankYou resetSubmit={resetSubmit} />
                 }
+                <SubmitThankYou resetSubmit={resetSubmit} />
             </form>
         </>
     )
