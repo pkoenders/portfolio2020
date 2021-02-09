@@ -31,9 +31,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
       <style type="text/css">
         {`
         body  {
-          background-color: #efeff0;
-          background: rgb(255,255,255);
-          background: linear-gradient(158deg, rgba(255,255,255,1) 0%, rgba(186,186,186,1) 100%);
+          background-color: #ffffff;
         }
       `}
       </style>
