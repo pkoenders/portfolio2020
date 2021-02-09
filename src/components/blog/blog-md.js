@@ -33,7 +33,7 @@ const LatestBlogPosts = () => {
 
     return (
         <section className={latestBlog.wrapper + ' section-layout-wide'}>
-            <h2>Recent posts</h2>
+            <h1>Recent posts</h1>
             <div>
                 <ul className={"grid"}>
                     {data.allMarkdownRemark.edges.map((edge, i) => (

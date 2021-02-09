@@ -3,13 +3,13 @@
 .wrapper {
     background-color: #ffffff;
 
-    padding: $globalSecionPadding;
+    padding: $globalSectionPadding;
 
     @include respond-below(lg) {
         //  padding: 45px 0 5px 0;
     }
 
-    h2 {
+    h1 {
         text-align: center;
         //color: #ffffff;
     }

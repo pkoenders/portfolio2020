@@ -41,7 +41,7 @@ const LatestProjects = () => {
     return (
 
         <section className={latestProjectsStyles.latestProjectsSection + ' section-layout-wide'}>
-            <h2>My projects</h2>
+            <h1>My projects</h1>
             <div className={latestProjectsStyles.wrapper}>
                 <ul className={"grid"}>
                     {data.allMarkdownRemark.edges.map((edge, i) => (

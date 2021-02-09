@@ -88,12 +88,6 @@ module.exports = {
               text: "“ ”",
               strategy: 'base64',
             },
-
-
-
-
-
-
           ],
         },
         // formatAgents: {

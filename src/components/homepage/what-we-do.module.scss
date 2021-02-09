@@ -369,8 +369,11 @@ section.whatWeDoWrapper {
             }
 
             @include respond-below(lg) {
-                border-top: 1px solid #ffffff;
                 padding: 30px;
+            }
+
+            @include respond-below(sm) {
+                border-top: 1px solid #ffffff;
             }
 
             h2 {

@@ -4,9 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import SEO from '../seo/seo'
 import projectStyles from './project-item.module.scss'
 
-
-
-
 //export default function ProjectTemplate({ data }) {
 const ProjectTemplate = ({ data }) => {
 

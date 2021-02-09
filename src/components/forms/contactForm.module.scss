@@ -2,7 +2,7 @@
 
 .contactFormSection,
 .contactFormSectionSuccess {
-    padding: $globalSecionPadding;
+    padding: $globalSectionPadding;
     background-color: $tertiaryColorA;
 
 
@@ -11,11 +11,11 @@
     }
 
     @include respond-below(md) {
-        padding: 20px 15px 15px;
+        padding: 45px 15px 15px;
     }
 
     @include respond-below(sm) {
-        padding: 0px;
+        // padding: 0px;
     }
 
     .contactFormWrapper,
