@@ -68,7 +68,7 @@ module.exports = {
 
             {
               family: "Roboto",
-              variants: ["300", "400", "500", "700"],
+              variants: ["400", "500", "600"],
               // fontDisplay: 'swap',
               strategy: 'base64', // 'base64' || 'cdn'
             },
