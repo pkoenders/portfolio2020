@@ -8,7 +8,7 @@ import projectStyles from './project-item.module.scss'
 
 
 //export default function ProjectTemplate({ data }) {
-const ProjectTemplate = ({ data, pageContext }) => {
+const ProjectTemplate = ({ data }) => {
 
   const Metadata = useStaticQuery(graphql`
     query projectsData {

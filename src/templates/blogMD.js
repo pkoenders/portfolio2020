@@ -18,6 +18,13 @@ export const query = graphql`
         title
         category
         intro
+        coverimage {
+          childImageSharp {
+            fluid(maxWidth: 1200, quality: 100) {
+                ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
       }
     }
   }

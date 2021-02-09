@@ -1,18 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="602" height="602" viewBox="0 0 602 602">
-  <g fill="none" fill-rule="evenodd" transform="rotate(-90 301 301)">
-    <rect width="532" height="532" x="35" y="37"/>
-    <circle cx="301" cy="301" r="301"/>
-    <g transform="rotate(-180 237.5 238)">
-      <polygon fill="#972363" points="172 0 0 172 172 172"/>
-      <polygon fill="#B42A76" points="0 0 0 172 172 0"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="592px" height="592px" viewBox="0 0 592 592" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2 Copy 5</title>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-3807.000000, -7341.000000)">
+            <g id="Group-2-Copy-5" transform="translate(4103.000000, 7637.000000) rotate(-90.000000) translate(-4103.000000, -7637.000000) translate(3807.000000, 7341.000000)">
+                <g id="Group-20" transform="translate(131.000000, 131.000000)" fill-rule="nonzero">
+                    <g id="Group" transform="translate(248.500000, 248.500000) rotate(-180.000000) translate(-248.500000, -248.500000) translate(167.000000, 167.000000)">
+                        <polygon id="Path" fill="#EB5686" points="163 0 0 163 163 163"></polygon>
+                        <polygon id="Path" fill="#E41B5B" points="0 0 0 163 163 0"></polygon>
+                    </g>
+                    <g id="Group" transform="translate(248.500000, 81.500000) rotate(-90.000000) translate(-248.500000, -81.500000) translate(167.000000, 0.000000)">
+                        <polygon id="Path" fill="#96D8F3" transform="translate(81.500000, 81.500000) rotate(-90.000000) translate(-81.500000, -81.500000) " points="3.28001515e-14 9.79360802e-13 163 163 163 9.79360802e-13"></polygon>
+                        <polygon id="Path" fill="#1BABE4" transform="translate(81.500000, 81.500000) rotate(-90.000000) translate(-81.500000, -81.500000) " points="3.28001515e-14 163 163 163 3.28001515e-14 9.79360802e-13"></polygon>
+                    </g>
+                    <g id="Group" transform="translate(81.500000, 81.500000) rotate(-90.000000) translate(-81.500000, -81.500000) translate(0.000000, 0.000000)">
+                        <polygon id="Path" fill="#F3E896" points="0 0 0 163 163 163"></polygon>
+                        <polygon id="Path" fill="#EBD956" points="0 0 163 163 163 0"></polygon>
+                    </g>
+                </g>
+                <rect id="Rectangle" x="1.09139364e-11" y="0" width="592" height="592"></rect>
+            </g>
+        </g>
     </g>
-    <g transform="rotate(-90 301 -2)">
-      <polygon fill="#53A3C1" points="0 0 172 172 172 0" transform="rotate(-90 86 86)"/>
-      <polygon fill="#68C9EE" points="0 172 172 172 0 0" transform="rotate(-90 86 86)"/>
-    </g>
-    <g transform="rotate(-90 212.5 86.5)">
-      <polygon fill="#C6756D" points="0 0 0 172 172 172"/>
-      <polygon fill="#F9CC6D" points="0 0 172 172 172 0"/>
-    </g>
-  </g>
 </svg>
