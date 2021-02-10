@@ -134,6 +134,7 @@
             h1 {
                 margin-bottom: -50px;
                 font-size: 2.4rem;
+                line-height: normal;
                 width: fit-content;
                 text-align: left;
                 background: rgb(224, 152, 175);
@@ -171,6 +172,7 @@
                 }
 
                 span {
+                    display: block;
                     // animation: fadein 2s;
                 }
             }
