@@ -12,9 +12,17 @@
 
 <div class="description">
 
+**Project**<br />
 A portfolio design and build for a portrait artist. Displaying the artwork at its best, fitting the browser window where possible and the ability to zoom on images was the client request/requirement.
 
-The client also requested a straight forward, easy to use Content Management System as the technical skills of the client are proudly not the best.
+**Challenges**<br />
+The client also requested a straightforward, easy to use Content Management System as the technical skills of the client are proudly not the best. The client also required that the new website images should load quickly and have a traditional gallery view option.
+
+**Solution**<br />
+Gatsby is a framework for building static websites that optimise images and load quickly. It was the start of a global lockdown and I knew it was a good chance to pick up and learn a new stack.
+
+**Stack**<br />
+Gatsby (React, HTML, SCSS & API's) and DatoCMS.
 
 <div class="testimonial">
 

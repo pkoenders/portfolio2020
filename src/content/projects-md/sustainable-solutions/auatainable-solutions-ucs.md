@@ -12,9 +12,14 @@
 
 <div class="description">
 
+**Project**<br />
 A web application for pharmaceutical supply chain software is used in national drug distribution projects, warehouses and hospitals in more than 20 countries around the world. Screen designs are of the search functionality for desktop and mobile.
 
-A pattern library was created for the components using [Material-UI](https://material-ui.com) as the design framework.
+**Challenges**<br />
+I wanted to implement a Figma pattern library based on the [Material-UI](https://material-ui.com) as the design framework, but there was no appropriate base library to work from at the time.
+
+**Solution**<br />
+The Material Design Kit for Sketch gave me all the pre-baked symbols and overrides I needed for components, text and colour attributes. Design solutions delivered and shared on InVision.
 
 </div>
 
