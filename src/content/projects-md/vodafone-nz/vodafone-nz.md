@@ -18,6 +18,10 @@ Re-design and rebuild web pages, journeys, components and assets.
 
 I created the designs ensuring brand guidelines are adhered to. Deliverables included design files and components, presented for a range of screen sizing and collaborate with stakeholders.
 
+**Challenges**<br />
+No shared resource for designers to draw from.
+
+**Solution**<br />
 I designed, built and managed pattern library and style guide. Ensured brand and style consistency, allowing the design team to use consistent components from a shared source.
 
 </div>
