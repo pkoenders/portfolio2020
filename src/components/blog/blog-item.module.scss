@@ -61,108 +61,84 @@ section.sectionProject {
                         }
 
                         >div {
-                            overflow: hidden;
-                            position: relative;
-                            background-color: #ffffff;
-                            //color: #3d4f61;
-                            padding: 30px 30px;
-                            top: auto;
-                            border: 1px solid #e4e4e4;
-                            line-height: 0px;
-                            box-shadow: 0 0 5px 0 #5f5b5b14;
-                            border-radius: $globalBorderRadiusA;
-                            margin-bottom: 0px;
-
-                            @include respond-below(md) {
-                                margin-bottom: 15px;
-                            }
-
-                            p:first-of-type::before {
-                                content: "\201C";
-                                top: 15px;
-                                left: -25px;
-                            }
-
-                            p:nth-last-of-type(2)::after {
-                                content: "\201D";
-                                bottom: 3px;
-                            }
-
-
-                            p:first-of-type::before,
-                            p:nth-last-of-type(2)::after {
-                                font-size: 2.7rem;
-                                line-height: 0px;
-                                position: absolute;
-                                font-family: 'Spectral', serif;
-                                color: #25324094;
-                            }
-
-                            p:first-of-type {
-                                //text-indent: 30px;
-                                margin: 0 25px;
-                            }
-
-                            p:first-of-type,
-                            p:nth-last-of-type(2) {
-                                //margin: 0 25px;
-                                display: inline;
-                                //line-height: 1.3rem;
-                                position: relative;
-
-                                //text-indent: 30px;
-                            }
+                            width: 150px;
 
                             p {
-                                margin: 15px 0 10px 0;
-                                text-align: left;
-                                font-size: .9rem;
-                                font-family: 'Roboto', sans-serif;
-                                line-height: 1.2rem;
-                                color: #253240;
 
-                            }
-
-                            p:last-of-type {
-                                font-weight: bold;
-                                margin: 15px 0 0 0;
+                                span {
+                                    box-shadow: none !important;
+                                    border-radius: 0;
+                                }
                             }
                         }
-                    }
 
-                    p {
+                        p {
+                            margin: 15px 0 10px 0;
+                            text-align: left;
+                            font-size: .9rem;
+                            font-family: 'Roboto', sans-serif;
+                            line-height: 1.2rem;
+                            color: #253240;
 
-                        span {
-                            border-radius: $globalBorderRadiusA;
-                            overflow: hidden;
-                            background-color: #ffffff;
-                            border: 1px solid #ffffff;
-                            box-shadow: 0 0 15px 0 #5f5b5b9e;
-                            //margin: 60px 0;
-                            //height: auto !important;
+                            >span {
+                                border-radius: $globalBorderRadiusA;
+                                overflow: hidden;
+                                background-color: #ffffff;
+                                border: 1px solid #ffffff;
+                                box-shadow: 0 0 15px 0 #5f5b5b9e;
 
+                                margin: 60px 0;
 
+                                //height: auto !important;
+                                img {
+                                    display: block;
+                                    position: relative;
+                                    width: 100%;
+                                    height: auto !important;
 
-
-
-                            img {
-                                display: block;
-                                position: relative;
-                                width: 100%;
-                                height: auto !important;
-                                // max-height: max-content !important;
+                                    // max-height: max-content !important;
+                                }
                             }
                         }
+
+
 
 
                         p:last-of-type {
-                            margin-bottom: 0;
-                        }
-
-                        p span:last-of-type {
-                            margin-bottom: 0;
+                            font-weight: bold;
+                            margin: 15px 0 0 0;
                         }
                     }
+
+
+
+                    // p {
+                    //     span {
+                    //         border-radius: $globalBorderRadiusA;
+                    //         overflow: hidden;
+                    //         background-color: #ffffff;
+                    //         border: 1px solid #ffffff;
+                    //         box-shadow: 0 0 15px 0 #5f5b5b9e;
+
+                    //         //margin: 60px 0;
+                    //         //height: auto !important;
+                    //         img {
+                    //             display: block;
+                    //             position: relative;
+                    //             width: 100%;
+                    //             height: auto !important;
+                    //             // max-height: max-content !important;
+                    //         }
+                    //     }
+
+                    //     p:last-of-type {
+                    //         margin-bottom: 0;
+                    //     }
+
+                    //     p span:last-of-type {
+                    //         margin-bottom: 0;
+                    //     }
+                    // }
                 }
             }
         }

@@ -11,9 +11,11 @@
 
 <div class="description">
 
+<h3>Application of Accessibility Web Standards</h3>
+
 The MidCentral District Health Board website<sup>1</sup> has accessibility issues from a visual design and HTML mark-up perspective.
 
-![The MidCentral District Health Board Homepage](./mcdhb-homepage.png "The MidCentral District Health Board Homepage") 
+![The MidCentral District Health Board Homepage](./mcdhb-homepage.png "The MidCentral District Health Board Homepage")
 
 This webpage has no mobile first strategy to provide for mobile device usage, of which dominates at around 51.5% of global traffic.<sup>2</sup>
 

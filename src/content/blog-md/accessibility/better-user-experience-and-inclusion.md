@@ -11,6 +11,8 @@
 
 <div class="description">
 
+<h3>Reviewing the Impact of Accessible Design</h3>
+
 The Web Content Accessibility Guidelines (WCAG) 2.1 is an internationally recognised standard for individuals, organisations and governments created by the World Wide Web Consortium (W3C). The document describes how to make digital content more accessible for people with a wide range of impairments and help to improve usability.<sup>1</sup>
 
 The WCAG is built around four core principles of accessibility; Perceivable, Operable, Understandable and Robustness. Each principle has a layer of guidance and success criteria that must be achieved to conform to the standard. Content in a digital interface must be presented in a manner that a user can recognise. The user must also be able to operate and interact. Operation of the interface must be understandable for the user and be robust enough to be interpreted by user agents and assistive technologies.<sup>2</sup>

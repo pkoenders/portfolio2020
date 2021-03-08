@@ -20,6 +20,8 @@ I created the user flows & wire-frames and hi definition designs for course enro
 
 <div class="images">
 
+![The Mind Lab - User flow](./tfl-flow-small.png "The Mind Lab - User flow")
+
 ![The Mind Lab - Home page](./home@2x.jpg "The Mind Lab - Home page")
 
 ![The Mind Lab - Register - Step 1](./register-step1@2x.jpg "The Mind Lab - Register - Step 1")

@@ -10,6 +10,12 @@
 ---
 
 <div class="description">
+<!-- <div class="smallImg"> 
+
+   ![Accessibility Icon](./a11y-icon.png "Accessibility Icon")
+</div> -->
+
+<h3>Digital Accessibility Fundamentals</h3>
 
 The introduction to the models of disability, Medical, Charitable, Social and Human rights was new to me and has enhanced my understanding of a person with a disability. I am inspired how the Social model describes a person is disabled by the barriers they encounter in our society contrary to their impairment. <sup>1,2</sup>
 
