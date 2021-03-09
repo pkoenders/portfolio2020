@@ -62,7 +62,7 @@ module.exports = {
             {
               family: `Material+Icons+Round`,
               // fontDisplay: 'swap',
-              text: "call clear send arrow_forward arrow_back chevron_left chevron_right launch",
+              text: "download call clear send arrow_forward arrow_back chevron_left chevron_right launch",
               strategy: 'base64', // 'base64' || 'cdn'
             },
 

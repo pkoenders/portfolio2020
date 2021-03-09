@@ -36,7 +36,7 @@ const WhatWeDo = () => {
 
                     <div className={whatWeDoStyles.aboutMe}>
                         <div>
-                            <p>I’m a versatile UI/UX designer with over 20 years of all-round industry experience. I originally from a traditional Graphic Design and transitioned into Digital and Web Design. I have worked with small and large organisations.  I am fastidious in work flow; definition and planning, research, design, technical, management and review.</p>
+                            <p>I’m a versatile UI/UX designer with over 20 years of all-round industry experience. I originally from a traditional Graphic Design and transitioned into Digital and Web Design. I have worked with small and large organisations.  I am fastidious in work flow; definition and planning, design, technical, management and review.</p>
                         </div>
 
                         <span>
@@ -44,8 +44,8 @@ const WhatWeDo = () => {
                             <ul>
                                 <li>Implementation of the UI/UX design process</li>
                                 <li>Estimating &amp; proposal review</li>
-                                <li>Iterative wire-framing, prototypes &amp; design</li>
-                                <li>Pattern libraries &amp; style guides</li>
+                                <li>Iterative wire-framing, prototypes</li>
+                                <li>Build and maintain design systems</li>
                                 <li>HTML templates &amp; components</li>
                                 <li>Graphic design</li>
                             </ul>
@@ -54,12 +54,12 @@ const WhatWeDo = () => {
 
                     <div className={whatWeDoStyles.technical}>
                         <div>
-                            <p>I take an interest in and am an advocate for digital accessibility. I am also am curious and enjoy working with creative teams on diversified digital projects.</p>
+                            <p>I support digital accessibility, am curious and enjoy working with creative teams on diversified digital projects.</p>
                         </div>
                         <span>
                             <IconDevelopment />
-                            <p>With professionalism, integrity and care, I work in a collaborative manner to plan, design and deliver crafted solutions with best practices in mind.</p>
-                            <a href="/peter-koenders-resume.pdf" className="buttonPrimary" >View my resumé</a>
+                            <p>With professionalism, integrity and care, I work in a collaborative manner to plan, design and deliver crafted, digitally accessible solutions that are optimised and built with best practices in mind.</p>
+                            <a href="/peter-koenders-resume.pdf" className="buttonPrimary">View my resumé</a>
                         </span>
 
                     </div>
