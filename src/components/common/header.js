@@ -127,7 +127,7 @@ const Header = ({ data, location }) => {
               </Link>
             </li>
             <li>
-              <a href="/peter-koenders-resumé.pdf" >View my resumé</a>
+              <a href="/peter-koenders-resume.pdf" >View my resumé</a>
             </li>
             <li className="closeMenu hide">
               <button
