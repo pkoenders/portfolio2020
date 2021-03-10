@@ -45,7 +45,7 @@ const WhatWeDo = () => {
                                 <li>Implementation of the UI/UX design process</li>
                                 <li>Estimating &amp; proposal review</li>
                                 <li>Iterative wire-framing, prototypes</li>
-                                <li>Build and maintain design systems</li>
+                                <li>Build &amp; maintain design systems</li>
                                 <li>HTML templates &amp; components</li>
                                 <li>Graphic design</li>
                             </ul>
@@ -54,11 +54,11 @@ const WhatWeDo = () => {
 
                     <div className={whatWeDoStyles.technical}>
                         <div>
-                            <p>I support digital accessibility, am curious and enjoy working with creative teams on diversified digital projects.</p>
+                            <p>I support digital accessibility, am curious and enjoy working with creative and integration teams on diversified digital projects.</p>
                         </div>
                         <span>
                             <IconDevelopment />
-                            <p>With professionalism, integrity and care, I work in a collaborative manner to plan, design and deliver crafted, digitally accessible solutions that are optimised and built with best practices in mind.</p>
+                            <p>With professionalism, integrity and care. I work in a collaborative manner to plan, design and deliver crafted, digitally accessible solutions that are optimised and built with best practices in mind.</p>
                             <a href="/peter-koenders-resume.pdf" className="buttonPrimary">View my resumé</a>
                         </span>
 
