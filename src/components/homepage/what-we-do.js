@@ -58,7 +58,7 @@ const WhatWeDo = () => {
                         </div>
                         <span>
                             <IconDevelopment />
-                            <p>With professionalism, integrity and care. I work in a collaborative manner to plan, design and deliver crafted, digitally accessible solutions that are optimised and built with best practices in mind.</p>
+                            <p>With professionalism, integrity and care. I work in a collaborative manner to plan, design and deliver crafted, digitally accessible solutions.</p>
                             <a href="/peter-koenders-resume.pdf" className="buttonPrimary">View my resumé</a>
                         </span>
 
