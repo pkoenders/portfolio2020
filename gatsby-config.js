@@ -199,7 +199,9 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/svg/logo-pixl-manifest.inline.svg`, // This path is relative to the root of the site.
         icon_options: {
-          purpose: `maskable`,
+          purpose: `any maskable`,
+          sizes: `192x192`,
+          type: `image/svg`,
         },
       },
     },
