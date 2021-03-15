@@ -36,7 +36,7 @@ const WhatWeDo = () => {
 
                     <div className={whatWeDoStyles.aboutMe}>
                         <div>
-                            <p>I’m a versatile UI/UX designer with over 20 years of all-round industry experience. I originally from a traditional Graphic Design and transitioned into Digital and Web Design. I have worked with small and large organisations.  I am fastidious in work flow; definition and planning, design, technical, management and review.</p>
+                            <p>I’m a versatile UI/UX designer with over 20 years of all-round industry experience. Originally from a traditional Graphic Design background and transitioned into Digital and Web Design.</p>
                         </div>
 
                         <span>
@@ -58,7 +58,7 @@ const WhatWeDo = () => {
                         </div>
                         <span>
                             <IconDevelopment />
-                            <p>With professionalism, integrity and care. I work in a collaborative manner to plan, design and deliver crafted, digitally accessible solutions.</p>
+                            <p>With professionalism, integrity and care. I work in a collaborative manner to plan, design and deliver crafted solutions.</p>
                             <a href="/peter-koenders-resume.pdf" className="buttonPrimary">View my resumé</a>
                         </span>
 
