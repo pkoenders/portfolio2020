@@ -72,13 +72,15 @@ section.sectionProject {
                             }
                         }
 
-                        p {
+                        p,
+                        ul li,
+                        ol li {
                             margin: 15px 0 10px 0;
                             text-align: left;
-                            font-size: .9rem;
-                            font-family: 'Roboto', sans-serif;
-                            line-height: 1.2rem;
-                            color: #253240;
+                            // font-size: .9rem;
+                            // font-family: 'Roboto', sans-serif;
+                            // line-height: 1.2rem;
+                            // color: #253240;
 
                             >span {
                                 border-radius: $globalBorderRadiusA;
@@ -100,6 +102,7 @@ section.sectionProject {
                                 }
                             }
                         }
+
 
 
 
