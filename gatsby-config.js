@@ -200,8 +200,6 @@ module.exports = {
         icon: `/logo-pixl-manifest.svg`, // This path is relative to the root of the site.
         icon_options: {
           purpose: `any maskable`,
-          sizes: `192x192`,
-          type: `image/svg`,
         },
       },
     },
