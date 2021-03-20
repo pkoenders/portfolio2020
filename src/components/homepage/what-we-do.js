@@ -36,7 +36,7 @@ const WhatWeDo = () => {
 
                     <div className={whatWeDoStyles.aboutMe}>
                         <div>
-                            <p>I’m a versatile UI/UX designer with over 20 years of all-round industry experience. Originally from a traditional Graphic Design background and transitioned into Digital and Web Design.</p>
+                            <p>I’m a versatile UI/UX designer originally from a traditional Graphic Design background and transitioned into Digital and Web Design.</p>
                         </div>
 
                         <span>
