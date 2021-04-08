@@ -19,7 +19,7 @@ A portfolio design and build for a portrait artist. Displaying the artwork at it
 The client also requested a straightforward, easy to use Content Management System as the technical skills of the client are proudly not the best. The client also required that the new website images should load quickly and have a traditional gallery view option.
 
 **Solution**<br />
-Gatsby is a framework for building static websites that optimise images and load quickly. It was the start of a global lockdown and I knew it was a good chance to pick up and learn a new stack.
+Gatsby is a framework for building static websites that optimise images and load quickly. It was the start of a global lockdown and I knew it was a good chance to pick up and learn a new tool.
 
 **Stack**<br />
 Gatsby (React, HTML, SCSS & API's) and DatoCMS.
