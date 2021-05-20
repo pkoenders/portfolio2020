@@ -1,18 +1,5 @@
 import "./src/styles/index.scss"
 
-
-
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
-
-// You can delete this file if you're not using it
-
-
-//import mediumZoom from 'medium-zoom'
-
 export const onServiceWorkerUpdateReady = () => {
     const answer = window.confirm(
         `This application has been updated. ` +
@@ -41,44 +28,9 @@ function ready() {
     document.addEventListener('click', function (e) {
         srollNav()
     })
-
-    //resizeAllGridItems()
     srollNav()
     canvasAnin()
-
 }
-
-// Resize grid
-const resizeGridItem = item => {
-
-    const grid = document.querySelector(".grid"),
-        rowHeight = parseInt(
-            window.getComputedStyle(grid).getPropertyValue("grid-auto-rows")
-        ),
-        rowGap = parseInt(
-            window.getComputedStyle(grid).getPropertyValue("grid-row-gap")
-        ),
-        rowSpan = Math.ceil(
-            // (item.querySelector(".item-content").getBoundingClientRect().height +
-            //     rowGap) /
-            // (rowHeight + rowGap)
-
-            (item.getBoundingClientRect().height +
-                rowGap) /
-            (rowHeight + rowGap)
-        )
-    item.style.gridRowEnd = `span ${rowSpan}`
-    //console.log("Grid updated")
-
-}
-function resizeAllGridItems() {
-    const allItems = document.querySelectorAll(".grid li")
-    for (let x = 0; x < allItems.length; x += 1) {
-        resizeGridItem(allItems[x])
-        //console.log("allItems = " + allItems)
-    }
-}
-
 
 function canvasAnin() {
     var animsToRun = [
