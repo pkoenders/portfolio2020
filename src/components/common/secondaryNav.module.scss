@@ -15,6 +15,7 @@
     transition: all .25s linear;
     border-bottom: 1px solid #efeff0;
     box-shadow: $globalBoxShadowB;
+    z-index: 1000;
 
     nav {
         max-width: 1200px;
