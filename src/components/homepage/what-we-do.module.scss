@@ -386,6 +386,10 @@ section.whatWeDoWrapper {
                 margin: 30px auto 15px auto;
                 background-color: $primaryColor;
             }
+
+            a:hover {
+                transform: scale(1.1);
+            }
         }
     }
 
