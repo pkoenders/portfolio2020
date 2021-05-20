@@ -3,7 +3,7 @@
     slug: the-mind-lab
     date: 2017-12-01
     category: Website
-    url: http://athemindlab.com
+    url: http://themindlab.com
     addtohomepage: true
     title: The Mind Lab/Tech Futures Lab - Course enrolment 
     coverimage: ./thumb@2x.jpg
