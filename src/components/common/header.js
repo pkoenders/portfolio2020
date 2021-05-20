@@ -1,12 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
-import IconCreativeTech from "../../images/svg/logo-pixl.inline.svg"
-import "./header.scss"
+
 import '/src/styles/index.scss'
 import "/src/styles/hamburger.scss"
+import "./header.scss"
+
+import IconCreativeTech from "../../images/svg/logo-pixl.inline.svg"
 
 
-const Header = ({ data, location }) => {
+const Header = ({ location }) => {
 
   const isPartiallyActive = ({
     isPartiallyCurrent
@@ -64,7 +66,7 @@ const Header = ({ data, location }) => {
 
   return (
     <>
-      <header className="headerNavWrapper" aria-label="Main heading">
+      <header className="headerNavWrapper" aria-label="Main heading" style={{ zIndex: '100000' }}>
         <nav className="headerNav" aria-label="Main navigation" role="navigation">
 
           {location.pathname.split('/')[1] !== ""
