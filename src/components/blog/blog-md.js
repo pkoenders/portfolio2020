@@ -49,27 +49,22 @@ const LatestBlogPosts = () => {
                     columnClassName={latestBlog.masonryGridColumn}>
 
                     {data.allMarkdownRemark.edges.map((edge, i) => (
-                        <>
-                            {edge.node.frontmatter.addtohomepage === true
-                                ? ''
-                                : <div
-                                    key={i}
-                                    className={latestBlog.item}
-                                >
-                                    <Link to={`/blog/${edge.node.frontmatter.slug}`}>
+                        edge.node.frontmatter.addtohomepage === true ? ''
+                            : <div
+                                className={latestBlog.item}
+                                key={i}>
+                                <Link to={`/blog/${edge.node.frontmatter.slug}`}>
+                                    <span>
+                                        <i className={'material-icons-round md-36'}>arrow_forward</i>
+                                        <h3>{edge.node.frontmatter.title}</h3>
+                                        <p>{edge.node.frontmatter.category}</p>
+                                        <p>{moment(edge.node.frontmatter.date).format(`dddd DD MMM YYYY`)}</p>
                                         <span>
-                                            <i className={'material-icons-round md-36'}>arrow_forward</i>
-                                            <h3>{edge.node.frontmatter.title}</h3>
-                                            <p>{edge.node.frontmatter.category}</p>
-                                            <p>{moment(edge.node.frontmatter.date).format(`dddd DD MMM YYYY`)}</p>
-                                            <span>
-                                                <p>{edge.node.frontmatter.intro}</p>
-                                            </span>
+                                            <p>{edge.node.frontmatter.intro}</p>
                                         </span>
-                                    </Link>
-                                </div>
-                            }
-                        </>
+                                    </span>
+                                </Link>
+                            </div>
                     ))}
                 </Masonry>
             </div>
