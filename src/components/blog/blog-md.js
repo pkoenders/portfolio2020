@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import moment from 'moment'
-import latestBlog from './latest-blog.module.scss'
+import Masonry from 'react-masonry-css'
+
+import * as latestBlog from './latest-blog.module.scss'
 
 const LatestBlogPosts = () => {
     moment()
@@ -31,37 +33,40 @@ const LatestBlogPosts = () => {
     }
     `)
 
+    const breakpointColumnsObj = {
+        default: 2,
+        992: 2,
+        768: 1,
+        576: 1
+    }
     return (
         <section className={latestBlog.wrapper + ' section-layout-wide'}>
             <h1>Recent posts</h1>
-            <div>
-                <ul className={"grid"}>
+            <div className={latestBlog.wrapper}>
+                <Masonry
+                    breakpointCols={breakpointColumnsObj}
+                    className={latestBlog.masonryGrid}
+                    columnClassName={latestBlog.masonryGridColumn}>
+
                     {data.allMarkdownRemark.edges.map((edge, i) => (
-                        <>
-                            {edge.node.frontmatter.addtohomepage === true
-                                ? ''
-                                : <li
-                                    key={i}
-                                    // data-sal="fade"
-                                    // data-sal-duration="300"
-                                    // data-sal-easing="ease"
-                                    className={"item"} >
-                                    <Link to={`/blog/${edge.node.frontmatter.slug}`}>
+                        edge.node.frontmatter.addtohomepage === true ? ''
+                            : <div
+                                className={latestBlog.item}
+                                key={i}>
+                                <Link to={`/blog/${edge.node.frontmatter.slug}`}>
+                                    <span>
+                                        <i className={'material-icons-round md-36'}>arrow_forward</i>
+                                        <h3>{edge.node.frontmatter.title}</h3>
+                                        <p>{edge.node.frontmatter.category}</p>
+                                        <p>{moment(edge.node.frontmatter.date).format(`dddd DD MMM YYYY`)}</p>
                                         <span>
-                                            <i className={'material-icons-round md-36'}>arrow_forward</i>
-                                            <h3>{edge.node.frontmatter.title}</h3>
-                                            <p>{edge.node.frontmatter.category}</p>
-                                            <p>{moment(edge.node.frontmatter.date).format(`dddd DD MMM YYYY`)}</p>
-                                            <span>
-                                                <p>{edge.node.frontmatter.intro}</p>
-                                            </span>
+                                            <p>{edge.node.frontmatter.intro}</p>
                                         </span>
-                                    </Link>
-                                </li>
-                            }
-                        </>
+                                    </span>
+                                </Link>
+                            </div>
                     ))}
-                </ul>
+                </Masonry>
             </div>
         </section>
 

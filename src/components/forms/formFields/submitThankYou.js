@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import submitStyles from "./thankYou.module.scss"
+import * as submitStyles from "./thankYou.module.scss"
 import IconSubmitSuccess from "../../../images/svg/icon-contact-success.inline.svg"
 
 const SubmitThankYou = (resetSubmit) => {

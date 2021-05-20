@@ -1,8 +1,9 @@
 import React from "react"
 //import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
-import SEO from '../seo/seo'
-import projectStyles from './project-item.module.scss'
+import Seo from '../seo/seo'
+
+import * as projectStyles from './project-item.module.scss'
 
 //export default function ProjectTemplate({ data }) {
 const ProjectTemplate = ({ data }) => {
@@ -34,12 +35,12 @@ const ProjectTemplate = ({ data }) => {
         }
       `}
       </style>
-      <SEO
+      <Seo
         title={frontmatter.title + ' - Projects | ' + Metadata.site.siteMetadata.title}
         description={frontmatter.intro}
-        image={frontmatter.coverimage.childImageSharp.fluid.src}
+        image={frontmatter.coverimage.childImageSharp.src}
       />
-      <section className={projectStyles.sectionProject + ' section-layout-wide'}>
+      <section className={projectStyles.sectionProjectWrapper + ' section-layout-wide'}>
 
         <div className={projectStyles.sectionProjectWrapper}>
           <div className={projectStyles.content}>

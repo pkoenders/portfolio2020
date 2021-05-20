@@ -1,7 +1,8 @@
 import React from 'react'
-import contactStyles from './contactForm.module.scss'
 import IconWave from "../../images/svg/icon-wave.inline.svg"
 import FormContact from "./formContact"
+
+import * as contactStyles from './contactForm.module.scss'
 
 const ContactForm = ({ data, location }) => {
 

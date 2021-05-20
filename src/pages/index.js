@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SectionWhatWeDo from "../components/homepage/what-we-do"
 import SectionLatestProjects from "../components/homepage/latest-projects"
 import SectionContact from "../components/forms/contact"
-import SEO from '../components/seo/seo'
+import Seo from '../components/seo/seo'
 
 
 const IndexPage = ({ location }) => {
@@ -21,7 +21,7 @@ const IndexPage = ({ location }) => {
 
   return (
     <>
-      <SEO
+      <Seo
         title={'A versatile UI/UX designer - Tēnā koe, Welcome to my portfolio | ' + data.site.siteMetadata.title}
         description={'A versatile UI/UX designer with 20+ years of all-round industry experience.'}
       />

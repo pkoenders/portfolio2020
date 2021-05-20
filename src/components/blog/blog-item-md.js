@@ -1,9 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import SEO from '../seo/seo'
-import projectStyles from './blog-item.module.scss'
+import Seo from '../seo/seo'
 
-
+import * as projectStyles from './blog-item.module.scss'
 
 //export default function ProjectTemplate({ data }) {
 const ProjectTemplate = ({ data, pageContext }) => {
@@ -35,7 +34,7 @@ const ProjectTemplate = ({ data, pageContext }) => {
         }
       `}
       </style>
-      <SEO
+      <Seo
         title={frontmatter.title + ' - Projects | ' + Metadata.site.siteMetadata.title}
         description={frontmatter.intro}
       />

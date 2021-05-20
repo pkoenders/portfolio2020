@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from 'gatsby-image'
-import latestProjectsStyles from '../homepage/latest-projects.module.scss'
+import { GatsbyImage } from "gatsby-plugin-image"
+import Masonry from 'react-masonry-css'
+
+import * as latestProjectsStyles from '../homepage/latest-projects.module.scss'
 
 const LatestProjects = () => {
 
@@ -25,9 +27,7 @@ const LatestProjects = () => {
                         title
                         coverimage{
                             childImageSharp {
-                                fluid(maxWidth: 720, quality: 50) {
-                                    ...GatsbyImageSharpFluid_withWebp
-                                }
+                                gatsbyImageData(layout: CONSTRAINED, formats: [AUTO, WEBP, AVIF], placeholder:BLURRED )
                             }
                         }
                         intro
@@ -38,35 +38,48 @@ const LatestProjects = () => {
     }
     `)
 
+    //const coverimage = getImage(data.allMarkdownRemark.edges.node.frontmatter.coverimage)
+    //let coverimage = ''
+
+    const breakpointColumnsObj = {
+        default: 2,
+        992: 2,
+        768: 1,
+        576: 1
+    }
     return (
 
         <section className={latestProjectsStyles.latestProjectsSection + ' section-layout-wide'}>
             <h1>My projects</h1>
             <div className={latestProjectsStyles.wrapper}>
-                <ul className={"grid"}>
+                <Masonry
+                    breakpointCols={breakpointColumnsObj}
+                    className={latestProjectsStyles.masonryGrid}
+                    columnClassName={latestProjectsStyles.masonryGridColumn}>
+
+
                     {data.allMarkdownRemark.edges.map((edge, i) => (
-                        <li
-                            key={i}
-                            // data-sal="fade"
-                            // data-sal-duration="300"
-                            // data-sal-easing="ease"
-                            className={"item"} >
+
+                        <div
+                            className={latestProjectsStyles.item}
+                            key={i}>
                             <Link to={`/projects/${edge.node.frontmatter.slug}`}>
-                                <Img
+
+                                <GatsbyImage
                                     alt={edge.node.frontmatter.title}
-                                    fluid={edge.node.frontmatter.coverimage.childImageSharp.fluid}
-                                    loading="lazy"
+                                    image={edge.node.frontmatter.coverimage.childImageSharp.gatsbyImageData}
                                 />
+
                                 <span>
                                     <h3>{edge.node.frontmatter.title}</h3>
                                     <p>{edge.node.frontmatter.intro}</p>
                                 </span>
                             </Link>
-                        </li>
+                        </div>
                     ))}
-                </ul>
+                </Masonry>
             </div>
-        </section>
+        </section >
 
     )
 }

@@ -1,8 +1,10 @@
 import React from 'react'
-import whatWeDoStyles from './what-we-do.module.scss'
 import PixlLogo from "../../images/svg/logo-pixl.inline.svg"
 import IconDevelopment from "../../images/svg/icon-development.inline.svg"
 import Pkoenders from "../../images/svg/pkoenders.inline.svg"
+
+import * as whatWeDoStyles from './what-we-do.module.scss'
+
 //import Pkoenders from "../../images/svg/pkoenders-anim.inline.svg"
 
 const WhatWeDo = () => {

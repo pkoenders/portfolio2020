@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 //Collect the required form fields
-import contactStyles from './contactForm.module.scss'
 import InputName from "./formFields/name"
 import InputEmail from "./formFields/email"
 import InputSubject from "./formFields/subject"
@@ -8,6 +7,9 @@ import InputMessage from "./formFields/message"
 import SubmitThankYou from "./formFields/submitThankYou"
 import SubmitError from "./formFields/submitError"
 import FormSubmit from "./formFields/buttonSubmit"
+
+import * as contactStyles from './contactForm.module.scss'
+
 
 const encode = data => {
     return Object.keys(data)
