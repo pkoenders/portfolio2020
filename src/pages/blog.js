@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import SEO from '../components/seo/seo'
+import Seo from '../components/seo/seo'
 import Layout from "../components/layout"
 import SectionBlog from "../components/blog/blog-md"
 
@@ -24,7 +24,7 @@ const Blog = ({ location }) => {
       `}
       </style>
 
-      <SEO
+      <Seo
         title={'Blog | ' + data.site.siteMetadata.title}
         description={'blog list for Peter Koenders.'}
       />

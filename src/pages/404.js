@@ -1,8 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import SEO from '../components/seo/seo'
+import Seo from '../components/seo/seo'
 import Layout from "../components/layout"
 import Bground404 from "../components/404-bground"
+
 import "../styles/index.scss"
 
 const NotFoundPage = ({ location }) => {
@@ -37,7 +38,7 @@ const NotFoundPage = ({ location }) => {
       `}
       </style>
 
-      <SEO
+      <Seo
         title={'Page not found | ' + data.site.siteMetadata.title}
         description={'Error 404, page not found.'}
       />

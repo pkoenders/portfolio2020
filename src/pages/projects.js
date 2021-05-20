@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import SEO from '../components/seo/seo'
+import Seo from '../components/seo/seo'
 import Layout from "../components/layout"
 import SectionProjects from "../components/projects/projects-md"
 
@@ -24,7 +24,7 @@ const Projects = ({ location }) => {
       `}
       </style>
 
-      <SEO
+      <Seo
         title={'Projects | ' + data.site.siteMetadata.title}
         description={'Listing all UI/UX and Graphic Design projects.'}
       />

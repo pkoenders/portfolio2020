@@ -38,23 +38,6 @@ module.exports = {
     `gatsby-plugin-sass`,
 
     {
-      resolve: `gatsby-plugin-scroll-reveal`,
-      options: {
-        threshold: .33, // Percentage of an element's area that needs to be visible to launch animation
-        once: true, // Defines if animation needs to be launched once
-        disable: false, // Flag for disabling animations
-
-        // Advanced Options
-        selector: '[data-sal]', // Selector of the elements to be animated
-        animateClassName: 'sal-animate', // Class name which triggers animation
-        disabledClassName: 'sal-disabled', // Class name which defines the disabled state
-        rootMargin: '0% 50%', // Corresponds to root's bounding box margin
-        enterEventName: 'sal:in', // Enter event name
-        exitEventName: 'sal:out', // Exit event name
-      }
-    },
-
-    {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
@@ -114,6 +97,7 @@ module.exports = {
     },
 
     `gatsby-plugin-react-helmet`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -146,17 +130,16 @@ module.exports = {
       },
     },
 
-
-    //`gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-
     {
-      resolve: `gatsby-transformer-sharp`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        // The option defaults to true
-        checkSupportedExtensions: false,
+        path: `${__dirname}/gatsby-config.js`,
       },
     },
+
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
 
     {
       resolve: `gatsby-transformer-remark`,

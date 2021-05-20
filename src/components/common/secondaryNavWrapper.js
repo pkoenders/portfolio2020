@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import secondaryNav from './secondaryNav.module.scss'
+
+import * as secondaryNav from './secondaryNav.module.scss'
 
 const SecondaryNavWrapper = ({ children }) => {
   return (
