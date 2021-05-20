@@ -1,15 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-//import Img from 'gatsby-image'
-//import PlaceImage from './image/image'
 import IconCreativeTech from "../../images/svg/logo-pixl.inline.svg"
-// //import EmojiUnemployed from "../images/svg/emoji-unemployed.inline.svg"
-// import EmojiSeekingEmployment from "../images/svg/emoji-seeking-employment.inline.svg"
-// //import EmojiToday from "../images/svg/emoji-today-i-am.inline.svg"
-// import EmojiWorking from "../images/svg/emoji-working.inline.svg"
-import '../../styles/index.scss'
-import "../../styles/hamburger.scss"
 import "./header.scss"
+import '/src/styles/index.scss'
+import "/src/styles/hamburger.scss"
+
 
 const Header = ({ data, location }) => {
 
