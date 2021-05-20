@@ -11,8 +11,6 @@ import "./src/styles/index.scss"
 // You can delete this file if you're not using it
 
 
-
-
 //import mediumZoom from 'medium-zoom'
 
 export const onServiceWorkerUpdateReady = () => {
@@ -27,22 +25,14 @@ export const onServiceWorkerUpdateReady = () => {
 }
 
 
-
-
 export const onRouteUpdate = () => {
 
     // Load page
     document.addEventListener("DOMContentLoaded", ready())
 
-    // mediumZoom('.images p span img', {
-    //     //background: '#efeff0',
-
-    //     background: '#ffffff',
-    // })
-
     "resize reload click keydown keyup orientationchange".split(" ").forEach(function (e) {
         window.addEventListener(e, () => {
-            resizeAllGridItems()
+            // resizeAllGridItems()
         })
     })
 }
@@ -52,7 +42,7 @@ function ready() {
         srollNav()
     })
 
-    resizeAllGridItems()
+    //resizeAllGridItems()
     srollNav()
     canvasAnin()
 

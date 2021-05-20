@@ -4,11 +4,12 @@ header.headerNavWrapper.slide {
   // will-change: transform;
   // transition: translate 1.4s;
   transform: translate(0, -61px);
+  z-index: 100001 !important;
 }
 
 header.headerNavWrapper {
   position: fixed;
-  z-index: 100000;
+  z-index: 100001 !important;
   left: 0;
   right: 0;
   top: 0;
