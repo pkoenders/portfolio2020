@@ -44,8 +44,10 @@
             svg {
                 width: 90px;
                 height: auto;
+                max-height: fit-content;
                 display: block;
                 margin: 30px auto;
+                position: relative;
             }
 
             p {

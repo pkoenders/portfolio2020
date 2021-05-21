@@ -215,6 +215,7 @@ section.whatWeDoWrapper {
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
+
         box-shadow: $globalBoxShadowA;
         overflow: hidden;
         position: relative;
@@ -238,6 +239,8 @@ section.whatWeDoWrapper {
         width: 100%;
         margin: 0;
         position: relative;
+        display: flex;
+        flex-direction: column;
         align-self: left;
         text-align: center;
         color: #2d1330;
@@ -250,7 +253,9 @@ section.whatWeDoWrapper {
 
         div {
             padding: 60px;
-            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
             box-shadow: none;
             width: 50%;
             // text-align: left;
@@ -273,8 +278,9 @@ section.whatWeDoWrapper {
 
         span {
             overflow: hidden;
-            display: block;
+            display: flex;
             align-self: stretch;
+            align-items: center;
             height: 100%;
             padding: 60px;
             background-color: $secondaryColorA;
@@ -306,7 +312,7 @@ section.whatWeDoWrapper {
 
                 li {
                     list-style-type: square;
-                    margin-top: 7.5px;
+                    margin: 16px 0;
                 }
             }
         }
@@ -384,11 +390,12 @@ section.whatWeDoWrapper {
 
             a {
                 margin: 30px auto 15px auto;
+                color: #fffFFF !important;
                 background-color: $primaryColor;
             }
 
             a:hover {
-                transform: scale(1.1);
+                transform: scale(1.075);
             }
         }
     }

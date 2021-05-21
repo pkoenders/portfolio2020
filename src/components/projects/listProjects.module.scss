@@ -1,0 +1,45 @@
+@import "src/styles/scss";
+
+.listProjectsSection {
+    background-color: #ffffff;
+    padding: $globalSectionPadding;
+
+    @include respond-below(lg) {
+        // padding: 30px 0 0 0;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+        line-height: normal;
+        margin: 45px 0;
+        //color: #ffffff;
+    }
+
+    div.wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        @include respond-below(lg) {
+            padding: 0 15px 15px;
+        }
+
+        .masonryGrid {
+            display: flex;
+            margin-left: -64px;
+            /* gutter size offset */
+            width: auto;
+        }
+
+        .masonryGridColumn {
+            padding-left: 64px;
+            /* gutter size */
+            background-clip: padding-box;
+        }
+
+        /* Style your items */
+        .masonryGridColumn>a {
+            margin-bottom: 64px;
+        }
+    }
+}

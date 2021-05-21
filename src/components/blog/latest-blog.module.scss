@@ -34,75 +34,75 @@
         }
 
 
-        div.item {
-            //margin-bottom: 30px;
+
+
+        a.item {
             display: block;
             position: relative;
             height: max-content;
             transition: all 0.2s ease-in-out;
             z-index: 5;
             width: 100%;
+            color: $txtColor;
+            margin-bottom: 64px;
 
-            a {
-                color: $txtColor;
-                width: 100%;
-                height: 100%;
+            display: block;
+
+            span {
                 display: block;
+                padding: 20px 4px;
+                text-align: left;
+                border-top: 5px solid $headerBgColor;
+
+                i {
+                    margin-left: auto;
+                }
+
+                h3 {
+                    margin: 0 0 10px 0;
+                    font-family: 'Crimson Pro', sans-serif;
+                    font-weight: 900;
+                    color: inherit;
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                }
+
+                p {
+                    padding: 0px;
+                    width: 100%;
+                    margin: 0;
+                    font-size: .9rem;
+                    line-height: 1.2rem;
+                    color: inherit;
+                }
 
                 span {
-                    display: block;
-                    padding: 20px 15px;
-                    text-align: left;
-
-                    i {
-                        margin-left: auto;
-                    }
-
-                    h3 {
-                        margin: 0 0 10px 0;
-                        font-family: 'Crimson Pro', sans-serif;
-                        font-weight: 900;
-                        color: inherit;
-                        display: flex;
-                        width: 100%;
-                        align-items: center;
-                    }
+                    margin-top: 15px;
+                    padding: 15px 0;
+                    border-top: 1px solid #b8b8b8;
+                    //border-bottom: 1px solid #b8b8b8;
 
                     p {
-                        padding: 0px;
-                        width: 100%;
-                        margin: 0;
-                        font-size: .9rem;
-                        line-height: 1.2rem;
-                        color: inherit;
-                    }
-
-                    span {
-                        margin-top: 15px;
-                        padding: 15px 0;
-                        border-top: 1px solid #b8b8b8;
-                        border-bottom: 1px solid #b8b8b8;
-
-                        p {
-                            font-size: 1.1rem;
-                            line-height: 1.4rem;
-                        }
+                        font-size: 1.1rem;
+                        line-height: 1.4rem;
                     }
                 }
             }
+        }
 
-            a:hover {
-                text-decoration: none;
+        a:hover {
+            text-decoration: none;
+
+            span {
+                // color: $primaryColor;
+                border-top: 5px solid $primaryColor;
 
                 span {
-                    color: $primaryColor;
-
-                    span {
-                        border-top: 1px solid $primaryColor;
-                        border-bottom: 1px solid $primaryColor;
-                    }
-
+                    border-top: 1px solid $primaryColor;
+                    // border-bottom: 1px solid $primaryColor;
                 }
+
             }
         }
     }

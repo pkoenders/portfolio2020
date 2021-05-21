@@ -103,7 +103,7 @@ exports.createPages = ({ graphql, actions }) => {
         const next = index === blogItems.length - 1 ? null : blogItems[index + 1].node
         const previous = index === 0 ? null : blogItems[index - 1].node
         const thisBlogItem = blogItem
-        var pagePath = `/blog/`
+        var pagePath = `/thoughts/`
         var templatePath = `./src/templates/blogMD.js`
         var item = blogItem
 

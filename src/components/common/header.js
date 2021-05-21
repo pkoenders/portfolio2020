@@ -118,9 +118,9 @@ const Header = ({ location }) => {
             </li>
             <li>
               <Link
-                to="/blog"
+                to="/thoughts"
                 activeClassName={"activeNavItem"}>
-                Blog
+                Thoughts
               </Link>
             </li>
             <li>

@@ -1,9 +1,9 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Layout from "../components/layout"
-import SectionWhatWeDo from "../components/homepage/what-we-do"
-import SectionLatestProjects from "../components/homepage/latest-projects"
-import SectionContact from "../components/forms/contact"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Layout from '../components/layout'
+import SectionWhatWeDo from '../components/homepage/what-we-do'
+import ListProjects from '../components/projects/listProjects'
+import SectionContact from '../components/forms/contact'
 import Seo from '../components/seo/seo'
 
 
@@ -27,7 +27,8 @@ const IndexPage = ({ location }) => {
       />
       <Layout location={location}>
         <SectionWhatWeDo />
-        <SectionLatestProjects />
+        {/* <SectionLatestProjects /> */}
+        <ListProjects title={'Latest projects'} isHomepage={true} />
         <SectionContact location={location} />
       </Layout>
     </>

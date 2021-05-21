@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Seo from '../components/seo/seo'
 import Layout from "../components/layout"
-import SectionProjects from "../components/projects/projects-md"
+import ListProjects from '../components/projects/listProjects'
 
 const Projects = ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -29,7 +29,7 @@ const Projects = ({ location }) => {
         description={'Listing all UI/UX and Graphic Design projects.'}
       />
       <Layout location={location}>
-        <SectionProjects />
+        <ListProjects title={'Projects'} isHomepage={false} />
       </Layout >
     </>
   )
