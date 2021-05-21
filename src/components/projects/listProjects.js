@@ -77,6 +77,8 @@ const ListProjects = ({ title, isHomepage }) => {
                                         key={i}
                                     />
                                 )
+                            } else {
+                                return null;
                             }
                         }
                     })}
