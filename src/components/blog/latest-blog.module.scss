@@ -50,12 +50,13 @@
 
             span {
                 display: block;
-                padding: 20px 4px;
+                padding: 16px 4px;
                 text-align: left;
-                border-top: 5px solid $headerBgColor;
+                border-top: 5px solid $tertiaryColor;
 
                 i {
                     margin-left: auto;
+                    color: $tertiaryColor
                 }
 
                 h3 {
@@ -97,6 +98,10 @@
             span {
                 // color: $primaryColor;
                 border-top: 5px solid $primaryColor;
+
+                i {
+                    color: $primaryColor
+                }
 
                 span {
                     border-top: 1px solid $primaryColor;

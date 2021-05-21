@@ -41,7 +41,7 @@ const LatestBlogPosts = () => {
     }
     return (
         <section className={latestBlog.wrapper + ' section-layout-wide'}>
-            <h1>Recent posts</h1>
+            <h1>Recent thoughts</h1>
             <div className={latestBlog.wrapper}>
                 <Masonry
                     breakpointCols={breakpointColumnsObj}
