@@ -80,6 +80,8 @@ const ListProjects = ({ title, isHomepage }) => {
                             } else {
                                 return null;
                             }
+                        } else {
+                            return null;
                         }
                     })}
                 </Masonry>
