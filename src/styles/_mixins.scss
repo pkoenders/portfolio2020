@@ -51,3 +51,28 @@
   // border-bottom: 1px solid #343b44;
   box-shadow: $globalBoxShadowA;
 }
+
+@mixin masonryGrid {
+  .masonryGrid {
+    display: flex;
+    max-width: 1200px;
+    //margin-left: -px;
+    /* gutter size offset */
+    width: auto;
+  }
+
+  .masonryGridColumn {
+    padding-left: 32px;
+    /* gutter size */
+    background-clip: padding-box;
+  }
+
+  .masonryGridColumn:first-of-type {
+    padding-left: 0px;
+    padding-right: 32px;
+
+    @include respond-below(sm) {
+      padding-right: 0;
+    }
+  }
+}

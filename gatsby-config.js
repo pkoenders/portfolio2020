@@ -58,7 +58,7 @@ module.exports = {
 
             {
               family: "Crimson+Pro",
-              variants: ["900"],
+              variants: ["900", "700"],
               // fontDisplay: 'swap',
               strategy: 'base64',
             },

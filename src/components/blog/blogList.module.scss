@@ -2,7 +2,6 @@
 
 .wrapper {
     background-color: #ffffff;
-
     padding: $globalSectionPadding;
 
     @include respond-below(lg) {
@@ -18,23 +17,7 @@
     div.wrapper {
         max-width: 1200px;
         margin: 0 auto;
-
-        .masonryGrid {
-            display: flex;
-            max-width: 1200px;
-            margin-left: -64px;
-            /* gutter size offset */
-            width: auto;
-        }
-
-        .masonryGridColumn {
-            padding-left: 64px;
-            /* gutter size */
-            background-clip: padding-box;
-        }
-
-
-
+        @include masonryGrid;
 
         a.item {
             display: block;
@@ -52,7 +35,11 @@
                 display: block;
                 padding: 16px 4px;
                 text-align: left;
-                border-top: 5px solid $tertiaryColor;
+                border-top: 4px solid $tertiaryColor;
+
+                @include respond-below(lg) {
+                    padding: 16px 16px;
+                }
 
                 i {
                     margin-left: auto;
@@ -86,7 +73,7 @@
 
                     p {
                         font-size: 1.1rem;
-                        line-height: 1.4rem;
+                        line-height: 1.8rem;
                     }
                 }
             }
@@ -97,7 +84,7 @@
 
             span {
                 // color: $primaryColor;
-                border-top: 5px solid $primaryColor;
+                border-top: 4px solid $primaryColor;
 
                 i {
                     color: $primaryColor

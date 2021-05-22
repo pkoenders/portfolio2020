@@ -46,8 +46,11 @@ const ListProjectItem = ({ itemData }) => {
                     toggleActions: 'play none none reverse',
                     //markers: true
                 }
-            });
-        });
+            })
+            return () => {
+                revealTxt.current.kill()
+            }
+        })
 
         revealTxt.current.forEach((item, index) => {
             gsap.fromTo(item, {
@@ -66,9 +69,13 @@ const ListProjectItem = ({ itemData }) => {
                     toggleActions: 'play none none reverse',
                     // markers: true
                 }
-            });
-        });
-    }, []);
+            })
+            return () => {
+                revealRefs.current.kill()
+            }
+        })
+
+    }, [])
 
     return (
         <Link

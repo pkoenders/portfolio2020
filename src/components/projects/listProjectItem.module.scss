@@ -8,6 +8,7 @@ a.item {
     position: relative;
     height: max-content;
     z-index: 5;
+    margin-bottom: 64px;
 
     div {
 
@@ -36,7 +37,7 @@ a.item {
         display: block;
         padding: 16px 4px;
         text-align: left;
-        border-top: 5px solid $headerBgColor;
+        border-top: 4px solid $headerBgColor;
 
         span {
             //all: unset;
@@ -76,7 +77,7 @@ a:hover {
     }
 
     span {
-        border-top: 5px solid $primaryColor;
+        border-top: $primaryColor;
         color: $primaryColor;
 
         >span {

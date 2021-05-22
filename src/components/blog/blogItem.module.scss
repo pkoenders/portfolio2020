@@ -9,21 +9,24 @@ section.sectionProject {
             padding: 0 15px;
 
             .header {
+                display: flex;
+                border-bottom: 1px solid $tertiaryColor;
+                align-items: center;
+                margin-bottom: 32px;
 
                 h1 {
                     margin-bottom: 5px;
                 }
 
                 p {
-                    line-height: 1.8rem;
+                    line-height: 1.3rem;
                     margin-bottom: 15px;
-
-                    a {
-                        i {
-                            font-size: 32px;
-
-                        }
-                    }
+                    padding: 0 0 0 16px;
+                    font-size: .9rem;
+                    margin-left: auto;
+                    text-align: right;
+                    white-space: nowrap;
+                    color: $txtColorLight;
                 }
             }
 
@@ -33,6 +36,8 @@ section.sectionProject {
                     display: flex;
                     flex-direction: row;
                     align-self: flex-start;
+                    max-width: 760px;
+                    margin: 0 auto;
 
                     @include respond-below(md) {
                         flex: none;
@@ -72,76 +77,50 @@ section.sectionProject {
                             }
                         }
 
+                        h3 {
+                            margin-bottom: 16px;
+                            font-family: "Crimson Pro", serif;
+                        }
+
                         p,
                         ul li,
                         ol li {
                             margin: 15px 0 10px 0;
                             text-align: left;
-                            // font-size: .9rem;
-                            // font-family: 'Roboto', sans-serif;
-                            // line-height: 1.2rem;
-                            // color: #253240;
+                            line-height: 1.8rem;
+                            position: relative;
+                            //overflow-x: visible;
 
                             >span {
-                                border-radius: $globalBorderRadiusA;
+                                //border-radius: $globalBorderRadiusA;
                                 overflow: hidden;
                                 background-color: #ffffff;
                                 border: 1px solid #ffffff;
-                                box-shadow: 0 0 15px 0 #5f5b5b9e;
+                                box-shadow: 0 0 15px 0 #61616177;
+                                margin: 48px 0;
+                                position: relative;
+                                // left: -64px;
+                                // right: -64px;
 
-                                margin: 60px 0;
+                                // max-width: 150%;
+                                width: 100%;
+                                //max-width: fit-content;
 
-                                //height: auto !important;
                                 img {
                                     display: block;
-                                    position: relative;
+
+
                                     width: 100%;
                                     height: auto !important;
-
-                                    // max-height: max-content !important;
                                 }
                             }
                         }
-
-
-
-
 
                         p:last-of-type {
                             font-weight: bold;
                             margin: 15px 0 0 0;
                         }
                     }
-
-
-
-                    // p {
-                    //     span {
-                    //         border-radius: $globalBorderRadiusA;
-                    //         overflow: hidden;
-                    //         background-color: #ffffff;
-                    //         border: 1px solid #ffffff;
-                    //         box-shadow: 0 0 15px 0 #5f5b5b9e;
-
-                    //         //margin: 60px 0;
-                    //         //height: auto !important;
-                    //         img {
-                    //             display: block;
-                    //             position: relative;
-                    //             width: 100%;
-                    //             height: auto !important;
-                    //             // max-height: max-content !important;
-                    //         }
-                    //     }
-
-                    //     p:last-of-type {
-                    //         margin-bottom: 0;
-                    //     }
-
-                    //     p span:last-of-type {
-                    //         margin-bottom: 0;
-                    //     }
-                    // }
                 }
             }
         }

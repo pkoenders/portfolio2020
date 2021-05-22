@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Seo from '../seo/seo'
 
-import * as projectStyles from './blog-item.module.scss'
+import * as projectStyles from './blogItem.module.scss'
 
 //export default function ProjectTemplate({ data }) {
 const ProjectTemplate = ({ data, pageContext }) => {

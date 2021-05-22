@@ -3,7 +3,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import moment from 'moment'
 import Masonry from 'react-masonry-css'
 
-import * as latestBlog from './latest-blog.module.scss'
+import * as latestBlog from './blogList.module.scss'
 
 const LatestBlogPosts = () => {
     moment()
@@ -41,7 +41,7 @@ const LatestBlogPosts = () => {
     }
     return (
         <section className={latestBlog.wrapper + ' section-layout-wide'}>
-            <h1>Recent thoughts</h1>
+            <h1>Thoughts & considerations</h1>
             <div className={latestBlog.wrapper}>
                 <Masonry
                     breakpointCols={breakpointColumnsObj}
@@ -52,7 +52,7 @@ const LatestBlogPosts = () => {
                         edge.node.frontmatter.addtohomepage === true ? ''
                             :
                             <Link
-                                to={`/blog/${edge.node.frontmatter.slug}`}
+                                to={`/thoughts/${edge.node.frontmatter.slug}`}
                                 className={latestBlog.item}
                                 key={i}>
                                 <span>

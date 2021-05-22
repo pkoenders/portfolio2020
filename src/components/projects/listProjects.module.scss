@@ -24,22 +24,6 @@
             padding: 0 15px 15px;
         }
 
-        .masonryGrid {
-            display: flex;
-            margin-left: -64px;
-            /* gutter size offset */
-            width: auto;
-        }
-
-        .masonryGridColumn {
-            padding-left: 64px;
-            /* gutter size */
-            background-clip: padding-box;
-        }
-
-        /* Style your items */
-        .masonryGridColumn>a {
-            margin-bottom: 64px;
-        }
+        @include masonryGrid;
     }
 }
