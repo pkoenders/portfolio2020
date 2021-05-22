@@ -79,8 +79,11 @@ a:hover {
     span {
         border-top: $primaryColor;
         color: $primaryColor;
+        border-top: 4px solid $primaryColor;
 
         >span {
+
+
             h3 {
                 text-decoration: none;
             }
