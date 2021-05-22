@@ -23,7 +23,7 @@ const ContactForm = ({ data, location }) => {
         //const waveAnim = document.querySelector('.wave')
         wavetTl.current = gsap.timeline({
             scrollTrigger: {
-                trigger: [waveRef.current],
+                trigger: waveRef.current,
                 start: 'top bottom-=192px',
                 end: 'top top',
                 toggleActions: 'play none none reverse',
@@ -31,7 +31,7 @@ const ContactForm = ({ data, location }) => {
             }
         });
 
-        wavetTl.current.fromTo([waveRef.current],
+        wavetTl.current.fromTo(waveRef.current,
             {
                 rotation: -20,
                 scale: .9,
