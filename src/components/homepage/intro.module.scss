@@ -24,7 +24,8 @@ section.sectionIntro {
         align-items: stretch;
         box-shadow: $globalBoxShadowA;
         overflow: hidden;
-        border-radius: 3px;
+        border-radius: 4px;
+
 
         @include respond-below(lg) {
             border-radius: 0px;
@@ -32,9 +33,11 @@ section.sectionIntro {
 
         >div {
             padding: 64px;
-            width: 50%;
+            box-sizing: border-box;
+            width: calc(50% - 1px);
             display: flex;
             align-items: center;
+            margin: 0 .5px 1px .5px;
 
 
 
