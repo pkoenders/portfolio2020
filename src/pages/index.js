@@ -1,7 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import SectionWhatWeDo from '../components/homepage/what-we-do'
+import Hero from '../components/homepage/hero'
+import Intro from '../components/homepage/intro'
 import ListProjects from '../components/projects/listProjects'
 import SectionContact from '../components/forms/contact'
 import Seo from '../components/seo/seo'
@@ -26,8 +27,8 @@ const IndexPage = ({ location }) => {
         description={'A versatile UI/UX designer with 20+ years of all-round industry experience.'}
       />
       <Layout location={location}>
-        <SectionWhatWeDo />
-        {/* <SectionLatestProjects /> */}
+        <Hero />
+        <Intro />
         <ListProjects title={'Latest projects'} isHomepage={true} />
         <SectionContact location={location} />
       </Layout>
