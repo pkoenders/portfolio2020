@@ -56,7 +56,8 @@ section.sectionIntro {
                 p,
                 ul,
                 li {
-                    color: #000000 !important;
+                    // color: #000000 !important;
+                    color: $headerBgColor !important;
                     -webkit-margin-after: 0;
                 }
 
