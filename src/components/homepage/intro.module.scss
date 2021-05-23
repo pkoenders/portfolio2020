@@ -42,7 +42,7 @@ section.sectionIntro {
 
 
             @include respond-below(md) {
-                padding: 64px 32px;
+                padding: 40px 32px;
             }
 
             @include respond-below(sm) {
@@ -76,7 +76,7 @@ section.sectionIntro {
                     margin: 0px auto 30px auto;
 
                     @include respond-below(sm) {
-                        width: 40%;
+                        width: 50%;
                     }
                 }
 
