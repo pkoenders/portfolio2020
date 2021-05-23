@@ -5,15 +5,11 @@ import Pkoenders from "../../images/svg/pkoenders.inline.svg"
 
 import * as whatWeDoStyles from './what-we-do.module.scss'
 
-//import Pkoenders from "../../images/svg/pkoenders-anim.inline.svg"
-
 const WhatWeDo = () => {
 
     return (
         <>
             <section className={whatWeDoStyles.sectionHeroImg + ' section-layout-wide'}>
-
-                {/* <canvas id="canv" width="32" height="32" /> */}
 
                 <div className={whatWeDoStyles.intro}>
                     <div className={whatWeDoStyles.introWrapper}>
@@ -22,14 +18,10 @@ const WhatWeDo = () => {
                 </div>
 
                 <span>
-
                     <canvas className="headAnim" width="32" height="32" />
                     <Pkoenders />
                 </span>
-                {/* <Img
-                    alt={'Web designer'}
-                    fluid={dataWhatWeDo.webDesigner.childImageSharp.fluid}
-                /> */}
+
             </section>
 
             <section className={whatWeDoStyles.whatWeDoWrapper + ' section-layout-wide contentStart'}>
@@ -56,7 +48,7 @@ const WhatWeDo = () => {
 
                     <div className={whatWeDoStyles.technical}>
                         <div>
-                            <p>I support digital accessibility, am curious and enjoy working with creative and integration teams on diversified digital projects.</p>
+                            <p>I support digital accessibility, am curious and enjoy working with creative and integration teams delivering digital solutions.</p>
                         </div>
                         <span>
                             <IconDevelopment />

@@ -1,6 +1,6 @@
 $whiteText:#eff0f1;
 $primaryColor: #E41B5B;
-$primaryColorA: #EB5686;
+$primaryColorA: #ED6E96;
 $secondaryColor: #EBD956;
 $secondaryColorA: #F3E896;
 $tertiaryColor: #1BABE4;
@@ -28,7 +28,8 @@ $globalSectionPadding: 1px 0 90px 0;
 $globalBorderRadiusA: 3px;
 $globalBorderRadiusB: 15px;
 
-$globalBoxShadowA: 0px 0px 8px 0px rgba(0, 0, 0, 0.33);
-$globalBoxShadowB: 0px 0px 16px 0px rgba(0, 0, 0, 0.33);
+$globalBoxShadowA: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+$globalBoxShadowB: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+$globalBoxShadowC: 0px 0px 22px 0px rgba(0, 0, 0, 0.33);
 
 $hoverTransition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);

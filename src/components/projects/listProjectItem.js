@@ -80,7 +80,7 @@ const ListProjectItem = ({ itemData }) => {
     return (
         <Link
             to={`/projects/${itemData.node.frontmatter.slug}`}
-            className={listProjectItem.item + ' item'}
+            className={listProjectItem.listProjectItem + ' item'}
             ref={itemRef}
         >
             <GatsbyImage

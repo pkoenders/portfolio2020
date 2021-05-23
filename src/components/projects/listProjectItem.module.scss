@@ -1,6 +1,6 @@
 @import "src/styles/scss";
 
-a.item {
+a.listProjectItem {
     width: 100%;
     height: 100%;
     height: max-content;
@@ -9,6 +9,9 @@ a.item {
     height: max-content;
     z-index: 5;
     margin-bottom: 64px;
+    transition: Y, .15s ease-out;
+
+
 
     div {
 
@@ -16,6 +19,7 @@ a.item {
         border-radius: 4px 4px 0px 0px;
         overflow: hidden;
         box-shadow: $globalBoxShadowB;
+        transition: all .15s ease-in-out;
         border: 1px solid #ffffff;
         border-bottom: none;
         display: block;
@@ -31,11 +35,13 @@ a.item {
     }
 
     span {
+        position: relative;
         color: $txtColor;
+        background-color: #ffffff;
         margin-top: -1px;
         z-index: 10;
         display: block;
-        padding: 24px 4px;
+        padding: 24px 8px;
         text-align: left;
         border-top: 4px solid $headerBgColor;
 
@@ -64,9 +70,14 @@ a.item {
     }
 }
 
-a:hover {
+a.listProjectItem:hover {
     text-decoration: none !important;
     color: $primaryColor !important;
+    transform: translateY(-2px) !important;
+
+    div {
+        box-shadow: $globalBoxShadowC;
+    }
 
     h3 {
         text-decoration: underline;
@@ -81,8 +92,9 @@ a:hover {
         color: $primaryColor;
         border-top: 4px solid $primaryColor;
 
-        >span {
-
+        span {
+            border: none;
+            padding: 0;
 
             h3 {
                 text-decoration: none;

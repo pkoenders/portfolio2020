@@ -155,13 +155,17 @@ header.headerNavWrapper {
           vertical-align: middle;
         }
 
-        a:hover {
+        a:hover,
+        button:hover {
           text-decoration: none !important;
+          color: $primaryColorA !important;
         }
 
         a.activeNavItem {
           pointer-events: none !important;
           border-left: 5px solid $primaryColorA;
+          color: $primaryColorA !important;
+
           margin-left: -5px;
         }
 

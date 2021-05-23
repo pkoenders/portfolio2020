@@ -392,6 +392,9 @@ section.whatWeDoWrapper {
                 margin: 30px auto 15px auto;
                 color: #fffFFF !important;
                 background-color: $primaryColor;
+                transition: all, .15s ease-out;
+
+
             }
 
             a:hover {
