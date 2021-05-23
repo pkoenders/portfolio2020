@@ -35,7 +35,7 @@ section.sectionIntro {
             width: 50%;
             display: flex;
             align-items: center;
-            color: #000000;
+
 
 
             @include respond-below(md) {
@@ -53,6 +53,7 @@ section.sectionIntro {
                 p,
                 ul,
                 li {
+                    color: #000000 !important;
                     -webkit-margin-after: 0;
                 }
 
