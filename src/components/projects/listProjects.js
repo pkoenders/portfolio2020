@@ -28,8 +28,11 @@ const ListProjects = ({ title, isHomepage }) => {
                             coverimage{
                                 childImageSharp {
                                     gatsbyImageData(
-                                        layout: CONSTRAINED, 
-                                        formats: [AUTO, WEBP, AVIF], 
+                                        width: 566
+                                        quality: 50
+                                        breakpoints: [768, 992, 1200, 1824]
+                                        layout: CONSTRAINED
+                                        formats: [AUTO, WEBP, AVIF]
                                         placeholder:BLURRED 
                                     )
                                 }
