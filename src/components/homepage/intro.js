@@ -46,20 +46,23 @@ const Intro = () => {
         <section className={intro.sectionIntro + ' section-layout-wide contentStart'}>
             <div className={intro.intro}>
 
-                <div className={intro.part1} ref={panelRef}>
+                <div className={intro.part1}>
                     <span>
+                        <i className={"material-icons-round"} aria-hidden="true">follow_the_signs</i>
                         <p>I’m a versatile UI/UX designer originally from a traditional Graphic Design background and transitioned into Digital and Web Design.</p>
                     </span>
                 </div>
 
-                <div className={intro.part2} ref={panelRef}>
+                <div className={intro.part2} >
                     <span>
+                        <i className={"material-icons-round"} aria-hidden="true">accessibility_new</i>
                         <p>I support digital accessibility, am curious and enjoy working with creative and integration teams delivering digital solutions.</p>
                     </span>
                 </div>
 
-                <div className={intro.part3} ref={panelRef}>
+                <div className={intro.part3} >
                     <span>
+                        <i className={"material-icons-round"} aria-hidden="true">design_services</i>
                         <ul>
                             <li>Implementation of the UI/UX design process</li>
                             <li>Estimating &amp; proposal review</li>
@@ -71,18 +74,16 @@ const Intro = () => {
                     </span>
                 </div>
 
-                <div className={intro.part4} ref={panelRef}>
+                <div className={intro.part4} >
                     <span>
+                        <i className={"material-icons-round"} aria-hidden="true">favorite_border</i>
                         <IconDevelopment />
                         <p>With professionalism, integrity and care. I work in a collaborative manner to plan, design and deliver crafted solutions.</p>
                         <a href="/peter-koenders-resume.pdf" className="buttonPrimary">View my resumé</a>
                     </span>
                 </div>
 
-
-
             </div>
-            <span ref={panelRef}></span>
         </section>
     )
 }

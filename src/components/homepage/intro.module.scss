@@ -3,7 +3,7 @@
 section.sectionIntro {
     background: rgb(65, 87, 111);
     background: linear-gradient(0deg, rgba(65, 87, 111, 1) 0%, rgba(37, 50, 64, 1) 100%);
-    padding-bottom: 120px;
+    //padding-bottom: 120px;
     font-size: 1.1rem;
     line-height: 1.8rem;
     font-weight: 500;
@@ -19,57 +19,82 @@ section.sectionIntro {
 
     .intro {
         max-width: 1200px;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         align-items: stretch;
-        //overflow: hidden;
-        position: relative;
-
+        overflow: hidden;
+        box-shadow: $globalBoxShadowA;
+        border-radius: 8px 8px 0 0;
 
         @include respond-below(lg) {
             border-radius: 0px;
+            box-shadow: none;
         }
 
-        >div {
-            padding: 64px;
-            box-sizing: border-box;
+        div {
+            padding: 32px;
+            // max-width: calc(50% - 1px);
             width: calc(50% - 1px);
-            align-items: center;
+            align-items: stretch;
             display: flex;
-            //position: relative;
-            // margin: 0px .5px 0px .5px;
-            //margin: 0px 1px 0px 1px;
-            border-top: 1px solid $headerBgColor;
-            border-left: 1px solid $headerBgColor;
+            margin: 1px .5px 0 .5px;
+            position: relative;
+
+            //border-top: 1px solid $headerBgColor;
+
+            @include respond-below(lf) {
+                margin: 1px 0 0 0;
+
+            }
 
             @include respond-below(md) {
-                padding: 40px 32px;
+                // padding: 40px 32px;
 
             }
 
             @include respond-below(sm) {
                 width: 100%;
-                border-left: none;
+
             }
+
+
 
             span {
                 align-items: center;
+
+                i {
+                    //color: #ffffff;
+                    //color: #41576f;
+                    color: $txtColor;
+                    align-self: flex-start;
+                    //background-color: #41576f;
+                    background-color: #41576f30;
+                    font-size: 28px;
+                    border-radius: 999rem;
+                    padding: 8px;
+                    margin-bottom: 16px;
+                }
+
+                //width: 100%;
+                // display: block;
+
 
                 h2,
                 p,
                 ul,
                 li {
-                    // color: #000000 !important;
                     color: $headerBgColor !important;
                     -webkit-margin-after: 0;
+                    margin-bottom: 0;
                 }
 
                 ul {
                     li {
                         list-style-type: square;
-                        margin: 16px 0;
+                        margin: 0 0 16px 0;
                         padding-left: 8px;
                     }
                 }
@@ -78,7 +103,7 @@ section.sectionIntro {
                     width: 60%;
                     height: auto;
                     display: block;
-                    margin: 0px auto 30px auto;
+                    margin: 0px auto 32px auto;
 
                     @include respond-below(sm) {
                         width: 50%;
@@ -86,7 +111,7 @@ section.sectionIntro {
                 }
 
                 a {
-                    margin: 30px auto 15px auto;
+                    margin: 32px auto 15px auto;
                     color: #fffFFF !important;
                     background-color: $primaryColor;
                     transition: all, .15s ease-out;
@@ -100,26 +125,56 @@ section.sectionIntro {
 
         .part1 {
             background-color: $tertiaryColorA;
+
+            // span {
+            //     i {
+            //         background-color: $tertiaryColor;
+
+            //     }
+            // }
+
             // background: rgb(27, 171, 228);
-            // background: linear-gradient(135deg, rgba(150, 216, 243, 1) 75%, rgba(255, 255, 255, 1) 100%);
+            // background: linear-gradient(135deg, rgba(150, 216, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            // background: linear-gradient(90deg, rgba(150, 216, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
         }
 
         .part2 {
             background-color: $primaryColorA;
+
+            span {
+                i {
+                    // background-color: $primaryColor;
+                    // background-color: $headerBgColor;
+                    //border: 1px solid $primaryColor
+                }
+            }
+
             // background: rgb(228, 27, 91);
-            // background: linear-gradient(225deg, rgba(224, 152, 175, 1) 75%, rgba(255, 255, 255, 1) 100%);
+            // background: linear-gradient(225deg, rgba(224, 152, 175, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            // background: linear-gradient(270deg, rgba(224, 152, 175, 1) 0%, rgba(255, 255, 255, 1) 100%);
         }
 
         .part3 {
             background-color: $secondaryColorA;
-            //background: rgb(235, 217, 86);
-            // background: linear-gradient(45deg, rgba(243, 232, 150, 1) 75%, rgba(255, 255, 255, 1) 100%);
+
+            // span {
+            //     i {
+            //         background-color: $secondaryColor;
+
+            //     }
+            // }
+
+            // background: rgb(235, 217, 86);
+            // background: linear-gradient(45deg, rgba(243, 232, 150, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            // background: linear-gradient(90deg, rgba(243, 232, 150, 1) 0%, rgba(255, 255, 255, 1) 100%);
         }
 
         .part4 {
             background-color: $tertiaryAltColorA;
-            //background: rgb(99, 213, 159);
-            // background: linear-gradient(315deg, rgba(153, 223, 190, 1) 75%, rgba(255, 255, 255, 1) 100%);
+
+            // background: rgb(99, 213, 159);
+            // background: linear-gradient(315deg, rgba(153, 223, 190, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            // background: linear-gradient(270deg, rgba(153, 223, 190, 1) 0%, rgba(255, 255, 255, 1) 100%);
         }
     }
 }

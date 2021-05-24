@@ -1,9 +1,9 @@
 @import "src/styles/scss";
 
 header.headerNavWrapper.slide {
-  // will-change: transform;
-  // transition: translate 1.4s;
-  // transform: translate(0, -61px);
+  will-change: transform;
+  //transition: translate 1.4s;
+  transform: translate(0, -61px);
 }
 
 header.headerNavWrapper {
@@ -240,6 +240,6 @@ header.headerNavWrapper.fillBground::before {
 
 header.headerNavWrapper.fillBgroundQuick::before {
   opacity: 1;
-  transition: opacity 0s;
+  transition: opacity 0.25s;
   @include minNavBottomBorder;
 }
