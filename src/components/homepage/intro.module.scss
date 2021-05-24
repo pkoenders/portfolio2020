@@ -24,11 +24,8 @@ section.sectionIntro {
         flex-wrap: wrap;
         flex-direction: row;
         align-items: stretch;
-        //box-shadow: $globalBoxShadowA;
         //overflow: hidden;
         position: relative;
-        // border-radius: 4px;
-        //margin-bottom: 120px !important;
 
 
         @include respond-below(lg) {
