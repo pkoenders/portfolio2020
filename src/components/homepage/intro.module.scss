@@ -1,18 +1,20 @@
 @import "src/styles/scss";
 
 section.sectionIntro {
-    margin-top: -60px !important;
     background: rgb(65, 87, 111);
     background: linear-gradient(0deg, rgba(65, 87, 111, 1) 0%, rgba(37, 50, 64, 1) 100%);
     padding-bottom: 120px;
     font-size: 1.1rem;
     line-height: 1.8rem;
     font-weight: 500;
+    // position: relative;
+    display: flex;
+    position: relative;
+    z-index: 999;
     //text-align: center;
 
     @include respond-below(lg) {
         padding-bottom: 0px;
-        margin-top: 0px !important;
     }
 
     .intro {
@@ -22,9 +24,11 @@ section.sectionIntro {
         flex-wrap: wrap;
         flex-direction: row;
         align-items: stretch;
-        box-shadow: $globalBoxShadowA;
-        overflow: hidden;
-        border-radius: 4px;
+        //box-shadow: $globalBoxShadowA;
+        //overflow: hidden;
+        position: relative;
+        // border-radius: 4px;
+        //margin-bottom: 120px !important;
 
 
         @include respond-below(lg) {
@@ -35,18 +39,22 @@ section.sectionIntro {
             padding: 64px;
             box-sizing: border-box;
             width: calc(50% - 1px);
-            display: flex;
             align-items: center;
-            margin: 0 .5px 1px .5px;
-
-
+            display: flex;
+            //position: relative;
+            // margin: 0px .5px 0px .5px;
+            //margin: 0px 1px 0px 1px;
+            border-top: 1px solid $headerBgColor;
+            border-left: 1px solid $headerBgColor;
 
             @include respond-below(md) {
                 padding: 40px 32px;
+
             }
 
             @include respond-below(sm) {
                 width: 100%;
+                border-left: none;
             }
 
             span {

@@ -3,12 +3,11 @@ import IconWave from "../../images/svg/icon-wave.inline.svg"
 import FormContact from "./formContact"
 
 import { gsap, Elastic } from "gsap"
-import { CSSPlugin, ScrollTrigger } from 'gsap/all'
+import { ScrollTrigger } from 'gsap/all'
 
 import * as contactStyles from './contactForm.module.scss'
 
 gsap.registerPlugin(ScrollTrigger)
-gsap.registerPlugin(CSSPlugin)
 
 const ContactForm = ({ data, location }) => {
 

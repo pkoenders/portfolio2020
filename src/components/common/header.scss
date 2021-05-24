@@ -3,7 +3,7 @@
 header.headerNavWrapper.slide {
   // will-change: transform;
   // transition: translate 1.4s;
-  transform: translate(0, -61px);
+  // transform: translate(0, -61px);
 }
 
 header.headerNavWrapper {
@@ -82,14 +82,14 @@ header.headerNavWrapper {
       display: flex;
       position: absolute;
       left: 0px;
-      margin: 3px 0 auto 3px;
+      margin: 0px 0 auto 3px;
       width: fit-content;
       white-space: nowrap;
       align-items: center;
-      height: 56px;
+      height: 60px;
       padding: 0 12px;
       background-color: $headerBgColor;
-      background-color: transparent;
+      // background-color: transparent;
       border: none;
       cursor: pointer;
 

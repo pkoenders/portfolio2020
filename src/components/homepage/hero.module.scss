@@ -4,10 +4,11 @@
     display: block;
     position: relative;
     background-color: $headerBgColor;
-    padding: 63px 0 0;
+    //padding: 63px 0 0;
+    margin-top: 63px;
 
     >span {
-        margin: 0 auto 60px 60%;
+        margin: 0 auto 0 60%;
         display: block;
         height: 350px;
         width: 294px;
@@ -33,10 +34,8 @@
 
         canvas {
             opacity: 1;
-            top: 2px;
-            left: 2px;
-            right: 2px;
-            bottom: 2px;
+
+            padding: 5px;
 
         }
 
