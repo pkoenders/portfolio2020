@@ -1,12 +1,12 @@
 import React from 'react'
-import { gsap } from "gsap"
-import { ScrollTrigger } from 'gsap/all'
+// import { gsap } from "gsap"
+// import { ScrollTrigger } from 'gsap/all'
 
 import IconDevelopment from "../../images/svg/icon-development.inline.svg"
 
 import * as intro from './intro.module.scss'
 
-gsap.registerPlugin(ScrollTrigger)
+// gsap.registerPlugin(ScrollTrigger)
 
 const Intro = () => {
 
