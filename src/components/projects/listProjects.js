@@ -30,7 +30,7 @@ const ListProjects = ({ title, isHomepage }) => {
                                     gatsbyImageData(
                                         width: 566
                                         quality: 50
-                                        breakpoints: [768, 992, 1200, 1824]
+                                        breakpoints: [576, 768, 992, 1200]
                                         layout: CONSTRAINED
                                         formats: [AUTO, WEBP, AVIF]
                                         placeholder:BLURRED 
