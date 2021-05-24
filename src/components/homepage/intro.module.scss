@@ -35,7 +35,7 @@ section.sectionIntro {
         }
 
         div {
-            padding: 32px;
+            padding: 24px 32px 32px;
             // max-width: calc(50% - 1px);
             width: calc(50% - 1px);
             align-items: stretch;
@@ -100,13 +100,13 @@ section.sectionIntro {
                 }
 
                 svg {
-                    width: 60%;
+                    width: 45%;
                     height: auto;
                     display: block;
                     margin: 0px auto 32px auto;
 
                     @include respond-below(sm) {
-                        width: 50%;
+                        //width: 50%;
                     }
                 }
 
