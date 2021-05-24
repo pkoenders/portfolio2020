@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import { gsap } from "gsap"
 import { ScrollTrigger } from 'gsap/all'
 
@@ -10,37 +10,37 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Intro = () => {
 
-    const panelRefs = useRef([])
-    panelRefs.current = []
+    // const panelRefs = useRef([])
+    // panelRefs.current = []
 
-    const panelRef = item => {
-        if (item && !panelRefs.current.includes(item)) {
-            panelRefs.current.push(item);
-        }
-    }
+    // const panelRef = item => {
+    //     if (item && !panelRefs.current.includes(item)) {
+    //         panelRefs.current.push(item);
+    //     }
+    // }
 
-    useEffect(() => {
-        panelRefs.current.forEach((item, index) => {
-            ScrollTrigger.create({
+    // useEffect(() => {
+    //     panelRefs.current.forEach((item, index) => {
+    //         ScrollTrigger.create({
 
-                trigger: item,
-                //start: "top top+=60px",
-                start: "top top+=59px",
-                //end: 'bottom top',
-                pin: true,
-                pinSpacing: false,
+    //             trigger: item,
+    //             //start: "top top+=60px",
+    //             start: "top top+=59px",
+    //             //end: 'bottom top',
+    //             pin: true,
+    //             pinSpacing: false,
 
-            });
-            return () => {
-                panelRefs.current.kill()
-            }
-        });
+    //         });
+    //         return () => {
+    //             panelRefs.current.kill()
+    //         }
+    //     });
 
-        // ScrollTrigger.create({
-        //     //snap: 1 / 4 // snap whole page to the closest section!
-        // });
+    //     // ScrollTrigger.create({
+    //     //     //snap: 1 / 4 // snap whole page to the closest section!
+    //     // });
 
-    }, [])
+    // }, [])
 
     return (
         <section className={intro.sectionIntro + ' section-layout-wide contentStart'}>
