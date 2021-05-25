@@ -38,8 +38,14 @@ section.sectionIntro {
         a {
             margin: 32px auto;
             color: #fffFFF !important;
-            background-color: $primaryColor;
+            // background-color: $primaryColor;
+            background-color: $primaryColorA;
+            //background-color: #CB4872;
+            //background-color: salmon;
             transition: all, .15s ease-out;
+            // border: 1px solid #B5B9BE;
+            // border: 1px solid #6D767F;
+            border: 1px solid $headerBgColor;
         }
 
         a:hover {
