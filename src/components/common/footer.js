@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import * as footerStyles from './footer.module.scss'
 
@@ -16,22 +16,22 @@ const Footer = () => {
     }
   `)
 
-  const [showScroll, setShowScroll] = useState(false)
+  // const [showScroll, setShowScroll] = useState(false)
 
-  const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 400) {
-      setShowScroll(true)
-    } else if (showScroll && window.pageYOffset <= 400) {
-      setShowScroll(false)
-    }
-  };
+  // const checkScrollTop = () => {
+  //   if (!showScroll && window.pageYOffset > 400) {
+  //     setShowScroll(true)
+  //   } else if (showScroll && window.pageYOffset <= 400) {
+  //     setShowScroll(false)
+  //   }
+  // };
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
-  if (typeof window !== 'undefined') {
-    window.addEventListener('scroll', checkScrollTop)
-  }
+  // if (typeof window !== 'undefined') {
+  //   window.addEventListener('scroll', checkScrollTop)
+  // }
 
 
   return (
