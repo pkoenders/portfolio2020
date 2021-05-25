@@ -44,7 +44,7 @@ const Footer = () => {
           <Brand />
         </Link>
         <p>© {new Date().getFullYear()} - {data.site.siteMetadata.author}</p>
-        <button onClick={scrollTop} label="Go to the top of the page"><i className={"material-icons-round"} aria-hidden="true">arrow_upward</i></button>
+        <button onClick={scrollTop} name="Go to the top of the page"><i className={"material-icons-round"} aria-hidden="true">arrow_upward</i></button>
       </div>
     </footer>
   )
