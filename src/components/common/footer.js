@@ -27,10 +27,12 @@ const Footer = () => {
   };
 
   const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', checkScrollTop)
+  }
 
-  window.addEventListener('scroll', checkScrollTop)
 
   return (
     <footer className={footerStyles.footer}>
