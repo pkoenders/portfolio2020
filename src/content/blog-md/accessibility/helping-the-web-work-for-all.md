@@ -23,7 +23,7 @@ While semi-automated testing tools are part of a toolkit, they are not a solutio
 
 However, semi-automated tools are necessary for efficient accessibility evaluation and reducing digital barriers. The tools contribute to creating to an overall better framework and experience not only for users, but all stakeholders and help make the web work for everyone.
 
-References
+**References**<br />
 1.	World Wide Web Consortium (W3C). Web Content Accessibility Guidelines (WCAG) 2.1. Retrieved from https://www.w3.org/TR/WCAG21/
 2.	University of Minnesota Duluth (UMN). Strengths and Limitations of Automated Tools. Retrieved from https://www.d.umn.edu/itss/training/online/wave/strengths_limits.html/
 

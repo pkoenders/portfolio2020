@@ -3,7 +3,7 @@
 .footer {
   position: relative;
   color: #f6f4f2;
-  padding: 96px 0px;
+  padding: 64px 0px;
   background-color: $footerBgColor;
   text-align: center;
 
@@ -28,8 +28,8 @@
 
       svg {
         width: auto;
-        height: 40px;
-        margin: 0 auto 8px;
+        height: 32px;
+        margin: 16px auto;
       }
     }
 
@@ -48,24 +48,34 @@
 
     button {
       cursor: pointer;
-      margin: 8px auto;
-      transition: Y, .15s ease-out;
+      margin: 16px auto;
       background-color: transparent;
       padding: 0;
       border: none;
       color: $headerBgColor;
+      display: flex;
 
       i {
+        margin-top: 8px;
         border-radius: 999rem;
         background-color: #ffffff;
         padding: 4px;
         font-size: 28px;
-
+        transition: all, .15s ease-out;
       }
     }
 
     button:hover {
-      transform: translateY(-4px) !important;
+
+
+      i {
+        margin-top: 0;
+        //transform: translateY(-8px);
+        padding-bottom: 12px;
+        //height: calc(height + 4px);
+        //height: 50px;
+      }
+
     }
   }
 }

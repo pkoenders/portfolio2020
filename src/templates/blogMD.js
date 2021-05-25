@@ -10,7 +10,7 @@ export const query = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM YYYY")
+        date(formatString: "DD MMM YYYY")
         slug
         title
         category

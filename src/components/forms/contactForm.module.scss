@@ -26,10 +26,10 @@
 
         .contactForm {
             display: block;
-            padding: 30px;
+            padding: 32px 32px 1px;
 
             @include respond-below(sm) {
-                padding: 30px 15px 15px;
+                padding: 32px 16px 1px;
             }
 
             svg {
@@ -83,13 +83,16 @@
 
                 button {
                     display: flex;
-                    margin: 30px auto;
+                    margin: 64px auto;
                     align-items: center;
-                    line-height: initial;
-                    padding: 15px 30px;
+                    padding: 16px 32px;
+
+                    @include respond-below(sm) {
+                        margin: 32px auto;
+                    }
 
                     i {
-                        margin-right: 10px;
+                        margin-right: 8px;
                     }
                 }
             }

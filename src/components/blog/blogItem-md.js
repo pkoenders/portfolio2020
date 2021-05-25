@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+
 import Seo from '../seo/seo'
 
 import * as projectStyles from './blogItem.module.scss'
@@ -44,10 +45,11 @@ const ProjectTemplate = ({ data, pageContext }) => {
             <div className={projectStyles.header}>
               <h1>{frontmatter.title}</h1>
               <p>
-                {frontmatter.category}<br />
-                {frontmatter.date}<br />
+                {frontmatter.category}&nbsp;-&nbsp;
+              {frontmatter.date}
               </p>
             </div>
+
             <div className={projectStyles.contentInner}>
               <div
                 className={projectStyles.contentMD}

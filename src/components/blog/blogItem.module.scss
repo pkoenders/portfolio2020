@@ -2,25 +2,26 @@
 
 section.sectionProject {
     .sectionProjectWrapper {
+        //max-width: 1200px;
         max-width: 992px;
         margin: 100px auto;
 
         .content {
-            padding: 0 15px;
+            padding: 0 16px;
 
             .header {
-                display: flex;
-                border-bottom: 1px solid $tertiaryColor;
-                align-items: center;
                 margin-bottom: 32px;
 
                 h1 {
-                    margin-bottom: 5px;
+                    padding-bottom: 8px;
+                    margin-bottom: 8px;
+                    width: 100%;
+                    border-bottom: 1px solid $tertiaryColor;
                 }
 
                 p {
                     line-height: 1.3rem;
-                    margin-bottom: 15px;
+                    margin-bottom: 16px;
                     padding: 0 0 0 16px;
                     font-size: .9rem;
                     margin-left: auto;
@@ -36,7 +37,7 @@ section.sectionProject {
                     display: flex;
                     flex-direction: row;
                     align-self: flex-start;
-                    max-width: 760px;
+                    // max-width: 760px;
                     margin: 0 auto;
 
                     @include respond-below(md) {
@@ -50,11 +51,11 @@ section.sectionProject {
                         flex: 1;
                         position: sticky;
                         top: 105px;
-                        margin-right: 15px;
-                        padding-top: 15px;
+                        margin-right: 16px;
+                        padding-top: 16px;
 
                         ul li {
-                            margin-bottom: 15px;
+                            margin-bottom: 16px;
                         }
 
                         @include respond-below(md) {
@@ -65,16 +66,16 @@ section.sectionProject {
                             display: block;
                         }
 
-                        >div {
-                            width: 150px;
-
-                            p {
-
-                                span {
-                                    box-shadow: none !important;
-                                    border-radius: 0;
-                                }
-                            }
+                        h3,
+                        h4,
+                        p,
+                        ul,
+                        ol {
+                            max-width: 760px;
+                            text-align: left;
+                            line-height: 1.7rem;
+                            position: relative;
+                            margin: 18px auto 8px auto;
                         }
 
                         h3 {
@@ -82,43 +83,18 @@ section.sectionProject {
                             font-family: "Crimson Pro", serif;
                         }
 
-                        p,
-                        ul li,
-                        ol li {
-                            margin: 15px 0 10px 0;
-                            text-align: left;
-                            line-height: 1.8rem;
-                            position: relative;
-                            //overflow-x: visible;
+                        ul,
+                        ol {
+                            margin-top: 0;
+                            padding: 0 16px;
+                        }
 
-                            >span {
-                                //border-radius: $globalBorderRadiusA;
-                                overflow: hidden;
-                                background-color: #ffffff;
-                                border: 1px solid #ffffff;
-                                box-shadow: 0 0 15px 0 #61616177;
-                                margin: 48px 0;
-                                position: relative;
-                                // left: -64px;
-                                // right: -64px;
-
-                                // max-width: 150%;
-                                width: 100%;
-                                //max-width: fit-content;
-
-                                img {
-                                    display: block;
-
-
-                                    width: 100%;
-                                    height: auto !important;
-                                }
-                            }
+                        figure {
+                            margin: 64px 0;
                         }
 
                         p:last-of-type {
-                            font-weight: bold;
-                            margin: 15px 0 0 0;
+                            margin-top: 40px;
                         }
                     }
                 }

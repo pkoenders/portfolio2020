@@ -53,9 +53,9 @@ header.headerNavWrapper {
       }
 
       svg {
-        height: 24px;
+        height: 20px;
         width: auto;
-        margin: 12px 0;
+        margin: 14px 0;
       }
     }
 
@@ -159,6 +159,7 @@ header.headerNavWrapper {
         button:hover {
           text-decoration: none !important;
           color: $primaryColorA !important;
+
         }
 
         a.activeNavItem {

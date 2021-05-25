@@ -23,7 +23,7 @@ Although a digital interface is a convenience for most of us, it can be a hindra
 
 We all benefit from a digital interface that is universal and it is the right thing to do.
 
-References
+**References**<br />
 1.	World Wide Web Consortium (W3C). Web Content Accessibility Guidelines (WCAG) 2.1. Retrieved from https://www.w3.org/TR/WCAG21/
 2.	World Wide Web Consortium (W3C). Introduction to Understanding WCAG 2.1. Retrieved from https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility
 

@@ -75,7 +75,11 @@
             color: #ffffffee;
 
             span {
-                color: $tertiaryAltColorA;
+                //color: $tertiaryAltColorA;
+                background: $tertiaryAltColorA;
+                background: linear-gradient(120deg, rgb($tertiaryAltColorA, 1) 0%, rgb(255, 255, 255) 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
 
             opacity: 0;
