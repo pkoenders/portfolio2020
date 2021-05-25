@@ -18,7 +18,7 @@ const Intro = () => {
     }
 
     useEffect(() => {
-        const timeline = gsap.timeline()
+        // const timeline = gsap.timeline()
         gsap.fromTo(iconRefs.current,
             {
                 opacity: 0,
