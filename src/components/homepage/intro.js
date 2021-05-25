@@ -1,46 +1,72 @@
-import React from 'react'
-// import { gsap } from "gsap"
-// import { ScrollTrigger } from 'gsap/all'
-
-import IconDevelopment from "../../images/svg/icon-development.inline.svg"
+import React, { useEffect, useRef } from 'react'
+import { gsap, Bounce } from "gsap"
+import { ScrollTrigger } from 'gsap/all'
 
 import * as intro from './intro.module.scss'
 
-// gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger)
 
 const Intro = () => {
 
-    // const panelRefs = useRef([])
-    // panelRefs.current = []
+    const iconRefs = useRef([]);
+    iconRefs.current = [];
 
-    // const panelRef = item => {
-    //     if (item && !panelRefs.current.includes(item)) {
-    //         panelRefs.current.push(item);
-    //     }
-    // }
+    const iconRef = item => {
+        if (item && !iconRefs.current.includes(item)) {
+            iconRefs.current.push(item);
+        }
+    }
 
-    // useEffect(() => {
-    //     panelRefs.current.forEach((item, index) => {
-    //         ScrollTrigger.create({
+    useEffect(() => {
+        const timeline = gsap.timeline()
+        gsap.fromTo(iconRefs.current,
+            {
+                opacity: 0,
+                scale: .0,
 
-    //             trigger: item,
-    //             //start: "top top+=60px",
-    //             start: "top top+=59px",
-    //             //end: 'bottom top',
-    //             pin: true,
-    //             pinSpacing: false,
+            },
+            {
+                opacity: 1,
+                scale: 1,
+                ease: Bounce.easeOut,
+                duration: .5,
+                stagger: .75
+            },
+        )
 
-    //         });
-    //         return () => {
-    //             panelRefs.current.kill()
-    //         }
-    //     });
+        return () => {
+            iconRefs.current.kill()
+        }
 
-    //     // ScrollTrigger.create({
-    //     //     //snap: 1 / 4 // snap whole page to the closest section!
-    //     // });
+        // iconRefs.current.forEach((item, index) => {
+        //     gsap.fromTo(item,
+        //         {
+        //             scale: .0,
+        //             opacity: 0
+        //         },
+        //         {
+        //             opacity: 1,
+        //             scale: 1,
+        //             ease: Bounce.easeOut,
+        //             duration: .5,
+        //             stagger: .75,
+        //             scrollTrigger: {
+        //                 trigger: item,
+        //                 stagger: .75,
+        //                 start: "top bottom-=32px",
+        //                 // end: 'bottom bottom+=124px',
+        //                 toggleActions: 'play none none reverse',
+        //                 // markers: true
+        //             }
+        //         },
+        //     )
 
-    // }, [])
+        //     return () => {
+        //         iconRefs.current.kill()
+        //     }
+        // })
+
+    }, [])
 
     return (
         <section className={intro.sectionIntro + ' section-layout-wide contentStart'}>
@@ -48,21 +74,21 @@ const Intro = () => {
 
                 <div className={intro.part1}>
                     <span>
-                        <i className={"material-icons-round"} aria-hidden="true">follow_the_signs</i>
+                        <i className={"material-icons-round"} aria-hidden="true" ref={iconRef}>follow_the_signs</i>
                         <p>I’m a versatile UI/UX designer originally from a traditional Graphic Design background and transitioned into Digital and Web Design.</p>
                     </span>
                 </div>
 
                 <div className={intro.part2} >
                     <span>
-                        <i className={"material-icons-round"} aria-hidden="true">accessibility_new</i>
+                        <i className={"material-icons-round"} aria-hidden="true" ref={iconRef}>accessibility_new</i>
                         <p>I support digital accessibility, am curious and enjoy working with creative and integration teams delivering digital solutions.</p>
                     </span>
                 </div>
 
                 <div className={intro.part3} >
                     <span>
-                        <i className={"material-icons-round"} aria-hidden="true">favorite_border</i>
+                        <i className={"material-icons-round"} aria-hidden="true" ref={iconRef}>favorite_border</i>
                         {/* <IconDevelopment /> */}
                         <p>With professionalism, integrity and care. I work in a collaborative manner to plan, design and deliver crafted solutions.</p>
                     </span>
@@ -70,7 +96,7 @@ const Intro = () => {
 
                 <div className={intro.part4} >
                     <span>
-                        <i className={"material-icons-round"} aria-hidden="true">design_services</i>
+                        <i className={"material-icons-round"} aria-hidden="true" ref={iconRef}>design_services</i>
                         <ul>
                             <li>Implementation of the UI/UX design process</li>
                             {/* <li>Estimating &amp; proposal review</li> */}
@@ -82,10 +108,7 @@ const Intro = () => {
                     </span>
                 </div>
 
-
-
                 <a href="/peter-koenders-resume.pdf" className="buttonPrimary">View my resumé</a>
-
 
             </div>
         </section>

@@ -91,6 +91,8 @@ section.sectionIntro {
                     border-radius: 999rem;
                     padding: 8px;
                     margin-bottom: 16px;
+                    height: auto;
+                    position: relative;
                 }
 
                 //width: 100%;
@@ -102,7 +104,8 @@ section.sectionIntro {
                 ul,
                 li {
                     //color: $headerBgColor !important;
-                    color: #ffffff;
+                    // color: #ffffff;
+                    color: #ffffffb8;
                     -webkit-margin-after: 0;
                     margin-bottom: 0;
                     text-align: left;
