@@ -2,7 +2,8 @@
 
 header.headerNavWrapper.slide {
   will-change: transform;
-  //transition: translate 1.4s;
+  // transition: translate 1.4s;
+  transition: all .4s;
   transform: translate(0, -61px);
 }
 
@@ -11,7 +12,7 @@ header.headerNavWrapper {
   left: 0;
   right: 0;
   top: 0;
-  // will-change: transform;
+  will-change: transform;
   transition: all .4s;
   height: 60px;
 
@@ -28,20 +29,16 @@ header.headerNavWrapper {
     align-content: center;
     justify-content: space-between;
 
-
     a.brand {
       order: 0;
       display: flex;
-      // align-items: stretch;
-      padding: 5px 12px 5px 15px;
-      height: 45px;
+      align-items: flex-start;
+      padding: 4px;
       margin: auto 0 auto auto;
-      //margin: 0;
       z-index: 1003;
       position: absolute;
-      //align-self: center;
-      top: 7.5px;
-      right: 3px;
+      right: 12px;
+      top: inherit;
 
       @include respond-below(sm) {
         order: 1;
@@ -51,11 +48,10 @@ header.headerNavWrapper {
         display: none;
       }
 
-
       svg {
-        // 
-        height: 100%;
+        height: 24px;
         width: auto;
+        margin: 12px 0;
       }
     }
 
@@ -82,14 +78,14 @@ header.headerNavWrapper {
       display: flex;
       position: absolute;
       left: 0px;
-      margin: 0px 0 auto 3px;
+      margin: 0px 0 auto 0;
       width: fit-content;
       white-space: nowrap;
       align-items: center;
       height: 60px;
       padding: 0 12px;
-      background-color: $headerBgColor;
-      // background-color: transparent;
+      //background-color: $headerBgColor;
+      background-color: transparent;
       border: none;
       cursor: pointer;
 
@@ -217,8 +213,6 @@ header.headerNavWrapper {
   }
 }
 
-
-
 header.headerNavWrapper::before {
   content: "";
   background-color: $headerBgColor;
@@ -233,13 +227,29 @@ header.headerNavWrapper::before {
   transition-timing-function: ease-in;
 }
 
-header.headerNavWrapper.fillBground::before {
-  opacity: 1;
 
+
+header.headerNavWrapper.fillBground::before,
+.fillBgroundQuick::before {
+  content: "";
+  background-color: $headerBgColor;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  will-change: transform;
+  transition: opacity 0.0s;
 }
 
-header.headerNavWrapper.fillBgroundQuick::before {
-  opacity: 1;
-  transition: opacity 0.25s;
-  @include minNavBottomBorder;
-}
+
+// header.headerNavWrapper.fillBground::before {
+//   opacity: 1;
+// }
+
+// header.headerNavWrapper.fillBgroundQuick::before {
+//   opacity: 1;
+//   transition: opacity 0.25s;
+//   @include minNavBottomBorder;
+// }

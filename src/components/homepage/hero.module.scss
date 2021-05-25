@@ -3,18 +3,43 @@
 .wrapper {
     display: flex;
     margin-top: 60px;
-    padding: 32px 0 0;
+    padding: 0 96px 32px;
 
     div.intro {
-
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
         display: block;
-        //align-items: center;
-        //position: relative;
         z-index: 10004;
-        pointer-events: none;
+
+        a {
+            opacity: 0;
+            animation-name: fadein;
+            animation-duration: 2.5s;
+            animation-fill-mode: forwards;
+            margin: 0px auto 64px;
+            color: #fffFFF !important;
+            // background-color: $primaryColor;
+            background-color: $primaryColor;
+            background-color: $headerBgColor;
+            background-color: #253240;
+            background-color: #1f2935;
+            //background-color: #CB4872;
+            //background-color: salmon;
+            transition: all, .15s ease-out;
+            // border: 1px solid #B5B9BE;
+            border: 1px solid #6D767F;
+            // border: 1px solid #BCC3CB;
+            border: 1px solid #40566E;
+
+            i {
+                color: $tertiaryColorA;
+            }
+        }
+
+        a:hover {
+            transform: scale(1.075);
+        }
 
 
 
@@ -33,17 +58,22 @@
 
 
         h1 {
-            font-size: 2.0rem;
+            font-size: 2.2rem;
             line-height: normal;
             width: 100%;
             text-align: center;
+
             // background: rgb(224, 152, 175);
             // background: linear-gradient(120deg, rgba(224, 152, 175, 1) 0%, rgba(153, 223, 190, 1) 100%);
             // background-clip: text;
             //-webkit-text-fill-color: transparent;
-            color: #ffffff;
-            //display: block;
-            animation: fadein 1s;
+
+            color: #ffffffee;
+            opacity: 0;
+            animation-name: fadein;
+            animation-duration: 2.5s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
             margin-bottom: 32px;
             padding: 0 16px;
         }
@@ -123,11 +153,19 @@
 }
 
 @keyframes fadein {
-    from {
+    0% {
         opacity: 0;
     }
 
-    to {
+    100% {
         opacity: 1;
     }
+
+    // from {
+    //     0% {opacity: 0;}
+    // }
+
+    // to {
+    //     opacity: 1;
+    // }
 }

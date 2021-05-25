@@ -115,7 +115,7 @@ function srollNav() {
         if (contentStart) {
             var rect = contentStart.getBoundingClientRect()
             headerNavWrapper.classList.remove("fillBground")
-            var rectHeight = rect.top
+            var rectHeight = rect.bottom
             //console.log(rectHeight)
             //console.log(rect.top);
             //if (rect.bottom <= 61) {
@@ -136,7 +136,7 @@ function srollNav() {
         var rect = contentStart.getBoundingClientRect()
         headerNavWrapper.classList.remove("fillBground")
         headerNavWrapper.classList.remove("fillBgroundQuick")
-        //console.log(rect.top);
+        //console.log(rect.bottom);
         if (rect.bottom <= 61) {
             headerNavWrapper.classList.add("fillBground")
         } else {
@@ -144,6 +144,7 @@ function srollNav() {
             headerNavWrapper.classList.remove("fillBgroundQuick")
         }
     } else {
+        //headerNavWrapper.classList.remove("fillBground")
         headerNavWrapper.classList.add("fillBgroundQuick")
     }
 }

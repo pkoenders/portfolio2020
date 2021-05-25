@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { gsap, Bounce } from "gsap"
 import { ScrollTrigger } from 'gsap/all'
+// import IconDevelopment from "../../images/svg/icon-development.inline.svg"
 
 import * as intro from './intro.module.scss'
 
@@ -19,57 +20,57 @@ const Intro = () => {
 
     useEffect(() => {
         // const timeline = gsap.timeline()
-        gsap.fromTo(iconRefs.current,
-            {
-                opacity: 0,
-                scale: .0,
+        // gsap.fromTo(iconRefs.current,
+        //     {
+        //         opacity: 0,
+        //         scale: .0,
 
-            },
-            {
-                opacity: 1,
-                scale: 1,
-                ease: Bounce.easeOut,
-                duration: .5,
-                stagger: .75
-            },
-        )
+        //     },
+        //     {
+        //         opacity: 1,
+        //         scale: 1,
+        //         ease: Bounce.easeOut,
+        //         duration: .5,
+        //         stagger: .75
+        //     },
+        // )
 
-        return () => {
-            iconRefs.current.kill()
-        }
+        // return () => {
+        //     iconRefs.current.kill()
+        // }
 
-        // iconRefs.current.forEach((item, index) => {
-        //     gsap.fromTo(item,
-        //         {
-        //             scale: .0,
-        //             opacity: 0
-        //         },
-        //         {
-        //             opacity: 1,
-        //             scale: 1,
-        //             ease: Bounce.easeOut,
-        //             duration: .5,
-        //             stagger: .75,
-        //             scrollTrigger: {
-        //                 trigger: item,
-        //                 stagger: .75,
-        //                 start: "top bottom-=32px",
-        //                 // end: 'bottom bottom+=124px',
-        //                 toggleActions: 'play none none reverse',
-        //                 // markers: true
-        //             }
-        //         },
-        //     )
+        iconRefs.current.forEach((item, index) => {
+            gsap.fromTo(item,
+                {
+                    scale: .66,
+                    opacity: 0
+                },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    ease: Bounce.easeOut,
+                    duration: 1,
+                    stagger: .75,
+                    scrollTrigger: {
+                        trigger: item,
+                        stagger: .75,
+                        start: "top bottom-=32px",
+                        // end: 'bottom bottom+=124px',
+                        toggleActions: 'play none none reset',
+                        // markers: true
+                    }
+                },
+            )
 
-        //     return () => {
-        //         iconRefs.current.kill()
-        //     }
-        // })
+            return () => {
+                iconRefs.current.kill()
+            }
+        })
 
     }, [])
 
     return (
-        <section className={intro.sectionIntro + ' section-layout-wide contentStart'}>
+        <section className={intro.sectionIntro + ' section-layout-wide'}>
             <div className={intro.intro}>
 
                 <div className={intro.part1}>
@@ -108,7 +109,7 @@ const Intro = () => {
                     </span>
                 </div>
 
-                <a href="/peter-koenders-resume.pdf" className="buttonPrimary">View my resumé</a>
+                {/* <IconDevelopment /> */}
 
             </div>
         </section>

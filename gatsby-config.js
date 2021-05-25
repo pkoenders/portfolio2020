@@ -45,7 +45,7 @@ module.exports = {
             {
               family: `Material+Icons+Round`,
               // fontDisplay: 'swap',
-              text: "download call clear send arrow_forward arrow_back chevron_left chevron_right launch follow_the_signs follow_the_signs design_services accessibility_new favorite_border",
+              text: "download call clear send arrow_forward arrow_back arrow_upward chevron_left chevron_right launch follow_the_signs design_services accessibility_new favorite_border article",
               strategy: 'base64', // 'base64' || 'cdn'
             },
 
@@ -187,7 +187,7 @@ module.exports = {
         theme_color: `#253240`,
         lang: `en`,
         display: `standalone`,
-        icon: `static/logo-pixl-manifest.svg`, // This path is relative to the root of the site.
+        icon: `static/brand-manifest.svg`, // This path is relative to the root of the site.
         icon_options: {
           purpose: `any maskable`,
         },

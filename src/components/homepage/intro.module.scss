@@ -34,24 +34,6 @@ section.sectionIntro {
             box-shadow: none;
         }
 
-
-        a {
-            margin: 32px auto;
-            color: #fffFFF !important;
-            // background-color: $primaryColor;
-            background-color: $primaryColor;
-            //background-color: #CB4872;
-            //background-color: salmon;
-            transition: all, .15s ease-out;
-            // border: 1px solid #B5B9BE;
-            // border: 1px solid #6D767F;
-            border: 1px solid $headerBgColor;
-        }
-
-        a:hover {
-            transform: scale(1.075);
-        }
-
         div {
             padding: 24px 32px 32px;
             // max-width: calc(50% - 1px);
@@ -93,7 +75,7 @@ section.sectionIntro {
                     align-self: flex-start;
                     //background-color: #41576f;
                     background-color: #41576f30;
-                    font-size: 28px;
+                    font-size: 24px;
                     border-radius: 999rem;
                     padding: 8px;
                     margin-bottom: 16px;
@@ -212,6 +194,22 @@ section.sectionIntro {
             // background: rgb(99, 213, 159);
             // background: linear-gradient(315deg, rgba(153, 223, 190, 1) 0%, rgba(255, 255, 255, 1) 100%);
             // background: linear-gradient(270deg, rgba(153, 223, 190, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+    }
+
+    svg {
+        //vertical-align: middle;
+        display: block;
+        width: 160px;
+        height: auto;
+        margin: 32px auto;
+        pointer-events: none;
+        animation: fadein 4s;
+        //margin: -120px -30px -40px 0px;
+
+        @include respond-below(md) {
+            // width: 75px;
+            // margin: -112px -20px -50px 0px;
         }
     }
 }

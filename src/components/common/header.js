@@ -5,8 +5,7 @@ import '/src/styles/index.scss'
 import "/src/styles/hamburger.scss"
 import "./header.scss"
 
-import IconCreativeTech from "../../images/svg/logo-pixl.inline.svg"
-
+import Brand from "./brand"
 
 const Header = ({ location }) => {
 
@@ -46,6 +45,7 @@ const Header = ({ location }) => {
 
   function openHamburgerNav(headerNavHomepage, hamBurgerBtn, headerDiv, closeMenu) {
     //console.log("hamburger open")
+    //headerDivWrapper.classList.add("fillBgroundQuick")
     headerDiv.classList.add("open", "fillBground")
     hamBurgerBtn.classList.add("is-active")
     headerNavHomepage.classList.remove("hide")
@@ -56,7 +56,7 @@ const Header = ({ location }) => {
 
   function closeHamburgerNav(headerNavHomepage, hamBurgerBtn, headerDiv, closeMenu) {
     //console.log("hamburger close")
-    headerDiv.classList.remove("open", "fillBground")
+    headerDiv.classList.remove("open")
     hamBurgerBtn.classList.remove("is-active")
     headerNavHomepage.classList.add("hide")
     closeMenu.classList.add("hide")
@@ -65,79 +65,78 @@ const Header = ({ location }) => {
   }
 
   return (
-    <>
-      <header className="headerNavWrapper" aria-label="Main heading" style={{ zIndex: '100000' }}>
-        <nav className="headerNav" aria-label="Main navigation" role="navigation">
+    <header className="headerNavWrapper fillBground" aria-label="Main heading" style={{ zIndex: '100000' }}>
+      <nav className="headerNav" aria-label="Main navigation" role="navigation">
 
-          {location.pathname.split('/')[1] !== ""
-            ? <Link className="brand" to="/" title="Link to homepage">
-              <span>Link to homepage</span>
-              <IconCreativeTech alt={"Logo - Link to homepage"} />
-            </Link>
-            : ""
-          }
+        {location.pathname.split('/')[1] !== ""
+          ? <Link className="brand" to="/" title="Link to homepage">
+            <span>Link to homepage</span>
+            {/* <IconCreativeTech alt={"Logo - Link to homepage"} /> */}
+            <Brand alt={"Logo - Link to homepage"} />
+          </Link>
+          : ""
+        }
 
-          <button
-            className="hamburger hamburger--squeeze"
-            type="button"
-            aria-label="Open and Close navigation menu"
-            aria-controls="mainNavigation"
-            aria-expanded="false"
-            aria-pressed="false"
-            onClick={toggleMobileNav}
-          >
-            <span className="hamburger-label">Menu</span>
-            <span className="hamburger-box">
-              <span className="hamburger-inner"></span>
-            </span>
-          </button>
+        <button
+          className="hamburger hamburger--squeeze"
+          type="button"
+          aria-label="Open and Close navigation menu"
+          aria-controls="mainNavigation"
+          aria-expanded="false"
+          aria-pressed="false"
+          onClick={toggleMobileNav}
+        >
+          <span className="hamburger-label">Menu</span>
+          <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
+          </span>
+        </button>
 
 
-          <ul id="mainNavigation">
-            <li className="homePage hide">
-              <Link
-                to="/"
-                activeClassName={"activeNavItem"}>
-                Peter Koenders
+        <ul id="mainNavigation">
+          <li className="homePage hide">
+            <Link
+              to="/"
+              activeClassName={"activeNavItem"}>
+              Peter Koenders
               </Link>
-            </li>
-            <li>
-              <Link
-                to="/projects"
-                activeClassName={"activeNavItem"}
-                getProps={isPartiallyActive}>
-                My projects
+          </li>
+          <li>
+            <Link
+              to="/projects"
+              activeClassName={"activeNavItem"}
+              getProps={isPartiallyActive}>
+              My projects
               </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                activeClassName={"activeNavItem"}>
-                Contact me
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              activeClassName={"activeNavItem"}>
+              Contact me
               </Link>
-            </li>
-            <li>
-              <Link
-                to="/thoughts"
-                activeClassName={"activeNavItem"}>
-                Thoughts
+          </li>
+          <li>
+            <Link
+              to="/thoughts"
+              activeClassName={"activeNavItem"}>
+              Thoughts
               </Link>
-            </li>
-            <li>
-              <a href="/peter-koenders-resume.pdf" >View my resumé</a>
-            </li>
-            <li className="closeMenu hide">
-              <button
-                onClick={toggleMobileNav}>
-                Close
+          </li>
+          <li>
+            <a href="/peter-koenders-resume.pdf" >View my resumé</a>
+          </li>
+          <li className="closeMenu hide">
+            <button
+              onClick={toggleMobileNav}>
+              Close
                 <i className={"material-icons-round"} aria-hidden="true">clear</i>
-              </button>
-            </li>
-          </ul>
+            </button>
+          </li>
+        </ul>
 
-        </nav>
-      </header >
-    </>
+      </nav>
+    </header >
   )
 };
 
