@@ -3,7 +3,7 @@
 section.sectionIntro {
     background: rgb(65, 87, 111);
     background: linear-gradient(0deg, rgba(65, 87, 111, 1) 0%, rgba(37, 50, 64, 1) 100%);
-    //padding-bottom: 120px;
+    padding-bottom: 32px;
     font-size: 1.1rem;
     line-height: 1.8rem;
     font-weight: 500;
@@ -13,9 +13,9 @@ section.sectionIntro {
     z-index: 999;
     //text-align: center;
 
-    @include respond-below(lg) {
-        padding-bottom: 0px;
-    }
+    // @include respond-below(lg) {
+    //     padding-bottom: 0px;
+    // }
 
     .intro {
         max-width: 1200px;
@@ -26,12 +26,24 @@ section.sectionIntro {
         flex-direction: row;
         align-items: stretch;
         overflow: hidden;
-        box-shadow: $globalBoxShadowA;
+        // box-shadow: $globalBoxShadowA;
         border-radius: 8px 8px 0 0;
 
         @include respond-below(lg) {
             border-radius: 0px;
             box-shadow: none;
+        }
+
+
+        a {
+            margin: 32px auto;
+            color: #fffFFF !important;
+            background-color: $primaryColor;
+            transition: all, .15s ease-out;
+        }
+
+        a:hover {
+            transform: scale(1.075);
         }
 
         div {
@@ -64,11 +76,14 @@ section.sectionIntro {
 
             span {
                 align-items: center;
+                //text-align: center;
+                width: 100%;
 
                 i {
                     //color: #ffffff;
                     //color: #41576f;
                     color: $txtColor;
+
                     align-self: flex-start;
                     //background-color: #41576f;
                     background-color: #41576f30;
@@ -86,15 +101,20 @@ section.sectionIntro {
                 p,
                 ul,
                 li {
-                    color: $headerBgColor !important;
+                    //color: $headerBgColor !important;
+                    color: #ffffff;
                     -webkit-margin-after: 0;
                     margin-bottom: 0;
+                    text-align: left;
+                    //font-size: 1.0rem;
                 }
 
                 ul {
+                    text-align: left;
+
                     li {
                         list-style-type: square;
-                        margin: 0 0 16px 0;
+                        margin: 0 0 0px 0;
                         padding-left: 8px;
                     }
                 }
@@ -124,14 +144,14 @@ section.sectionIntro {
         }
 
         .part1 {
-            background-color: $tertiaryColorA;
+            //background-color: $tertiaryColorA;
 
-            // span {
-            //     i {
-            //         background-color: $tertiaryColor;
+            span {
+                i {
+                    background-color: $tertiaryColorA;
 
-            //     }
-            // }
+                }
+            }
 
             // background: rgb(27, 171, 228);
             // background: linear-gradient(135deg, rgba(150, 216, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
@@ -139,13 +159,13 @@ section.sectionIntro {
         }
 
         .part2 {
-            background-color: $primaryColorA;
+            //background-color: $primaryColorA;
 
             span {
                 i {
                     // background-color: $primaryColor;
-                    // background-color: $headerBgColor;
-                    //border: 1px solid $primaryColor
+                    background-color: $primaryColorA;
+                    //border: 1px solid $primaryColorA
                 }
             }
 
@@ -155,14 +175,14 @@ section.sectionIntro {
         }
 
         .part3 {
-            background-color: $secondaryColorA;
+            //background-color: $secondaryColorA;
 
-            // span {
-            //     i {
-            //         background-color: $secondaryColor;
+            span {
+                i {
+                    background-color: $secondaryColorA;
 
-            //     }
-            // }
+                }
+            }
 
             // background: rgb(235, 217, 86);
             // background: linear-gradient(45deg, rgba(243, 232, 150, 1) 0%, rgba(255, 255, 255, 1) 100%);
@@ -170,7 +190,15 @@ section.sectionIntro {
         }
 
         .part4 {
-            background-color: $tertiaryAltColorA;
+            //background-color: $tertiaryAltColorA;
+
+
+            span {
+                i {
+                    background-color: $tertiaryAltColorA;
+
+                }
+            }
 
             // background: rgb(99, 213, 159);
             // background: linear-gradient(315deg, rgba(153, 223, 190, 1) 0%, rgba(255, 255, 255, 1) 100%);

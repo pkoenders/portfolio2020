@@ -62,26 +62,30 @@ const Intro = () => {
 
                 <div className={intro.part3} >
                     <span>
-                        <i className={"material-icons-round"} aria-hidden="true">design_services</i>
-                        <ul>
-                            <li>Implementation of the UI/UX design process</li>
-                            <li>Estimating &amp; proposal review</li>
-                            <li>Iterative wire-framing &amp; prototypes</li>
-                            <li>Build &amp; maintain design systems</li>
-                            <li>HTML templates &amp; components</li>
-                            <li>Graphic design</li>
-                        </ul>
+                        <i className={"material-icons-round"} aria-hidden="true">favorite_border</i>
+                        {/* <IconDevelopment /> */}
+                        <p>With professionalism, integrity and care. I work in a collaborative manner to plan, design and deliver crafted solutions.</p>
                     </span>
                 </div>
 
                 <div className={intro.part4} >
                     <span>
-                        <i className={"material-icons-round"} aria-hidden="true">favorite_border</i>
-                        <IconDevelopment />
-                        <p>With professionalism, integrity and care. I work in a collaborative manner to plan, design and deliver crafted solutions.</p>
-                        <a href="/peter-koenders-resume.pdf" className="buttonPrimary">View my resumé</a>
+                        <i className={"material-icons-round"} aria-hidden="true">design_services</i>
+                        <ul>
+                            <li>Implementation of the UI/UX design process</li>
+                            {/* <li>Estimating &amp; proposal review</li> */}
+                            <li>Iterative wire-framing &amp; prototypes</li>
+                            {/* <li>Build &amp; maintain design systems</li> */}
+                            <li>HTML templates &amp; components</li>
+                            {/* <li>Graphic design</li> */}
+                        </ul>
                     </span>
                 </div>
+
+
+
+                <a href="/peter-koenders-resume.pdf" className="buttonPrimary">View my resumé</a>
+
 
             </div>
         </section>

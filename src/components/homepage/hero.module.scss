@@ -1,11 +1,76 @@
 @import "src/styles/scss";
 
 .wrapper {
-    display: block;
-    position: relative;
-    background-color: $headerBgColor;
-    //padding: 63px 0 0;
-    margin-top: 63px;
+    display: flex;
+    margin-top: 60px;
+    padding: 32px 0 0;
+
+    div.intro {
+
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        //align-items: center;
+        //position: relative;
+        z-index: 10004;
+        pointer-events: none;
+
+
+
+        @include respond-below(lg) {
+            //margin: auto 30px auto;
+        }
+
+        @include respond-below(md) {
+            //margin: auto 30px 30px;
+        }
+
+        @include respond-below(sm) {
+            // margin: auto auto auto 15px;
+        }
+
+
+
+        h1 {
+            font-size: 2.0rem;
+            line-height: normal;
+            width: 100%;
+            text-align: center;
+            // background: rgb(224, 152, 175);
+            // background: linear-gradient(120deg, rgba(224, 152, 175, 1) 0%, rgba(153, 223, 190, 1) 100%);
+            // background-clip: text;
+            //-webkit-text-fill-color: transparent;
+            color: #ffffff;
+            //display: block;
+            animation: fadein 1s;
+            margin-bottom: 32px;
+            padding: 0 16px;
+        }
+
+        svg {
+            //vertical-align: middle;
+            display: block;
+            width: 160px;
+            height: auto;
+            margin: 0 auto 32px auto;
+            pointer-events: none;
+            animation: fadein 4s;
+            //margin: -120px -30px -40px 0px;
+
+            @include respond-below(md) {
+                // width: 75px;
+                // margin: -112px -20px -50px 0px;
+            }
+        }
+
+        .introWrapper {
+            width: 100%;
+            // margin: auto 10% auto;
+            align-self: center;
+
+        }
+    }
 
     >span {
         margin: 0 auto 0 60%;
@@ -53,83 +118,6 @@
             margin: 0 15px 0px auto;
             height: 250px;
             width: 210px;
-        }
-    }
-
-    div.intro {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        z-index: 10004;
-        pointer-events: none;
-
-        .introWrapper {
-            width: 100%;
-            margin: auto 10% auto;
-            align-self: center;
-
-            @include respond-below(lg) {
-                margin: auto 30px auto;
-            }
-
-            @include respond-below(md) {
-                //margin: auto 30px 30px;
-            }
-
-            @include respond-below(sm) {
-                margin: auto auto auto 15px;
-            }
-
-            h1 {
-                margin-bottom: -50px;
-                font-size: 2.4rem;
-                line-height: normal;
-                width: fit-content;
-                text-align: left;
-                background: rgb(224, 152, 175);
-                background: linear-gradient(120deg, rgba(224, 152, 175, 1) 0%, rgba(153, 223, 190, 1) 100%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                display: block;
-                animation: fadein 1s;
-
-                @include respond-below(md) {
-                    // font-size: 1.4rem //margin-bottom: -37.5px;
-                }
-
-                @include respond-below(sm) {
-                    margin: 0;
-                }
-
-                @include respond-below(md) {
-                    font-size: 1.8rem;
-                    line-height: 1.8rem;
-                }
-
-                svg {
-                    vertical-align: middle;
-                    width: 100px;
-                    height: auto;
-                    pointer-events: none;
-                    animation: fadein 4s;
-                    margin: -120px -30px -40px 0px;
-
-                    @include respond-below(md) {
-                        width: 75px;
-                        margin: -112px -20px -50px 0px;
-                    }
-                }
-
-                span {
-                    display: block;
-                    // animation: fadein 2s;
-                }
-            }
         }
     }
 }
