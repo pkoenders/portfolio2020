@@ -16,6 +16,8 @@ header.headerNavWrapper {
   transition: all .4s;
   height: 60px;
 
+
+
   nav.headerNav {
     z-index: 1001;
     min-width: 130px;
@@ -28,6 +30,8 @@ header.headerNavWrapper {
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
+    //overflow-y: hidden;
+
 
     a.brand {
       order: 0;

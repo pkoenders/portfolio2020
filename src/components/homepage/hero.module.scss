@@ -11,13 +11,15 @@
         margin: 0 auto;
         display: block;
         z-index: 10004;
+        text-align: center;
 
         a {
             opacity: 0;
             animation-name: fadein;
+            animation-delay: .5s;
             animation-duration: 2.5s;
             animation-fill-mode: forwards;
-            margin: 32px auto 0;
+            margin: 32px auto 0 auto;
             color: #fffFFF;
             // background-color: $primaryColor;
             background-color: $primaryColor;
@@ -77,7 +79,6 @@
             opacity: 0;
             animation-name: fadein;
             animation-duration: 2.5s;
-            animation-delay: 1s;
             animation-fill-mode: forwards;
             margin-bottom: 0px;
             padding: 0 16px;

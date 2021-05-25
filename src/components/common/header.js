@@ -20,6 +20,7 @@ const Header = ({ location }) => {
   var viewportWidth = 0
 
   function toggleMobileNav() {
+    //const body = document.body()
     const headerNavHomepage = document.querySelector(".homePage")
     const headerDiv = document.querySelector(".headerNav")
     const headerDivNav = document.querySelector(".headerNav ul li")
@@ -46,6 +47,8 @@ const Header = ({ location }) => {
   function openHamburgerNav(headerNavHomepage, hamBurgerBtn, headerDiv, closeMenu) {
     //console.log("hamburger open")
     //headerDivWrapper.classList.add("fillBgroundQuick")
+    //document.body.style.position = 'fixed'
+
     headerDiv.classList.add("open", "fillBground")
     hamBurgerBtn.classList.add("is-active")
     headerNavHomepage.classList.remove("hide")
@@ -56,6 +59,8 @@ const Header = ({ location }) => {
 
   function closeHamburgerNav(headerNavHomepage, hamBurgerBtn, headerDiv, closeMenu) {
     //console.log("hamburger close")
+    //document.body.style.position = 'relative'
+
     headerDiv.classList.remove("open")
     hamBurgerBtn.classList.remove("is-active")
     headerNavHomepage.classList.add("hide")
@@ -97,7 +102,8 @@ const Header = ({ location }) => {
           <li className="homePage hide">
             <Link
               to="/"
-              activeClassName={"activeNavItem"}>
+              activeClassName={"activeNavItem"}
+              onClick={toggleMobileNav}>
               Peter Koenders
               </Link>
           </li>
@@ -105,21 +111,24 @@ const Header = ({ location }) => {
             <Link
               to="/projects"
               activeClassName={"activeNavItem"}
-              getProps={isPartiallyActive}>
+              getProps={isPartiallyActive}
+              onClick={toggleMobileNav}>
               My projects
               </Link>
           </li>
           <li>
             <Link
               to="/contact"
-              activeClassName={"activeNavItem"}>
+              activeClassName={"activeNavItem"}
+              onClick={toggleMobileNav}>
               Contact me
               </Link>
           </li>
           <li>
             <Link
               to="/thoughts"
-              activeClassName={"activeNavItem"}>
+              activeClassName={"activeNavItem"}
+              onClick={toggleMobileNav}>
               Thoughts
               </Link>
           </li>
