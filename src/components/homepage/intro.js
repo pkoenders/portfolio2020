@@ -75,7 +75,7 @@ const Intro = () => {
                 <div className={intro.part1}>
                     <span>
                         <i className={"material-icons-round"} aria-hidden="true" ref={iconRef}>follow_the_signs</i>
-                        <p>I’m a versatile UI/UX designer originally from a traditional Graphic Design background and transitioned into Digital and Web Design.</p>
+                        <p>I’m a UI/UX designer originally from a traditional Graphic Design background and transitioned into Digital and Web Design.</p>
                     </span>
                 </div>
 
