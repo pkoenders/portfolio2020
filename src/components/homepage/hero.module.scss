@@ -17,7 +17,7 @@
             animation-name: fadein;
             animation-duration: 2.5s;
             animation-fill-mode: forwards;
-            margin: 0px auto 64px;
+            margin: 0px auto 32px;
             color: #fffFFF !important;
             // background-color: $primaryColor;
             background-color: $primaryColor;
@@ -58,7 +58,7 @@
 
 
         h1 {
-            font-size: 1.9rem;
+            font-size: 1.8rem;
             line-height: normal;
             width: 100%;
             text-align: center;
@@ -79,7 +79,7 @@
             animation-duration: 2.5s;
             animation-delay: 1s;
             animation-fill-mode: forwards;
-            margin-bottom: 32px;
+            margin-bottom: 0px;
             padding: 0 16px;
         }
 
