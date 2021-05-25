@@ -8,14 +8,14 @@
   text-align: center;
 
   canvas {
-    z-index: 1 !important;
+    z-index: 1;
   }
 
   .wrapper {
     max-width: 1200px;
     position: relative;
     margin: 0 auto;
-    z-index: 100 !important;
+    z-index: 1000 !important;
 
     a {
       position: relative;
