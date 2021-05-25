@@ -29,7 +29,7 @@ const ListProjects = ({ title, isHomepage }) => {
                                 childImageSharp {
                                     gatsbyImageData(
                                         width: 566
-                                        quality: 50
+                                        quality: 30
                                         #breakpoints: [576, 768, 992, 1200]
                                         layout: CONSTRAINED
                                         formats: [AUTO, WEBP, AVIF]
