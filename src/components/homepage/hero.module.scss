@@ -3,7 +3,7 @@
 .wrapper {
     display: flex;
     margin-top: 60px;
-    padding: 0 92px 32px;
+    padding: 16px 92px 32px;
 
     div.intro {
         max-width: 1200px;
@@ -17,8 +17,8 @@
             animation-name: fadein;
             animation-duration: 2.5s;
             animation-fill-mode: forwards;
-            margin: 0px auto 32px;
-            color: #fffFFF !important;
+            margin: 32px auto 0;
+            color: #fffFFF;
             // background-color: $primaryColor;
             background-color: $primaryColor;
             background-color: $headerBgColor;
