@@ -3,15 +3,13 @@ import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import { gsap, Power3 } from "gsap"
-import { CSSPlugin } from 'gsap/CSSPlugin'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import * as listProjectItem from './listProjectItem.module.scss'
 
-gsap.registerPlugin(ScrollTrigger)
-gsap.registerPlugin(CSSPlugin)
-
 const ListProjectItem = ({ itemData }) => {
+
+    gsap.registerPlugin(ScrollTrigger)
 
     const revealRefs = useRef([]);
     revealRefs.current = [];
@@ -48,7 +46,8 @@ const ListProjectItem = ({ itemData }) => {
                 }
             })
             return () => {
-                revealTxt.current.kill()
+                revealRefs.current.kill()
+
             }
         })
 
@@ -60,7 +59,7 @@ const ListProjectItem = ({ itemData }) => {
                 opacity: 1,
                 y: 0,
                 ease: Power3.easeOut,
-                duration: 2.5,
+                duration: 2,
                 scrollTrigger: {
                     trigger: item,
                     start: "top bottom",
@@ -71,7 +70,7 @@ const ListProjectItem = ({ itemData }) => {
                 }
             })
             return () => {
-                revealRefs.current.kill()
+                revealTxt.current.kill()
             }
         })
 
@@ -83,16 +82,18 @@ const ListProjectItem = ({ itemData }) => {
             className={listProjectItem.listProjectItem + ' item'}
             ref={itemRef}
         >
-            <GatsbyImage
-                alt={itemData.node.frontmatter.title}
-                image={itemData.node.frontmatter.coverimage.childImageSharp.gatsbyImageData}
-            />
-            <span>
-                <span ref={innerTxt}>
-                    <h3>{itemData.node.frontmatter.title}</h3>
-                    <p>{itemData.node.frontmatter.intro}</p>
-                </span>
-            </span>
+            <div className={listProjectItem.wrapper} >
+                <GatsbyImage
+                    alt={itemData.node.frontmatter.title}
+                    image={itemData.node.frontmatter.coverimage.childImageSharp.gatsbyImageData}
+                />
+                <div className={listProjectItem.title}>
+                    <span ref={innerTxt}>
+                        <h3>{itemData.node.frontmatter.title}</h3>
+                        <p>{itemData.node.frontmatter.intro}</p>
+                    </span>
+                </div>
+            </div>
         </Link>
     )
 }

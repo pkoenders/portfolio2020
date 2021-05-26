@@ -31,7 +31,9 @@ const ProjectTemplate = ({ data, pageContext }) => {
       <style type="text/css">
         {`
         body  {
+          // background-color: #F9F9FB;
           background-color: #ffffff;
+          ;
         }
       `}
       </style>

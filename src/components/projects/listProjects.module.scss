@@ -1,8 +1,9 @@
 @import "src/styles/scss";
 
 .listProjectsSection {
-    background-color: #ffffff;
+    background-color: #F9F9FB;
     padding: $globalSectionPadding;
+    padding-bottom: 32px;
     position: relative;
     z-index: 1000;
     border-top: 1px solid $headerBgColor;

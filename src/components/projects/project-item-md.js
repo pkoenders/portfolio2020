@@ -31,6 +31,7 @@ const ProjectTemplate = ({ data }) => {
       <style type="text/css">
         {`
         body  {
+          // background-color: #F9F9FB;
           background-color: #ffffff;
         }
       `}

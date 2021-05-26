@@ -1,8 +1,11 @@
 @import "src/styles/scss";
 
 .wrapper {
+    // background-color: #F9F9FB;
     background-color: #ffffff;
     padding: $globalSectionPadding;
+    padding-bottom: 32px;
+
 
     @include respond-below(lg) {
         //  padding: 45px 0 5px 0;
@@ -30,10 +33,13 @@
             margin-bottom: 64px;
 
             display: block;
+            //background-color: #ffffff;
+
+            //box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 
             span {
                 display: block;
-                padding: 16px 4px;
+                padding: 16px 0px;
                 text-align: left;
                 border-top: 4px solid $tertiaryColor;
 
@@ -66,8 +72,8 @@
                 }
 
                 span {
-                    margin-top: 15px;
-                    padding: 15px 0;
+                    margin-top: 16px;
+                    padding: 16px 0px;
                     border-top: 1px solid #b8b8b8;
                     //border-bottom: 1px solid #b8b8b8;
 
