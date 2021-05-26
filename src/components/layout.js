@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Footer from "./common/footer"
-import Header from "./common/header"
+import Footer from "./common/footer/"
+import Header from "./common/header/"
 
 
 import * as layoutStyles from './layout.module.scss'

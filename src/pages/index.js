@@ -5,7 +5,7 @@ import Hero from '../components/homepage/hero'
 import Intro from '../components/homepage/intro'
 import ListProjects from '../components/projects/listProjects'
 import SectionContact from '../components/forms/contact'
-import Seo from '../components/seo/seo'
+import Seo from '../components/common/seo/'
 
 
 const IndexPage = ({ location }) => {

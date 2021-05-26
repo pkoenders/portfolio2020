@@ -1,0 +1,28 @@
+@import "src/styles/scss";
+
+button.btn {
+  cursor: pointer;
+  margin: 16px auto;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  color: $headerBgColor;
+  display: flex;
+
+  i {
+    margin-top: 8px;
+    border-radius: 999rem;
+    background-color: #ffffff;
+    padding: 4px;
+    font-size: 28px;
+    transition: all, .15s ease-out;
+  }
+}
+
+button.btn:hover {
+
+  i {
+    margin-top: 0;
+    padding-bottom: 12px;
+  }
+}

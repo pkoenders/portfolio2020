@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import BlogTemplate from '../components/blog/blogItem-md'
-import SecondaryNav from '../components/common/secondaryNav'
+import SecondaryNav from '../components/common/secondaryNav/'
 
 
 export const query = graphql`

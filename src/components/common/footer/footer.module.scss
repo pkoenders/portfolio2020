@@ -20,7 +20,9 @@
     a {
       position: relative;
       color: unset;
-      display: block;
+      display: flex;
+      margin: 0 auto;
+      width: fit-content;
 
       span {
         display: none;
@@ -29,7 +31,7 @@
       svg {
         width: auto;
         height: 32px;
-        margin: 16px auto;
+        margin: 16px 0;
       }
     }
 
@@ -44,38 +46,6 @@
       color: #ffffff;
       margin-bottom: 10px;
       position: relative;
-    }
-
-    button {
-      cursor: pointer;
-      margin: 16px auto;
-      background-color: transparent;
-      padding: 0;
-      border: none;
-      color: $headerBgColor;
-      display: flex;
-
-      i {
-        margin-top: 8px;
-        border-radius: 999rem;
-        background-color: #ffffff;
-        padding: 4px;
-        font-size: 28px;
-        transition: all, .15s ease-out;
-      }
-    }
-
-    button:hover {
-
-
-      i {
-        margin-top: 0;
-        //transform: translateY(-8px);
-        padding-bottom: 12px;
-        //height: calc(height + 4px);
-        //height: 50px;
-      }
-
     }
   }
 }

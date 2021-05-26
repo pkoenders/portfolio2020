@@ -1,7 +1,7 @@
 import React from "react"
 //import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
-import Seo from '../seo/seo'
+import Seo from '../common/seo/'
 
 import * as projectStyles from './project-item.module.scss'
 

@@ -1,10 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Seo from '../components/seo/seo'
+import Seo from '../components/common/seo/'
 import Layout from "../components/layout"
-import Bground404 from "../components/404-bground"
-
-import "../styles/index.scss"
+import Bground404 from "../components/404/404-bground"
 
 const NotFoundPage = ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -16,6 +14,7 @@ const NotFoundPage = ({ location }) => {
     }
   }
 `)
+
   return (
     <>
       <style type="text/css">
@@ -23,13 +22,6 @@ const NotFoundPage = ({ location }) => {
         footer  {
           display:none !important;
         }
-    
-
-        // canvas {
-        //   position: absolute !important;
-        //   top: -9999px !important;
-        //   left: -9999px !important;
-        // }
 
         canvas {
           z-index:-1 !important;

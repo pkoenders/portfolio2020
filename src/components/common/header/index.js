@@ -5,7 +5,7 @@ import '/src/styles/index.scss'
 import "/src/styles/hamburger.scss"
 import "./header.scss"
 
-import Brand from "./brand"
+import Brand from "../brand/"
 
 const Header = ({ location }) => {
 
