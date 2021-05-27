@@ -26,7 +26,7 @@ const Blog = ({ location }) => {
 
       <Seo
         title={'Blog | ' + data.site.siteMetadata.title}
-        description={'blog list for Peter Koenders.'}
+        description={'Thousts and considerations, short writings.'}
       />
       <Layout location={location}>
         <SectionBlog />
