@@ -25,9 +25,9 @@ export const onRouteUpdate = () => {
 }
 
 function ready() {
-    document.addEventListener('click', function (e) {
-        srollNav()
-    })
+    // document.addEventListener('click', function (e) {
+    //     srollNav()
+    // })
     srollNav()
     canvasAnin()
 }
@@ -93,11 +93,16 @@ function srollNav() {
     const headerNavWrapper = document.querySelector(".headerNavWrapper")
     const secondaryNav = document.querySelector(".secondaryNav")
     const hamBurgerBtn = document.querySelector(".hamburger")
-    var prevScrollpos = 0;
-    // No errors
+    //headerNavWrapper.classList.remove("slide")
 
-    window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
+    // var prevScrollpos = 0
+
+    var prevScrollpos = window.pageYOffset
+    // No errors
+    //window.onscroll = function () {
+    document.addEventListener('scroll', function (e) {
+        //console.log('scroll')
+        var currentScrollPos = window.pageYOffset
         if ((prevScrollpos >= currentScrollPos) || (hamBurgerBtn.classList.contains("is-active"))) {
             headerNavWrapper.classList.remove("slide")
             // toggleMainMenu.classList.remove("slide")
@@ -130,21 +135,21 @@ function srollNav() {
             currentScrollPos = 0;
         }
         prevScrollpos = currentScrollPos;
-    }
+    })
 
-    if (contentStart) {
-        var rect = contentStart.getBoundingClientRect()
-        headerNavWrapper.classList.remove("fillBground")
-        headerNavWrapper.classList.remove("fillBgroundQuick")
-        //console.log(rect.bottom);
-        if (rect.bottom <= 61) {
-            headerNavWrapper.classList.add("fillBground")
-        } else {
-            headerNavWrapper.classList.remove("fillBground")
-            headerNavWrapper.classList.remove("fillBgroundQuick")
-        }
-    } else {
-        //headerNavWrapper.classList.remove("fillBground")
-        headerNavWrapper.classList.add("fillBgroundQuick")
-    }
+    // if (contentStart) {
+    //     var rect = contentStart.getBoundingClientRect()
+    //     headerNavWrapper.classList.remove("fillBground")
+    //     headerNavWrapper.classList.remove("fillBgroundQuick")
+    //     //console.log(rect.bottom);
+    //     if (rect.bottom <= 61) {
+    //         headerNavWrapper.classList.add("fillBground")
+    //     } else {
+    //         headerNavWrapper.classList.remove("fillBground")
+    //         headerNavWrapper.classList.remove("fillBgroundQuick")
+    //     }
+    // } else {
+    //     //headerNavWrapper.classList.remove("fillBground")
+    //     headerNavWrapper.classList.add("fillBgroundQuick")
+    // }
 }

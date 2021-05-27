@@ -3,7 +3,7 @@
 header.headerNavWrapper.slide {
   will-change: transform;
   // transition: translate 1.4s;
-  transition: all .4s;
+  transition: all .25s;
   transform: translate(0, -61px);
 }
 
@@ -13,7 +13,7 @@ header.headerNavWrapper {
   right: 0;
   top: 0;
   will-change: transform;
-  transition: all .4s;
+  transition: all .25s;
   height: 60px;
 
 

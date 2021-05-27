@@ -30,24 +30,25 @@ const ListProjectItem = ({ itemData }) => {
     };
 
     useEffect(() => {
+
         revealRefs.current.forEach((item, index) => {
             // var tl = gsap.timeline({
             gsap.fromTo(item, {
-                y: 96
+                y: 96,
             }, {
                 y: 0, ease: Power3.easeOut,
+
                 scrollTrigger: {
                     trigger: item,
-                    start: "top bottom+=62px",
-                    end: 'bottom bottom+=62px',
-                    //scrub: 1,
+                    start: "top bottom-=0px",
+                    end: 'bottom bottom+=0px',
+                    scrub: -1,
                     toggleActions: 'play none none reverse',
                     //markers: true
                 }
             })
             return () => {
                 revealRefs.current.kill()
-
             }
         })
 
@@ -62,11 +63,11 @@ const ListProjectItem = ({ itemData }) => {
                 duration: 2,
                 scrollTrigger: {
                     trigger: item,
-                    start: "top bottom",
-                    //end: 'bottom bottom',
-                    //scrub: 1,
+                    start: "top bottom-=32px",
+                    end: 'bottom bottom+=32px',
+                    //scrub: 0,
                     toggleActions: 'play none none reverse',
-                    // markers: true
+                    //markers: true
                 }
             })
             return () => {

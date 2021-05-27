@@ -4,8 +4,9 @@
     background-color: #F9F9FB;
     padding: $globalSectionPadding;
     padding-bottom: 32px;
-    position: relative;
-    z-index: 1000;
+    display: block;
+    //position: relative;
+    //z-index: 1000;
     border-top: 1px solid $headerBgColor;
 
     @include respond-below(lg) {
