@@ -76,7 +76,7 @@ const Intro = () => {
                 <div className={intro.part1}>
                     <span>
                         <i className={"material-icons-round"} aria-hidden="true" ref={iconRef}>follow_the_signs</i>
-                        <p>I’m a UI/UX designer originally from a traditional Graphic Design background and transitioned into Digital and Web Design.</p>
+                        <p>I’m a UI/UX designer &amp; developer originally from a traditional Graphic Design background and transitioned into Digital and Web Design.</p>
                     </span>
                 </div>
 
@@ -103,7 +103,7 @@ const Intro = () => {
                             {/* <li>Estimating &amp; proposal review</li> */}
                             <li>Iterative wire-framing &amp; prototypes</li>
                             {/* <li>Build &amp; maintain design systems</li> */}
-                            <li>HTML templates &amp; components</li>
+                            <li>HTML components, React &amp; Headless CMS's</li>
                             {/* <li>Graphic design</li> */}
                         </ul>
                     </span>
